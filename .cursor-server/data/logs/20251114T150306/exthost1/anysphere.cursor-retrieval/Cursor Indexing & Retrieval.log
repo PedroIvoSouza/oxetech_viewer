@@ -1,0 +1,9 @@
+2025-11-14 15:03:15.773 [error] Error getting repo info: Failed to execute git
+2025-11-14 15:03:15.773 [error] Error: Failed to execute git
+	at t.Git._exec (/home/oxetech_mcz/.cursor-server/bin/ba90f2f88e4911312761abab9492c42442117cf0/extensions/git/dist/main.js:2:34772)
+	at async t.Git.exec (/home/oxetech_mcz/.cursor-server/bin/ba90f2f88e4911312761abab9492c42442117cf0/extensions/git/dist/main.js:2:33895)
+	at async t.GitProvider.executeGitCommandStable (/home/oxetech_mcz/.cursor-server/bin/ba90f2f88e4911312761abab9492c42442117cf0/extensions/cursor-retrieval/dist/main.js:2:1338976)
+	at async t.GitProvider.getRepoInfo (/home/oxetech_mcz/.cursor-server/bin/ba90f2f88e4911312761abab9492c42442117cf0/extensions/cursor-retrieval/dist/main.js:2:1314928)
+2025-11-14 15:03:15.773 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-11-14 15:03:15.773 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-11-14 15:03:16.013 [error] NoWorkspaceUriError

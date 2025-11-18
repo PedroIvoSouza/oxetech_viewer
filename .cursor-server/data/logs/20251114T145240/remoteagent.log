@@ -1,0 +1,18 @@
+2025-11-14 14:52:41.320 [info] 
+
+
+
+
+2025-11-14 14:52:41.340 [info] Extension host agent started.
+2025-11-14 14:52:41.372 [info] Started initializing default profile extensions in extensions installation folder. file:///home/oxetech_mcz/.cursor-server/extensions
+2025-11-14 14:52:41.401 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/oxetech_mcz/.cursor-server/extensions
+2025-11-14 14:52:41.842 [info] [127.0.0.1][02ceda28][ManagementConnection] New connection established.
+2025-11-14 14:52:42.204 [info] Getting extensions control
+2025-11-14 14:52:42.249 [info] [127.0.0.1][232543ad][ExtensionHostConnection] New connection established.
+2025-11-14 14:52:42.686 [info] [127.0.0.1][232543ad][ExtensionHostConnection] <28937> Launched Extension Host Process.
+2025-11-14 14:53:58.951 [warning] No ptyHost heartbeat after 6 seconds
+2025-11-14 14:54:33.387 [error] No ptyHost heartbeat after 12 seconds
+2025-11-14 14:55:09.056 [warning] No ptyHost heartbeat after 6 seconds
+2025-11-14 14:55:22.519 [warning] No ptyHost heartbeat after 6 seconds
+2025-11-14 14:55:46.992 [info] [127.0.0.1][02ceda28][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-11-14 14:57:41.484 [info] New EH opened, aborting shutdown

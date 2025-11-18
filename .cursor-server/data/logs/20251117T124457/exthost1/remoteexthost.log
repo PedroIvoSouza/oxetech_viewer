@@ -1,0 +1,26 @@
+2025-11-17 12:45:04.241 [info] Extension host with pid 194777 started
+2025-11-17 12:45:04.241 [info] [ExtHostShellExec] Initializing terminal executor with userTerminalHint: undefined
+2025-11-17 12:45:04.279 [info] Lock '/home/oxetech_mcz/.cursor-server/data/User/workspaceStorage/db1b72e9ee7a3769a4f447f63a2873db/vscode.lock': Lock acquired.
+2025-11-17 12:45:04.480 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-11-17 12:45:04.482 [info] ExtensionService#_doActivateExtension anysphere.cursor-agent-exec, startup: false, activationEvent: '*'
+2025-11-17 12:45:04.483 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-11-17 12:45:04.483 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2025-11-17 12:45:04.484 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-11-17 12:45:04.485 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-11-17 12:45:05.489 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2025-11-17 12:45:05.809 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-11-17 12:45:05.809 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-11-17 12:45:07.286 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-11-17 12:45:07.840 [info] Eager extensions activated
+2025-11-17 12:45:07.841 [info] ExtensionService#_doActivateExtension anysphere.cursor-browser-connect, startup: false, activationEvent: 'onStartupFinished'
+2025-11-17 12:45:07.842 [info] ExtensionService#_doActivateExtension anysphere.cursor-mcp, startup: false, activationEvent: 'onStartupFinished'
+2025-11-17 12:45:07.842 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-11-17 12:45:07.843 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-11-17 12:45:07.843 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-11-17 12:45:07.844 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-11-17 12:45:18.619 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-11-17 12:45:18.619 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-11-18 12:18:25.411 [info] ExtensionService#_doActivateExtension mechatroner.rainbow-csv, startup: false, activationEvent: 'onLanguage:csv'
+2025-11-18 16:30:44.434 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:typescriptreact'
+2025-11-18 17:58:59.658 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-11-18 17:59:04.676 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000

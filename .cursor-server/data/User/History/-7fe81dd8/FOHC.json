@@ -1,0 +1,8 @@
+{
+    "window.commandCenter": true,
+    "remote.SSH.remotePlatform": {
+        "pedro_ivo@35.206.104.97": "linux",
+        "oxetech_mcz@35.226.67.209": "linux"
+    },
+    "cursor.composer.queueMessageDefaultBehavior": "queue"
+}

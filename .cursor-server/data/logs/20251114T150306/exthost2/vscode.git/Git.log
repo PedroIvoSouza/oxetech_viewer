@@ -1,0 +1,799 @@
+2025-11-14 15:03:46.001 [info] [main] Log level: Info
+2025-11-14 15:03:46.001 [info] [main] Validating found git in: "git"
+2025-11-14 15:03:46.001 [info] [main] Using git "2.30.2" from "git"
+2025-11-14 15:03:46.001 [info] [Model][doInitialScan] Initial repository scan started
+2025-11-14 15:03:46.001 [info] > git rev-parse --show-toplevel [41ms]
+2025-11-14 15:03:46.001 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:03:46.001 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-11-14 15:03:46.107 [info] > git config --get remote.origin.url [31ms]
+2025-11-14 15:03:46.463 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:03:46.463 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:03:46.532 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:03:46.532 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:03:55.035 [info] > git config --global user.name [3ms]
+2025-11-14 15:03:55.042 [info] > git config --global user.email [2ms]
+2025-11-14 15:03:55.042 [info] [main] Stored git author name in global state:  <>
+2025-11-14 15:04:59.493 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:04:59.493 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:05:00.858 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:05:00.858 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:35.471 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:35.471 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:43.673 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:08:43.673 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:43.706 [info] > git rev-parse --show-toplevel [13ms]
+2025-11-14 15:08:43.706 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:43.719 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:43.719 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:44.471 [info] > git rev-parse --show-toplevel [22ms]
+2025-11-14 15:08:44.472 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:44.483 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:44.483 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:44.495 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:44.495 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:44.506 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:44.506 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:44.521 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:08:44.522 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:44.531 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:44.531 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:44.541 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:44.541 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:44.557 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:08:44.557 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:44.568 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:08:44.568 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:44.578 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:44.578 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.113 [info] > git rev-parse --show-toplevel [7ms]
+2025-11-14 15:08:46.113 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.153 [info] > git rev-parse --show-toplevel [23ms]
+2025-11-14 15:08:46.153 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.165 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:08:46.165 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.177 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:08:46.177 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.197 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:08:46.197 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.222 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:08:46.223 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.243 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:46.243 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.285 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:08:46.285 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.295 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:46.295 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.305 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:46.305 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.375 [info] > git rev-parse --show-toplevel [63ms]
+2025-11-14 15:08:46.375 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.398 [info] > git rev-parse --show-toplevel [6ms]
+2025-11-14 15:08:46.398 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.445 [info] > git rev-parse --show-toplevel [33ms]
+2025-11-14 15:08:46.445 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.459 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:46.459 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.471 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 15:08:46.471 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.482 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:46.482 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:46.493 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:46.493 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.172 [info] > git rev-parse --show-toplevel [14ms]
+2025-11-14 15:08:47.172 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.270 [info] > git rev-parse --show-toplevel [80ms]
+2025-11-14 15:08:47.270 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.341 [info] > git rev-parse --show-toplevel [45ms]
+2025-11-14 15:08:47.341 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.361 [info] > git rev-parse --show-toplevel [11ms]
+2025-11-14 15:08:47.361 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.408 [info] > git rev-parse --show-toplevel [37ms]
+2025-11-14 15:08:47.408 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.473 [info] > git rev-parse --show-toplevel [48ms]
+2025-11-14 15:08:47.473 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.486 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:08:47.487 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.495 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:08:47.495 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.521 [info] > git rev-parse --show-toplevel [17ms]
+2025-11-14 15:08:47.521 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.537 [info] > git rev-parse --show-toplevel [8ms]
+2025-11-14 15:08:47.537 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.554 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-14 15:08:47.554 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.572 [info] > git rev-parse --show-toplevel [11ms]
+2025-11-14 15:08:47.572 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.607 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-14 15:08:47.608 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.624 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-14 15:08:47.624 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.654 [info] > git rev-parse --show-toplevel [22ms]
+2025-11-14 15:08:47.655 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.673 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:08:47.673 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.705 [info] > git rev-parse --show-toplevel [7ms]
+2025-11-14 15:08:47.706 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:47.730 [info] > git rev-parse --show-toplevel [6ms]
+2025-11-14 15:08:47.730 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.276 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:08:48.276 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.295 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.295 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.305 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.305 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.343 [info] > git rev-parse --show-toplevel [30ms]
+2025-11-14 15:08:48.343 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.354 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.354 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.369 [info] > git rev-parse --show-toplevel [7ms]
+2025-11-14 15:08:48.369 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.380 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.380 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.390 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.390 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.400 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.400 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.410 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.410 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.421 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.421 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.431 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.431 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.451 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 15:08:48.451 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.469 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.469 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.479 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.479 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.489 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.489 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.499 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.499 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.510 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:08:48.510 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.552 [info] > git rev-parse --show-toplevel [34ms]
+2025-11-14 15:08:48.552 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.578 [info] > git rev-parse --show-toplevel [18ms]
+2025-11-14 15:08:48.578 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.588 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.588 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.599 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.599 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.610 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.610 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.621 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:08:48.621 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.632 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.632 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.642 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.642 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.652 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.652 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.662 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.662 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.672 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.672 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.683 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.683 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.693 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.693 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.703 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.703 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.714 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.714 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.725 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.725 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.736 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.736 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.746 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.746 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.759 [info] > git rev-parse --show-toplevel [6ms]
+2025-11-14 15:08:48.759 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.769 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.769 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.782 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 15:08:48.782 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.792 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.792 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.802 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.802 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.812 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.812 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.826 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.826 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.839 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.839 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.849 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:08:48.849 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.859 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.859 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.869 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.869 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:48.879 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:48.879 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.101 [info] > git rev-parse --show-toplevel [6ms]
+2025-11-14 15:08:51.101 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.119 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:08:51.119 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.154 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 15:08:51.154 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.174 [info] > git rev-parse --show-toplevel [6ms]
+2025-11-14 15:08:51.174 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.202 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:08:51.202 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.228 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-14 15:08:51.228 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.252 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 15:08:51.252 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.280 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-14 15:08:51.280 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.304 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:51.304 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.331 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-14 15:08:51.331 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.358 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 15:08:51.358 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.408 [info] > git rev-parse --show-toplevel [31ms]
+2025-11-14 15:08:51.408 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.443 [info] > git rev-parse --show-toplevel [8ms]
+2025-11-14 15:08:51.443 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.487 [info] > git rev-parse --show-toplevel [22ms]
+2025-11-14 15:08:51.487 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.539 [info] > git rev-parse --show-toplevel [25ms]
+2025-11-14 15:08:51.539 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.579 [info] > git rev-parse --show-toplevel [10ms]
+2025-11-14 15:08:51.579 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.596 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:08:51.596 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.610 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 15:08:51.610 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.626 [info] > git rev-parse --show-toplevel [6ms]
+2025-11-14 15:08:51.626 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.645 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:08:51.645 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.670 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-14 15:08:51.670 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.694 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 15:08:51.694 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.720 [info] > git rev-parse --show-toplevel [14ms]
+2025-11-14 15:08:51.721 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.744 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:51.744 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.770 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-14 15:08:51.771 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.793 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:51.793 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.819 [info] > git rev-parse --show-toplevel [8ms]
+2025-11-14 15:08:51.819 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:51.840 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:51.840 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:54.366 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 15:08:54.366 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:54.379 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:08:54.379 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:54.391 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:08:54.391 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:08:54.405 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 15:08:54.405 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:13:36.193 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 15:13:36.193 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:13:36.270 [info] > git config user.email [2ms]
+2025-11-14 15:13:36.276 [info] > git config user.name [1ms]
+2025-11-14 15:13:36.283 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 15:13:36.283 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:18:35.703 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:18:35.703 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:18:54.621 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:18:54.622 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:18:55.223 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:18:55.223 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:19:11.045 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:19:11.046 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:19:11.102 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 15:19:11.102 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:23:35.224 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:23:35.224 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:23:35.785 [info] > git config user.email [2ms]
+2025-11-14 15:23:35.793 [info] > git config user.name [1ms]
+2025-11-14 15:23:35.800 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 15:23:35.800 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:28:35.294 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:28:35.294 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:31:24.015 [info] > git remote get-url --push origin [4ms]
+2025-11-14 15:31:24.015 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:33:35.474 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:33:35.474 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:33:35.783 [info] > git config user.email [3ms]
+2025-11-14 15:33:35.790 [info] > git config user.name [1ms]
+2025-11-14 15:33:35.797 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 15:33:35.797 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:38:35.337 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:38:35.337 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:38:52.472 [info] > git remote get-url --push origin [1ms]
+2025-11-14 15:38:52.473 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:38:54.700 [info] > git rev-parse --show-toplevel [197ms]
+2025-11-14 15:38:54.700 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:39:09.560 [info] > git rev-parse --show-toplevel [26ms]
+2025-11-14 15:39:09.560 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:39:23.067 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:39:23.067 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:43:35.205 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:43:35.206 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:43:35.786 [info] > git config user.email [1ms]
+2025-11-14 15:43:35.793 [info] > git config user.name [2ms]
+2025-11-14 15:43:35.800 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 15:43:35.800 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:48:35.207 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:48:35.207 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:53:35.436 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 15:53:35.436 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:53:35.772 [info] > git config user.email [1ms]
+2025-11-14 15:53:35.778 [info] > git config user.name [1ms]
+2025-11-14 15:53:35.785 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 15:53:35.785 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 15:58:35.195 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 15:58:35.195 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:03:26.131 [info] > git remote get-url --push origin [3ms]
+2025-11-14 16:03:26.137 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:03:35.195 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 16:03:35.195 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:03:35.789 [info] > git config user.email [1ms]
+2025-11-14 16:03:35.795 [info] > git config user.name [1ms]
+2025-11-14 16:03:35.803 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 16:03:35.803 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:03:40.403 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 16:03:40.403 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:03:45.783 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 16:03:45.783 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:03:46.814 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 16:03:46.814 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:03:58.109 [info] > git rev-parse --show-toplevel [14ms]
+2025-11-14 16:03:58.109 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:08:35.190 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 16:08:35.190 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:13:35.346 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 16:13:35.346 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:13:35.774 [info] > git config user.email [1ms]
+2025-11-14 16:13:35.781 [info] > git config user.name [1ms]
+2025-11-14 16:13:35.789 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 16:13:35.789 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:18:35.407 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 16:18:35.407 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:20:25.732 [info] > git remote get-url --push origin [1ms]
+2025-11-14 16:20:25.733 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:23:35.262 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 16:23:35.262 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:23:35.805 [info] > git config user.email [1ms]
+2025-11-14 16:23:35.812 [info] > git config user.name [1ms]
+2025-11-14 16:23:35.818 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 16:23:35.818 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:27:10.093 [info] > git remote get-url --push origin [1ms]
+2025-11-14 16:27:10.093 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:28:35.184 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 16:28:35.184 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:33:35.191 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 16:33:35.198 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:33:35.769 [info] > git config user.email [3ms]
+2025-11-14 16:33:35.776 [info] > git config user.name [1ms]
+2025-11-14 16:33:35.782 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 16:33:35.782 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:36:43.160 [info] > git remote get-url --push origin [2ms]
+2025-11-14 16:36:43.161 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:38:35.187 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 16:38:35.187 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:43:35.188 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 16:43:35.189 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:43:35.768 [info] > git config user.email [1ms]
+2025-11-14 16:43:35.776 [info] > git config user.name [1ms]
+2025-11-14 16:43:35.782 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 16:43:35.783 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:46:28.333 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 16:46:28.333 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:46:30.758 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 16:46:30.758 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:48:35.274 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 16:48:35.274 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:53:35.269 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 16:53:35.269 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:53:35.764 [info] > git config user.email [2ms]
+2025-11-14 16:53:35.773 [info] > git config user.name [1ms]
+2025-11-14 16:53:35.782 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 16:53:35.782 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 16:58:35.333 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 16:58:35.333 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:03:35.358 [info] > git rev-parse --show-toplevel [12ms]
+2025-11-14 17:03:35.359 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:03:35.774 [info] > git config user.email [4ms]
+2025-11-14 17:03:35.790 [info] > git config user.name [9ms]
+2025-11-14 17:03:35.801 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [4ms]
+2025-11-14 17:03:35.801 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:08:35.174 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 17:08:35.174 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:13:35.434 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 17:13:35.434 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:13:35.757 [info] > git config user.email [2ms]
+2025-11-14 17:13:35.768 [info] > git config user.name [3ms]
+2025-11-14 17:13:35.776 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 17:13:35.776 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:18:24.930 [info] > git rev-parse --show-toplevel [19ms]
+2025-11-14 17:18:24.930 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:18:24.980 [info] > git rev-parse --show-toplevel [33ms]
+2025-11-14 17:18:24.980 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:18:25.481 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 17:18:25.481 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:18:25.500 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 17:18:25.500 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:18:30.599 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 17:18:30.599 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:18:35.335 [info] > git rev-parse --show-toplevel [14ms]
+2025-11-14 17:18:35.335 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:23:35.167 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 17:23:35.167 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:23:35.772 [info] > git config user.email [1ms]
+2025-11-14 17:23:35.780 [info] > git config user.name [1ms]
+2025-11-14 17:23:35.787 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 17:23:35.787 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:28:35.178 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 17:28:35.178 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:33:35.167 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 17:33:35.167 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:33:35.747 [info] > git config user.email [1ms]
+2025-11-14 17:33:35.753 [info] > git config user.name [1ms]
+2025-11-14 17:33:35.760 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 17:33:35.760 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:38:35.187 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 17:38:35.187 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:43:35.176 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 17:43:35.177 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:43:35.752 [info] > git config user.email [1ms]
+2025-11-14 17:43:35.759 [info] > git config user.name [1ms]
+2025-11-14 17:43:35.767 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 17:43:35.767 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:48:35.163 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 17:48:35.163 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:53:35.177 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 17:53:35.177 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:53:35.739 [info] > git config user.email [1ms]
+2025-11-14 17:53:35.747 [info] > git config user.name [2ms]
+2025-11-14 17:53:35.755 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 17:53:35.755 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 17:58:35.163 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 17:58:35.164 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:03:35.215 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 18:03:35.215 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:03:35.744 [info] > git config user.email [2ms]
+2025-11-14 18:03:35.751 [info] > git config user.name [2ms]
+2025-11-14 18:03:35.758 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 18:03:35.758 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:08:35.158 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 18:08:35.158 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:13:35.176 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 18:13:35.176 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:13:35.741 [info] > git config user.email [2ms]
+2025-11-14 18:13:35.750 [info] > git config user.name [3ms]
+2025-11-14 18:13:35.759 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 18:13:35.759 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:18:35.157 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 18:18:35.157 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:23:35.161 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 18:23:35.161 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:23:35.747 [info] > git config user.email [1ms]
+2025-11-14 18:23:35.754 [info] > git config user.name [1ms]
+2025-11-14 18:23:35.761 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 18:23:35.761 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:28:35.150 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 18:28:35.150 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:33:35.155 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 18:33:35.155 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:33:35.728 [info] > git config user.email [2ms]
+2025-11-14 18:33:35.735 [info] > git config user.name [1ms]
+2025-11-14 18:33:35.741 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 18:33:35.741 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:38:35.153 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 18:38:35.153 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:43:35.160 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 18:43:35.160 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:43:35.727 [info] > git config user.email [2ms]
+2025-11-14 18:43:35.734 [info] > git config user.name [2ms]
+2025-11-14 18:43:35.742 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 18:43:35.742 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:48:35.143 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 18:48:35.143 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:53:35.139 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 18:53:35.139 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:53:35.723 [info] > git config user.email [1ms]
+2025-11-14 18:53:35.730 [info] > git config user.name [2ms]
+2025-11-14 18:53:35.737 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 18:53:35.737 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 18:58:35.136 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 18:58:35.136 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:01:13.386 [info] > git rev-parse --show-toplevel [24ms]
+2025-11-14 19:01:13.386 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:03:35.137 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 19:03:35.137 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:03:35.717 [info] > git config user.email [2ms]
+2025-11-14 19:03:35.724 [info] > git config user.name [1ms]
+2025-11-14 19:03:35.731 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 19:03:35.731 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:08:35.139 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 19:08:35.139 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:13:35.134 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 19:13:35.134 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:13:35.730 [info] > git config user.email [1ms]
+2025-11-14 19:13:35.737 [info] > git config user.name [1ms]
+2025-11-14 19:13:35.745 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 19:13:35.745 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:18:35.134 [info] > git rev-parse --show-toplevel [0ms]
+2025-11-14 19:18:35.135 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:23:35.127 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 19:23:35.127 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:23:35.719 [info] > git config user.email [1ms]
+2025-11-14 19:23:35.725 [info] > git config user.name [1ms]
+2025-11-14 19:23:35.732 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 19:23:35.732 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:28:35.237 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 19:28:35.237 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:33:35.260 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 19:33:35.261 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:33:35.713 [info] > git config user.email [1ms]
+2025-11-14 19:33:35.720 [info] > git config user.name [1ms]
+2025-11-14 19:33:35.727 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 19:33:35.727 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:38:35.155 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 19:38:35.155 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:43:35.195 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 19:43:35.195 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:43:35.732 [info] > git config user.email [1ms]
+2025-11-14 19:43:35.739 [info] > git config user.name [2ms]
+2025-11-14 19:43:35.747 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 19:43:35.747 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:48:35.175 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 19:48:35.175 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:53:35.210 [info] > git rev-parse --show-toplevel [8ms]
+2025-11-14 19:53:35.210 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:53:35.748 [info] > git config user.email [5ms]
+2025-11-14 19:53:35.766 [info] > git config user.name [2ms]
+2025-11-14 19:53:35.788 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 19:53:35.788 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 19:58:35.185 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 19:58:35.186 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:03:35.133 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 20:03:35.133 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:03:35.699 [info] > git config user.email [1ms]
+2025-11-14 20:03:35.706 [info] > git config user.name [2ms]
+2025-11-14 20:03:35.713 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 20:03:35.713 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:08:35.119 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 20:08:35.119 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:10:14.847 [info] > git rev-parse --show-toplevel [32ms]
+2025-11-14 20:10:14.847 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:13:35.283 [info] > git rev-parse --show-toplevel [23ms]
+2025-11-14 20:13:35.323 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:13:35.749 [info] > git config user.email [1ms]
+2025-11-14 20:13:35.759 [info] > git config user.name [4ms]
+2025-11-14 20:13:35.768 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 20:13:35.769 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:18:35.208 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 20:18:35.208 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:23:35.197 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 20:23:35.197 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:23:35.714 [info] > git config user.email [4ms]
+2025-11-14 20:23:35.735 [info] > git config user.name [7ms]
+2025-11-14 20:23:35.749 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [5ms]
+2025-11-14 20:23:35.749 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:28:35.230 [info] > git rev-parse --show-toplevel [90ms]
+2025-11-14 20:28:35.256 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:33:35.255 [info] > git rev-parse --show-toplevel [87ms]
+2025-11-14 20:33:35.295 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:33:35.697 [info] > git config user.email [2ms]
+2025-11-14 20:33:35.729 [info] > git config user.name [2ms]
+2025-11-14 20:33:35.739 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [3ms]
+2025-11-14 20:33:35.739 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:38:35.203 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 20:38:35.203 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:43:35.115 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 20:43:35.116 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:43:35.689 [info] > git config user.email [1ms]
+2025-11-14 20:43:35.696 [info] > git config user.name [1ms]
+2025-11-14 20:43:35.703 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 20:43:35.703 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:48:35.173 [info] > git rev-parse --show-toplevel [4ms]
+2025-11-14 20:48:35.200 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:53:35.202 [info] > git rev-parse --show-toplevel [10ms]
+2025-11-14 20:53:35.257 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:53:35.707 [info] > git config user.email [4ms]
+2025-11-14 20:53:35.718 [info] > git config user.name [2ms]
+2025-11-14 20:53:35.729 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [4ms]
+2025-11-14 20:53:35.729 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 20:58:35.129 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 20:58:35.129 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:03:35.107 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 21:03:35.107 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:03:35.697 [info] > git config user.email [1ms]
+2025-11-14 21:03:35.704 [info] > git config user.name [1ms]
+2025-11-14 21:03:35.711 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 21:03:35.711 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:08:35.096 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 21:08:35.096 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:13:35.295 [info] > git rev-parse --show-toplevel [97ms]
+2025-11-14 21:13:35.301 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:13:35.690 [info] > git config user.email [2ms]
+2025-11-14 21:13:35.700 [info] > git config user.name [3ms]
+2025-11-14 21:13:35.707 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 21:13:35.707 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:18:35.242 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 21:18:35.242 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:23:35.389 [info] > git rev-parse --show-toplevel [151ms]
+2025-11-14 21:23:35.395 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:23:35.717 [info] > git config user.email [17ms]
+2025-11-14 21:23:35.768 [info] > git config user.name [19ms]
+2025-11-14 21:23:35.845 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [37ms]
+2025-11-14 21:23:35.845 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:28:20.772 [info] > git remote get-url --push origin [1ms]
+2025-11-14 21:28:20.772 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:28:35.108 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 21:28:35.108 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:30:12.378 [info] > git rev-parse --show-toplevel [21ms]
+2025-11-14 21:30:12.378 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:33:35.090 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 21:33:35.090 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:33:35.676 [info] > git config user.email [2ms]
+2025-11-14 21:33:35.683 [info] > git config user.name [1ms]
+2025-11-14 21:33:35.691 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 21:33:35.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:38:35.311 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 21:38:35.311 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:43:35.098 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 21:43:35.098 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:43:35.672 [info] > git config user.email [3ms]
+2025-11-14 21:43:35.679 [info] > git config user.name [1ms]
+2025-11-14 21:43:35.686 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 21:43:35.686 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:48:35.116 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 21:48:35.116 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:53:35.115 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-14 21:53:35.115 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:53:35.688 [info] > git config user.email [10ms]
+2025-11-14 21:53:35.713 [info] > git config user.name [2ms]
+2025-11-14 21:53:35.725 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [3ms]
+2025-11-14 21:53:35.725 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 21:58:35.211 [info] > git rev-parse --show-toplevel [26ms]
+2025-11-14 21:58:35.211 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:03:35.135 [info] > git rev-parse --show-toplevel [3ms]
+2025-11-14 22:03:35.135 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:03:35.668 [info] > git config user.email [1ms]
+2025-11-14 22:03:35.674 [info] > git config user.name [1ms]
+2025-11-14 22:03:35.681 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 22:03:35.681 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:08:35.147 [info] > git rev-parse --show-toplevel [54ms]
+2025-11-14 22:08:35.191 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:13:35.082 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 22:13:35.082 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:13:35.680 [info] > git config user.email [2ms]
+2025-11-14 22:13:35.688 [info] > git config user.name [2ms]
+2025-11-14 22:13:35.695 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 22:13:35.695 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:17:57.267 [info] > git remote get-url --push origin [2ms]
+2025-11-14 22:17:57.267 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:18:35.079 [info] > git rev-parse --show-toplevel [0ms]
+2025-11-14 22:18:35.080 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:23:36.044 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 22:23:36.044 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:23:37.047 [info] > git config user.email [1ms]
+2025-11-14 22:23:37.054 [info] > git config user.name [2ms]
+2025-11-14 22:23:37.061 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 22:23:37.061 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:28:35.077 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 22:28:35.077 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:33:35.134 [info] > git rev-parse --show-toplevel [11ms]
+2025-11-14 22:33:35.135 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:33:35.671 [info] > git config user.email [1ms]
+2025-11-14 22:33:35.679 [info] > git config user.name [2ms]
+2025-11-14 22:33:35.690 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 22:33:35.690 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:38:35.100 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-14 22:38:35.100 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:43:35.072 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 22:43:35.072 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:43:35.698 [info] > git config user.email [4ms]
+2025-11-14 22:43:35.738 [info] > git config user.name [4ms]
+2025-11-14 22:43:35.789 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [34ms]
+2025-11-14 22:43:35.789 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:45:36.861 [info] > git rev-parse --show-toplevel [29ms]
+2025-11-14 22:45:36.861 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:45:52.882 [info] > git remote get-url --push origin [1ms]
+2025-11-14 22:45:52.882 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:48:35.120 [info] > git rev-parse --show-toplevel [13ms]
+2025-11-14 22:48:35.120 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:53:35.078 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 22:53:35.079 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:53:35.652 [info] > git config user.email [2ms]
+2025-11-14 22:53:35.660 [info] > git config user.name [1ms]
+2025-11-14 22:53:35.668 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 22:53:35.668 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 22:58:35.069 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 22:58:35.069 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:03:35.066 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 23:03:35.066 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:03:35.657 [info] > git config user.email [3ms]
+2025-11-14 23:03:35.664 [info] > git config user.name [1ms]
+2025-11-14 23:03:35.672 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 23:03:35.672 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:08:35.072 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 23:08:35.072 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:13:35.111 [info] > git rev-parse --show-toplevel [17ms]
+2025-11-14 23:13:35.113 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:13:35.648 [info] > git config user.email [3ms]
+2025-11-14 23:13:35.661 [info] > git config user.name [3ms]
+2025-11-14 23:13:35.679 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [3ms]
+2025-11-14 23:13:35.679 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:18:35.063 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 23:18:35.063 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:23:35.076 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 23:23:35.076 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:23:35.650 [info] > git config user.email [3ms]
+2025-11-14 23:23:35.658 [info] > git config user.name [2ms]
+2025-11-14 23:23:35.666 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 23:23:35.666 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:28:35.071 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 23:28:35.071 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:33:35.092 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-14 23:33:35.093 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:33:35.666 [info] > git config user.email [13ms]
+2025-11-14 23:33:35.679 [info] > git config user.name [3ms]
+2025-11-14 23:33:35.691 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [2ms]
+2025-11-14 23:33:35.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:38:39.950 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 23:38:39.950 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:41:04.621 [info] > git remote get-url --push origin [1ms]
+2025-11-14 23:41:04.621 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:43:35.061 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 23:43:35.061 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:43:35.639 [info] > git config user.email [1ms]
+2025-11-14 23:43:35.646 [info] > git config user.name [1ms]
+2025-11-14 23:43:35.653 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 23:43:35.653 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:48:35.062 [info] > git rev-parse --show-toplevel [2ms]
+2025-11-14 23:48:35.062 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:53:35.050 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 23:53:35.050 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:53:35.649 [info] > git config user.email [1ms]
+2025-11-14 23:53:35.656 [info] > git config user.name [1ms]
+2025-11-14 23:53:35.663 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-14 23:53:35.663 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-14 23:58:35.070 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-14 23:58:35.071 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:03:35.078 [info] > git rev-parse --show-toplevel [6ms]
+2025-11-15 00:03:35.078 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:03:35.647 [info] > git config user.email [12ms]
+2025-11-15 00:03:35.675 [info] > git config user.name [12ms]
+2025-11-15 00:03:35.696 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [12ms]
+2025-11-15 00:03:35.696 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:08:35.043 [info] > git rev-parse --show-toplevel [1ms]
+2025-11-15 00:08:35.043 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:13:35.123 [info] > git rev-parse --show-toplevel [6ms]
+2025-11-15 00:13:35.123 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:13:35.672 [info] > git config user.email [3ms]
+2025-11-15 00:13:35.682 [info] > git config user.name [3ms]
+2025-11-15 00:13:35.692 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [3ms]
+2025-11-15 00:13:35.692 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:17:10.381 [info] > git remote get-url --push origin [23ms]
+2025-11-15 00:17:10.381 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:18:36.202 [info] > git rev-parse --show-toplevel [9ms]
+2025-11-15 00:18:36.202 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:23:35.210 [info] > git rev-parse --show-toplevel [109ms]
+2025-11-15 00:23:35.237 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:23:35.629 [info] > git config user.email [3ms]
+2025-11-15 00:23:35.636 [info] > git config user.name [1ms]
+2025-11-15 00:23:35.643 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-15 00:23:35.643 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:24:34.197 [info] > git rev-parse --show-toplevel [5ms]
+2025-11-15 00:24:34.197 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:28:35.225 [info] > git rev-parse --show-toplevel [105ms]
+2025-11-15 00:28:35.268 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:33:35.357 [info] > git rev-parse --show-toplevel [119ms]
+2025-11-15 00:33:35.418 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-11-15 00:33:35.741 [info] > git config user.email [3ms]
+2025-11-15 00:33:35.748 [info] > git config user.name [2ms]
+2025-11-15 00:33:35.755 [info] > git log --pretty=format:%H<|ENT|><|RY|>%s<|COM|><|MIT|> -n 10 --author oxetech_mcz [1ms]
+2025-11-15 00:33:35.755 [info] fatal: not a git repository (or any of the parent directories): .git

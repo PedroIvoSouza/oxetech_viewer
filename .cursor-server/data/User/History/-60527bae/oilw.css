@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Roboto+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Playfair+Display:wght@400;700;900&family=Lora:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* USAspending.gov Color System - Light Mode */
+    --background: 248 250 252; /* #f8fafc - Light gray-blue background */
+    --foreground: 15 23 42; /* #0f172a - Slate-900 for text */
+    --card: 255 255 255; /* White cards */
+    --card-foreground: 15 23 42;
+    --popover: 255 255 255;
+    --popover-foreground: 15 23 42;
+    
+    /* Primary - USAspending.gov Blue */
+    --primary: 0 94 162; /* #005ea2 - Primary Blue (USWDS Primary) */
+    --primary-vivid: 0 94 162; /* #005ea2 - Same for light mode */
+    --primary-foreground: 255 255 255;
+    
+    /* Accent Cool */
+    --accent-cool: 40 160 203; /* #28a0cb - Light blue accent */
+    --accent-foreground: 255 255 255;
+    
+    /* Secondary */
+    --secondary: 226 232 240; /* #e2e8f0 - Light gray */
+    --secondary-foreground: 15 23 42;
+    
+    /* Muted */
+    --muted: 241 245 249; /* #f1f5f9 - Very light gray */
+    --muted-foreground: 100 116 139; /* #64748b - Slate-500 */
+    
+    /* Alert Colors - USWDS */
+    --success: 0 169 28; /* #00a91c - Green */
+    --error: 213 67 9; /* #d54309 - Red */
+    
+    /* Border & Input */
+    --border: 226 232 240; /* #e2e8f0 */
+    --input: 226 232 240;
+    --ring: 0 94 162; /* Primary Blue */
+    
+    --radius: 8px; /* Slightly smaller radius for government look */
+  }
+
+  .dark {
+    /* USAspending.gov Dark Mode Color System */
+    /* Based on USWDS Dark Theme with USAspending.gov specific tweaks */
+    --background: 23 23 37; /* #171725 - Dark blue-gray background (USAspending.gov dark) */
+    --foreground: 250 250 252; /* #fafafc - Near white text */
+    --card: 32 32 48; /* #202030 - Dark cards (slightly lighter than background) */
+    --card-foreground: 250 250 252;
+    --popover: 32 32 48;
+    --popover-foreground: 250 250 252;
+    
+    /* Primary - Brighter blue for dark mode */
+    --primary: 59 130 246; /* #3b82f6 - Blue-500 */
+    --primary-vivid: 96 165 250; /* #60a5fa - Blue-400 */
+    --primary-foreground: 255 255 255;
+    
+    /* Accent Cool - Lighter blue */
+    --accent-cool: 96 165 250; /* #60a5fa - Bright blue */
+    --accent-foreground: 15 23 42;
+    
+    /* Secondary */
+    --secondary: 51 65 85; /* #334155 - Slate-700 */
+    --secondary-foreground: 250 250 252;
+    
+    /* Muted */
+    --muted: 51 65 85; /* #334155 */
+    --muted-foreground: 148 163 184; /* #94a3b8 - Slate-400 */
+    
+    /* Alert Colors - Adjusted for dark */
+    --success: 74 222 128; /* #4ade80 - Green-400 */
+    --error: 248 113 113; /* #f87171 - Red-400 */
+    
+    /* Border & Input */
+    --border: 51 65 85; /* #334155 - Slate-700 */
+    --input: 51 65 85;
+    --ring: 96 165 250; /* Blue-400 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Public Sans', 'Inter', sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Typography Hierarchy - USWDS Style */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', 'Public Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    color: hsl(var(--foreground));
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl;
+    font-weight: 700;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+    font-weight: 700;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+    font-weight: 600;
+  }
+  
+  /* Body text - Public Sans for readability (USWDS standard) */
+  p, span, div, li {
+    font-family: 'Public Sans', 'Inter', sans-serif;
+  }
+  
+  /* Monospace for numbers/tables */
+  .font-mono-numeric,
+  [data-numeric="true"] {
+    font-family: 'Roboto Mono', 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum';
+  }
+  
+  /* Editorial Typography - Reports Style */
+  .font-display {
+    font-family: 'Playfair Display', 'Merriweather', serif;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+  }
+  
+  .font-body {
+    font-family: 'Lora', 'Source Serif Pro', serif;
+    line-height: 1.8;
+  }
+}
+
+@layer components {
+  /* Bento Grid Container */
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 24px;
+  }
+  
+  /* Bento Grid - Responsive breakpoints */
+  @media (min-width: 640px) {
+    .bento-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .bento-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .bento-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Bento Card - USAspending.gov Style */
+  .bento-card {
+    @apply rounded-lg border bg-card text-card-foreground;
+    border-radius: 8px; /* USAspending.gov uses 8px radius */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .dark .bento-card {
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bento-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark .bento-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Card Title - USAspending.gov Style */
+  .card-title {
+    @apply uppercase tracking-wide text-xs font-semibold mb-4;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.05em;
+    color: hsl(var(--muted-foreground));
+  }
+  
+  .dark .card-title {
+    color: hsl(var(--muted-foreground));
+  }
+  
+  /* Big Number Ribbon - USAspending.gov Style */
+  .big-number {
+    @apply text-4xl md:text-5xl font-bold font-mono-numeric;
+    color: hsl(var(--primary-vivid));
+    line-height: 1.1;
+  }
+  
+  .dark .big-number {
+    color: hsl(var(--primary-vivid));
+  }
+  
+  /* KPI Number - USAspending.gov magenta/purple accent */
+  .kpi-number {
+    @apply text-4xl md:text-5xl font-bold font-mono-numeric;
+    line-height: 1.1;
+  }
+  
+  .kpi-number-primary {
+    color: #d946ef; /* Magenta-500 - USAspending.gov accent */
+  }
+  
+  .dark .kpi-number-primary {
+    color: #f0abfc; /* Magenta-300 - Brighter for dark */
+  }
+  
+  .big-number-label {
+    @apply text-xs uppercase tracking-wide mt-2;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1em;
+    color: hsl(var(--muted-foreground));
+  }
+  
+  /* Skeleton Loading - Bento Grid Style */
+  .skeleton-bento {
+    @apply rounded-lg bg-muted animate-pulse;
+    min-height: 200px;
+  }
+  
+  /* Table - USAspending.gov Style */
+  .gov-table {
+    @apply w-full border-collapse;
+  }
+  
+  .gov-table thead {
+    @apply bg-muted/50 sticky top-0 z-10;
+  }
+  
+  .gov-table th {
+    @apply px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide border-b;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: hsl(var(--muted-foreground));
+  }
+  
+  .gov-table td {
+    @apply px-4 py-3 text-sm border-b border-border/50;
+    font-family: 'Public Sans', sans-serif;
+    color: hsl(var(--foreground));
+  }
+  
+  .gov-table tbody tr:hover {
+    @apply bg-muted/30;
+  }
+  
+  .dark .gov-table tbody tr {
+    border-bottom-color: hsl(var(--border));
+  }
+  
+  /* Spotlight effect for charts */
+  .chart-spotlight {
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .chart-spotlight:not(:hover) {
+    opacity: 1;
+  }
+  
+  .chart-container:hover .chart-spotlight:not(:hover) {
+    opacity: 0.3;
+  }
+  
+  /* Glassmorphism subtle */
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-border/50;
+  }
+  
+  .dark .glass-card {
+    @apply bg-card/90 backdrop-blur-md;
+    border-color: hsl(var(--border));
+  }
+}
+
+@layer utilities {
+  /* Scrollbar - USAspending.gov Style */
+  .scrollbar-gov {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.3) transparent;
+  }
+  
+  .scrollbar-gov::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .scrollbar-gov::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  .scrollbar-gov::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+  
+  .scrollbar-gov::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}

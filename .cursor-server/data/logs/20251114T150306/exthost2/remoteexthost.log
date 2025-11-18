@@ -1,0 +1,28 @@
+2025-11-14 15:03:43.551 [info] Extension host with pid 1744 started
+2025-11-14 15:03:43.551 [info] [ExtHostShellExec] Initializing terminal executor with userTerminalHint: undefined
+2025-11-14 15:03:43.604 [info] Lock '/home/oxetech_mcz/.cursor-server/data/User/workspaceStorage/db1b72e9ee7a3769a4f447f63a2873db/vscode.lock': Lock acquired.
+2025-11-14 15:03:43.794 [info] ExtensionService#_doActivateExtension anysphere.cursor-agent-exec, startup: false, activationEvent: '*'
+2025-11-14 15:03:43.796 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-11-14 15:03:43.797 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-11-14 15:03:44.531 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-11-14 15:03:44.531 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-11-14 15:03:45.043 [info] Eager extensions activated
+2025-11-14 15:03:45.044 [info] ExtensionService#_doActivateExtension anysphere.cursor-browser-connect, startup: false, activationEvent: 'onStartupFinished'
+2025-11-14 15:03:45.045 [info] ExtensionService#_doActivateExtension anysphere.cursor-mcp, startup: false, activationEvent: 'onStartupFinished'
+2025-11-14 15:03:45.045 [info] ExtensionService#_doActivateExtension anysphere.cursor-retrieval, startup: false, activationEvent: 'onStartupFinished'
+2025-11-14 15:03:45.045 [info] ExtensionService#_doActivateExtension anysphere.cursor-shadow-workspace, startup: false, activationEvent: 'onStartupFinished'
+2025-11-14 15:03:45.046 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-11-14 15:03:45.047 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-11-14 15:04:37.769 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-11-14 15:04:37.770 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-11-14 15:04:37.770 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-11-14 15:18:25.352 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-11-14 15:18:25.354 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-11-14 15:19:10.967 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2025-11-14 16:04:57.743 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2025-11-14 16:22:39.427 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2025-11-15 12:22:14.856 [error] Error: getaddrinfo EAI_AGAIN mobile.events.data.microsoft.com
+	at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:120:26)
+2025-11-15 15:22:20.087 [info] Extension host terminating: renderer disconnected for too long (1)
+2025-11-15 15:22:20.092 [info] Lock '/home/oxetech_mcz/.cursor-server/data/User/workspaceStorage/db1b72e9ee7a3769a4f447f63a2873db/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-11-15 15:22:20.797 [info] Extension host with pid 1744 exiting with code 0

@@ -1,0 +1,75 @@
+2025-11-18 16:46:44,709 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall_rules']
+2025-11-18 16:46:44,720 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'create']
+2025-11-18 16:46:44,992 DEBUG    root            Running [gcloud.compute.firewall-rules.create] with arguments: [--allow: "['tcp:3000']", --description: "Allow external access to Next.js on port 3000", --direction: "INGRESS", --priority: "1000", --source-ranges: "['0.0.0.0/0']", NAME: "allow-nextjs-port-3000"]
+2025-11-18 16:46:45,033 DEBUG    root            (gcloud.compute.firewall-rules.create) You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+Traceback (most recent call last):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 946, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/compute/firewall_rules/create.py", line 162, in Run
+    client = holder.client
+             ^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/base_classes.py", line 67, in client
+    self._client = client_adapter.ClientAdapter(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 60, in __init__
+    self._client = client or core_apis.GetClientInstance(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 278, in GetClientInstance
+    return apis_internal._GetClientInstance(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis_internal.py", line 169, in _GetClientInstance
+    http_client = transports.GetApitoolsTransport(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transports.py", line 80, in GetApitoolsTransport
+    session = requests.GetSession(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/requests.py", line 85, in GetSession
+    credentials = store.LoadIfEnabled(
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 636, in LoadIfEnabled
+    return Load(
+           ^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 876, in Load
+    cred = _Load(
+           ^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py", line 1058, in _Load
+    raise creds_exceptions.NoActiveAccountException(
+googlecloudsdk.core.credentials.exceptions.NoActiveAccountException: You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.
+2025-11-18 16:46:45,040 ERROR    root            (gcloud.compute.firewall-rules.create) You do not currently have an active account selected.
+Please run:
+
+  $ gcloud auth login
+
+to obtain new credentials.
+
+If you have already logged in with a different account, run:
+
+  $ gcloud config set account ACCOUNT
+
+to select an already authenticated account to use.

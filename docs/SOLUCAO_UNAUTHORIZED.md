@@ -1,0 +1,95 @@
+# Solução para Erro Unauthorized
+
+## ✅ Correções Aplicadas
+
+### 1. **Fluxo de Login Corrigido** (`app/login/page.tsx`)
+   - ✅ Removida verificação de cookie via JavaScript (HttpOnly não é acessível)
+   - ✅ Usado `window.location.href` para forçar reload completo
+   - ✅ Delay de 300ms para garantir processamento do cookie
+   - ✅ Confiança na resposta do servidor (se login OK, cookie foi setado)
+
+### 2. **Tratamento de Erros Melhorado**
+   - ✅ Páginas BI detectam erro 401
+   - ✅ Mensagem específica para erro de autenticação
+   - ✅ Link direto para página de login
+   - ✅ Logs detalhados no middleware
+
+### 3. **Middleware com Logs**
+   - ✅ Log de erros de JWT para debug
+   - ✅ Mensagens de erro mais descritivas
+
+## 🔧 Como Resolver
+
+### **Passo 1: Fazer Login**
+1. Acesse `/login`
+2. Use as credenciais de teste:
+   - **Admin**: `admin@oxetech.al.gov.br` / `admin123`
+   - **Gestor**: `gestor@oxetech.al.gov.br` / `gestor123`
+   - **Visualização**: `visualizacao@oxetech.al.gov.br` / `view123`
+
+### **Passo 2: Verificar se Cookie foi Setado**
+1. Após login, abra DevTools (F12)
+2. Vá em **Application** → **Cookies** → `http://localhost:3000`
+3. Procure por `oxetech-auth-token`
+4. Se não existir:
+   - Faça logout (limpe cookies)
+   - Faça login novamente
+   - Verifique se não há bloqueadores de cookies
+
+### **Passo 3: Verificar Requisições**
+1. DevTools → **Network**
+2. Acesse `/bi/lab`
+3. Procure pela requisição `/api/bi/lab-detalhado`
+4. Verifique:
+   - **Request Headers** → **Cookie**: Deve conter `oxetech-auth-token=...`
+   - **Response**: Status deve ser 200 (não 401)
+
+### **Passo 4: Se Token Expirou**
+- Tokens expiram em 8 horas
+- Se expirou, faça login novamente
+
+## 🔍 Debug
+
+### **Verificar se Cookie está Sendo Enviado:**
+```javascript
+// No console do navegador (depois de fazer login)
+fetch('/api/bi/lab-detalhado', { credentials: 'include' })
+  .then(r => r.json())
+  .then(console.log)
+  .catch(console.error)
+```
+
+### **Verificar Token no Servidor:**
+- Olhar logs do terminal onde `npm run dev` está rodando
+- Procurar por: `JWT verification error:`
+- Se houver erro, o token pode estar inválido ou expirado
+
+### **Verificar Middleware:**
+- Logs do middleware mostram:
+  - Status da requisição
+  - Se cookie foi encontrado
+  - Se token foi verificado com sucesso
+
+## 📋 Checklist de Verificação
+
+- [ ] Fez login com credenciais corretas?
+- [ ] Cookie `oxetech-auth-token` existe no DevTools?
+- [ ] Cookie está sendo enviado nas requisições (Network tab)?
+- [ ] Status da resposta é 200 (não 401)?
+- [ ] Token não expirou (fazer login há menos de 8 horas)?
+
+## ✅ Status das Correções
+
+- ✅ Login corrigido com reload completo
+- ✅ Tratamento de erros melhorado
+- ✅ Mensagens claras para usuário
+- ✅ Link para login em caso de erro
+- ✅ Logs detalhados para debug
+
+---
+
+**Importante**: 
+- Cookie HttpOnly **não** é acessível via JavaScript
+- Por isso, usamos `window.location.href` para forçar reload completo
+- Isso garante que o cookie seja processado corretamente pelo navegador
+

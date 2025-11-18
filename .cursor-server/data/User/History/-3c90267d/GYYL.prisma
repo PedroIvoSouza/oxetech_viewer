@@ -1,0 +1,689 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model SequelizeMeta {
+  name String @id @db.VarChar(255)
+}
+
+model agentes {
+  id             Int           @id @default(autoincrement())
+  aluno_id       Int
+  laboratorio_id Int
+  created_at     DateTime      @db.Timestamptz(6)
+  updated_at     DateTime      @db.Timestamptz(6)
+  super_agente   Boolean?
+  alunos         alunos        @relation(fields: [aluno_id], references: [id], onDelete: SetNull)
+  laboratorios   laboratorios  @relation(fields: [laboratorio_id], references: [id], onDelete: SetNull)
+  instrutores    instrutores[]
+}
+
+model alunos {
+  id                            Int                            @id @default(autoincrement())
+  name                          String                         @db.VarChar(255)
+  email                         String                         @unique @db.VarChar(255)
+  telefone                      String                         @db.VarChar(255)
+  data_nascimento               DateTime                       @db.Timestamptz(6)
+  cpf                           String                         @unique @db.VarChar(255)
+  cep                           String                         @db.VarChar(255)
+  rua                           String                         @db.VarChar(255)
+  numero                        String                         @db.VarChar(255)
+  bairro                        String                         @db.VarChar(255)
+  municipio                     String                         @db.VarChar(255)
+  complemento                   String?                        @db.VarChar(255)
+  password_hash                 String                         @db.VarChar(255)
+  sobre_mim                     String?
+  skills                        Json?
+  foco_carreira                 String?                        @db.VarChar(255)
+  status                        String                         @default("AGUARDANDO VALIDAÇÃO") @db.VarChar(255)
+  accept_privacy_policies       Boolean?
+  created_at                    DateTime                       @db.Timestamptz(6)
+  updated_at                    DateTime                       @db.Timestamptz(6)
+  avatar_id                     Int?
+  comprovante_id                Int?
+  ocupacao                      String?                        @db.VarChar(255)
+  avatar_url                    String?                        @db.VarChar(255)
+  linkedin                      String?                        @db.VarChar(255)
+  github                        String?                        @db.VarChar(255)
+  outro                         String?                        @db.VarChar(255)
+  estado                        String                         @default("NÃO CONSTA") @db.VarChar(255)
+  languages                     Json?
+  experiences                   Json?
+  nome_social                   String?                        @db.VarChar(255)
+  notificacoes                  Json?                          @default("[]") @db.Json
+  responsabilidade              enum_alunos_responsabilidade   @default(dbgenerated("0"))
+  genero                        String                         @default("Desconhecido") @db.VarChar(255)
+  agentes                       agentes[]
+  avatar_alunos                 avatar_alunos?                 @relation(fields: [avatar_id], references: [id])
+  comprovante_residencia_alunos comprovante_residencia_alunos? @relation(fields: [comprovante_id], references: [id])
+  bolsistas_oxetech_edu         bolsistas_oxetech_edu[]
+  candidaturas                  candidaturas[]
+  contatos                      contatos[]
+  escolas_oxetech_edu           escolas_oxetech_edu[]
+  inscricoes_trilhas_alunos     inscricoes_trilhas_alunos[]
+  laboratorios                  laboratorios[]
+  matriculas                    matriculas[]
+  matriculas_oxetech_edu        matriculas_oxetech_edu[]
+  oxetechlab_inscricoes         oxetechlab_inscricoes[]
+  oxetechwork_inscricao_alunos  oxetechwork_inscricao_alunos[]
+}
+
+model anexos {
+  id         Int         @id @default(autoincrement())
+  path       String      @unique @db.VarChar(255)
+  created_at DateTime    @db.Timestamptz(6)
+  updated_at DateTime    @db.Timestamptz(6)
+  matriculas matriculas?
+}
+
+model atividades_trilhas {
+  id                      Int                       @id @default(autoincrement())
+  created_at              DateTime                  @db.Timestamptz(6)
+  updated_at              DateTime                  @db.Timestamptz(6)
+  cursos                  cursos[]
+  questoes_por_atividades questoes_por_atividades[]
+}
+
+model aulas {
+  id          Int           @id @default(autoincrement())
+  data        DateTime      @db.Timestamptz(6)
+  titulo      String        @db.VarChar(255)
+  assunto     String        @db.VarChar(255)
+  turma_id    Int
+  created_at  DateTime      @db.Timestamptz(6)
+  updated_at  DateTime      @db.Timestamptz(6)
+  turmas      turmas        @relation(fields: [turma_id], references: [id], onDelete: Cascade)
+  frequencias frequencias[]
+}
+
+model avatar_alunos {
+  id         Int      @id @default(autoincrement())
+  name       String   @db.VarChar(255)
+  path       String   @db.VarChar(255)
+  created_at DateTime @db.Timestamptz(6)
+  updated_at DateTime @db.Timestamptz(6)
+  alunos     alunos[]
+}
+
+model bolsistas_oxetech_edu {
+  id                  Int                   @id @default(autoincrement())
+  aluno_id            Int
+  created_at          DateTime              @db.Timestamptz(6)
+  updated_at          DateTime              @db.Timestamptz(6)
+  alunos              alunos                @relation(fields: [aluno_id], references: [id], onDelete: Cascade)
+  escolas_oxetech_edu escolas_oxetech_edu[]
+  horas_por_bolsistas horas_por_bolsistas[]
+}
+
+model candidaturas {
+  id                Int            @id @default(autoincrement())
+  vaga_id           Int
+  aluno_id          Int
+  created_at        DateTime       @db.Timestamptz(6)
+  updated_at        DateTime       @db.Timestamptz(6)
+  tempo_experiencia Int
+  oxetech_work      Boolean        @default(false)
+  alunos            alunos         @relation(fields: [aluno_id], references: [id], onDelete: SetNull)
+  vagas             vagas          @relation(fields: [vaga_id], references: [id], onDelete: SetNull)
+  contratacoes      contratacoes[]
+}
+
+model chamadas {
+  id                    Int                  @id @default(autoincrement())
+  titulo                String               @db.VarChar(255)
+  status                enum_chamadas_status
+  data_inicio           DateTime             @db.Timestamptz(6)
+  data_encerramento     DateTime             @db.Timestamptz(6)
+  qtd_vagas_total       Int
+  qtd_vagas_oferta      Int
+  qtd_vagas_preenchidas Int                  @default(0)
+  link_anexos           String               @db.VarChar(255)
+  created_at            DateTime             @db.Timestamptz(6)
+  updated_at            DateTime             @db.Timestamptz(6)
+}
+
+model comprovante_residencia_alunos {
+  id         Int      @id @default(autoincrement())
+  name       String   @db.VarChar(255)
+  path       String   @db.VarChar(255)
+  created_at DateTime @db.Timestamptz(6)
+  updated_at DateTime @db.Timestamptz(6)
+  alunos     alunos[]
+}
+
+model contatos {
+  id         Int      @id @default(autoincrement())
+  empresa_id Int
+  aluno_id   Int
+  created_at DateTime @db.Timestamptz(6)
+  updated_at DateTime @db.Timestamptz(6)
+  alunos     alunos   @relation(fields: [aluno_id], references: [id], onDelete: SetNull)
+  empresas   empresas @relation(fields: [empresa_id], references: [id], onDelete: SetNull)
+}
+
+model contratacoes {
+  id                 Int                      @id @default(autoincrement())
+  status             enum_contratacoes_status @default(dbgenerated("1"))
+  data_encerramento  DateTime                 @db.Timestamptz(6)
+  candidatura_id     Int
+  ciclo_id           Int
+  created_at         DateTime                 @db.Timestamptz(6)
+  updated_at         DateTime                 @db.Timestamptz(6)
+  candidaturas       candidaturas             @relation(fields: [candidatura_id], references: [id], onDelete: SetNull)
+  oxetechwork_ciclos oxetechwork_ciclos       @relation(fields: [ciclo_id], references: [id], onDelete: SetNull)
+}
+
+model cursos {
+  id                 Int                 @id @default(autoincrement())
+  titulo             String              @db.VarChar(255)
+  descricao          String              @db.VarChar(255)
+  playlist_id        String              @db.VarChar(255)
+  playlist_items     Json?               @default("[]") @db.Json
+  created_at         DateTime            @db.Timestamptz(6)
+  updated_at         DateTime            @db.Timestamptz(6)
+  atividade_id       Int?
+  atividades_trilhas atividades_trilhas? @relation(fields: [atividade_id], references: [id])
+  modulos_trilhas    modulos_trilhas[]
+}
+
+model empresas {
+  id                             Int                              @id @default(autoincrement())
+  cnpj                           String?                          @unique @db.VarChar(255)
+  razao_social                   String                           @db.VarChar(255)
+  email                          String                           @unique @db.VarChar(255)
+  telefone                       String                           @db.VarChar(255)
+  password_hash                  String                           @db.VarChar(255)
+  accept_privacy_policies        Boolean?
+  created_at                     DateTime                         @db.Timestamptz(6)
+  updated_at                     DateTime                         @db.Timestamptz(6)
+  endereco                       Json?
+  uuid                           String?                          @unique @db.VarChar(255)
+  sobre                          String?
+  nome_responsavel               String?                          @db.VarChar(255)
+  email_responsavel              String?                          @db.VarChar(255)
+  link_facebook                  String?
+  link_instagram                 String?
+  link_linkedin                  String?
+  link_video                     String?
+  latitude                       String?                          @db.VarChar(255)
+  longitude                      String?                          @db.VarChar(255)
+  categoria                      Json?
+  tem_propriedade_intelectual    Boolean?
+  propriedade_intelectual        Json?
+  oxetech_work                   Boolean                          @default(false)
+  avatar_url                     String?                          @db.VarChar(255)
+  notificacoes                   Json                             @default("[]") @db.Json
+  contatos                       contatos[]
+  oxetechwork_inscricao_empresas oxetechwork_inscricao_empresas[]
+  vagas                          vagas[]
+}
+
+model escolas_oxetech_edu {
+  id                     Int                      @id @default(autoincrement())
+  nome                   String                   @db.VarChar(255)
+  rua                    String                   @db.VarChar(255)
+  bairro                 String                   @db.VarChar(255)
+  numero                 String                   @db.VarChar(255)
+  cep                    String                   @db.VarChar(255)
+  complemento            String                   @db.VarChar(255)
+  created_at             DateTime                 @db.Timestamptz(6)
+  updated_at             DateTime                 @db.Timestamptz(6)
+  bolsista_id            Int?
+  professor_id           Int?
+  municipio              String                   @db.VarChar(255)
+  bolsistas_oxetech_edu  bolsistas_oxetech_edu?   @relation(fields: [bolsista_id], references: [id])
+  alunos                 alunos?                  @relation(fields: [professor_id], references: [id])
+  matriculas_oxetech_edu matriculas_oxetech_edu[]
+  turmas_oxetech_edu     turmas_oxetech_edu[]
+}
+
+model frequencias {
+  id           Int                     @id @default(autoincrement())
+  status       enum_frequencias_status
+  aula_id      Int
+  matricula_id Int
+  created_at   DateTime                @db.Timestamptz(6)
+  updated_at   DateTime                @db.Timestamptz(6)
+  aulas        aulas                   @relation(fields: [aula_id], references: [id], onDelete: Cascade)
+  matriculas   matriculas              @relation(fields: [matricula_id], references: [id], onDelete: Cascade)
+}
+
+model horas_por_bolsistas {
+  id                    Int                              @id @default(autoincrement())
+  bolsista_id           Int
+  inicio_semana         DateTime                         @db.Timestamptz(6)
+  fim_semana            DateTime                         @db.Timestamptz(6)
+  horas_trabalhadas     Int                              @default(0)
+  created_at            DateTime                         @db.Timestamptz(6)
+  updated_at            DateTime                         @db.Timestamptz(6)
+  cumpriu               enum_horas_por_bolsistas_cumpriu @default(dbgenerated("2"))
+  bolsistas_oxetech_edu bolsistas_oxetech_edu            @relation(fields: [bolsista_id], references: [id], onDelete: Cascade)
+}
+
+model inscricoes_trilhas_alunos {
+  id                      Int                      @id @default(autoincrement())
+  trilha_id               Int?
+  aluno_id                Int?
+  concluido               Boolean                  @default(false)
+  created_at              DateTime                 @db.Timestamptz(6)
+  updated_at              DateTime                 @db.Timestamptz(6)
+  alunos                  alunos?                  @relation(fields: [aluno_id], references: [id], onDelete: Cascade)
+  trilhas_de_conhecimento trilhas_de_conhecimento? @relation(fields: [trilha_id], references: [id], onDelete: Cascade)
+  modulos_trilhas_alunos  modulos_trilhas_alunos[]
+}
+
+model inscricoes_turmas_oxetech_edu {
+  id                     Int                    @id @default(autoincrement())
+  matricula_id           Int
+  turma_id               Int
+  presente               Boolean                @default(false)
+  created_at             DateTime               @db.Timestamptz(6)
+  updated_at             DateTime               @db.Timestamptz(6)
+  matriculas_oxetech_edu matriculas_oxetech_edu @relation(fields: [matricula_id], references: [id], onDelete: Cascade)
+  turmas_oxetech_edu     turmas_oxetech_edu     @relation(fields: [turma_id], references: [id], onDelete: Cascade)
+}
+
+model instrutores {
+  id         Int      @id @default(autoincrement())
+  agente_id  Int
+  turma_id   Int
+  created_at DateTime @db.Timestamptz(6)
+  updated_at DateTime @db.Timestamptz(6)
+  agentes    agentes  @relation(fields: [agente_id], references: [id], onDelete: SetNull)
+  turmas     turmas   @relation(fields: [turma_id], references: [id], onDelete: SetNull)
+}
+
+model laboratorios {
+  id             Int       @id @default(autoincrement())
+  nome           String    @db.VarChar(255)
+  municipio      String    @db.VarChar(255)
+  rua            String    @db.VarChar(255)
+  bairro         String    @db.VarChar(255)
+  numero         String    @db.VarChar(255)
+  cep            String    @db.VarChar(255)
+  complemento    String    @db.VarChar(255)
+  coordenador_id Int
+  created_at     DateTime  @db.Timestamptz(6)
+  updated_at     DateTime  @db.Timestamptz(6)
+  agentes        agentes[]
+  alunos         alunos    @relation(fields: [coordenador_id], references: [id], onDelete: SetNull)
+  turmas         turmas[]
+}
+
+model matriculas {
+  id                    Int                    @id @default(autoincrement())
+  media                 Float?
+  percentual_faltas     Float                  @default(0)
+  status                enum_matriculas_status @default(dbgenerated("1"))
+  aluno_id              Int
+  turma_id              Int
+  inscricao_id          Int                    @unique
+  certificado_id        Int?                   @unique
+  created_at            DateTime               @db.Timestamptz(6)
+  updated_at            DateTime               @db.Timestamptz(6)
+  frequencias           frequencias[]
+  alunos                alunos                 @relation(fields: [aluno_id], references: [id], onDelete: SetNull)
+  anexos                anexos?                @relation(fields: [certificado_id], references: [id])
+  oxetechlab_inscricoes oxetechlab_inscricoes  @relation(fields: [inscricao_id], references: [id], onDelete: SetNull)
+  turmas                turmas                 @relation(fields: [turma_id], references: [id], onDelete: SetNull)
+}
+
+model matriculas_oxetech_edu {
+  id                            Int                                @id @default(autoincrement())
+  aluno_id                      Int
+  escola_id                     Int
+  qtd_turmas_inscrito           Int                                @default(0)
+  faltas                        Int                                @default(0)
+  created_at                    DateTime                           @db.Timestamptz(6)
+  updated_at                    DateTime                           @db.Timestamptz(6)
+  status                        enum_matriculas_oxetech_edu_status @default(dbgenerated("0"))
+  inscricoes_turmas_oxetech_edu inscricoes_turmas_oxetech_edu[]
+  alunos                        alunos                             @relation(fields: [aluno_id], references: [id], onDelete: Cascade)
+  escolas_oxetech_edu           escolas_oxetech_edu                @relation(fields: [escola_id], references: [id], onDelete: Cascade)
+}
+
+model modulos_trilhas {
+  id                      Int                      @id @default(autoincrement())
+  trilha_id               Int
+  curso_id                Int
+  created_at              DateTime                 @db.Timestamptz(6)
+  updated_at              DateTime                 @db.Timestamptz(6)
+  cursos                  cursos                   @relation(fields: [curso_id], references: [id], onDelete: Cascade)
+  trilhas_de_conhecimento trilhas_de_conhecimento  @relation(fields: [trilha_id], references: [id], onDelete: Cascade)
+  modulos_trilhas_alunos  modulos_trilhas_alunos[]
+  modulos_trilhas_pdfs    modulos_trilhas_pdfs[]
+}
+
+model modulos_trilhas_alunos {
+  id                        Int                       @id @default(autoincrement())
+  inscricao_id              Int
+  modulo_id                 Int
+  bloqueado                 Boolean                   @default(false)
+  videos_vistos             Json                      @default("[]")
+  curso_concluido           Boolean                   @default(false)
+  nota_atividade            Int?
+  atividade_concluida       Boolean                   @default(false)
+  created_at                DateTime                  @db.Timestamptz(6)
+  updated_at                DateTime                  @db.Timestamptz(6)
+  inscricoes_trilhas_alunos inscricoes_trilhas_alunos @relation(fields: [inscricao_id], references: [id], onDelete: Cascade)
+  modulos_trilhas           modulos_trilhas           @relation(fields: [modulo_id], references: [id], onDelete: Cascade)
+}
+
+model modulos_trilhas_pdfs {
+  id              Int             @id @default(autoincrement())
+  modulo_id       Int
+  nome            String          @db.VarChar(255)
+  url             String          @db.VarChar(255)
+  mimetype        String          @db.VarChar(255)
+  size            Int
+  created_at      DateTime        @default(now()) @db.Timestamptz(6)
+  updated_at      DateTime        @default(now()) @db.Timestamptz(6)
+  modulos_trilhas modulos_trilhas @relation(fields: [modulo_id], references: [id], onDelete: Cascade)
+
+  @@index([modulo_id], map: "modulos_trilhas_pdfs_modulo_id")
+}
+
+model oxetechlab_inscricoes {
+  id                    Int                               @id @default(autoincrement())
+  status                enum_oxetechlab_inscricoes_status @default(dbgenerated("1"))
+  perguntas_e_respostas Json?
+  aluno_id              Int
+  turma_id              Int
+  created_at            DateTime                          @db.Timestamptz(6)
+  updated_at            DateTime                          @db.Timestamptz(6)
+  matriculas            matriculas?
+  alunos                alunos                            @relation(fields: [aluno_id], references: [id], onDelete: SetNull)
+  turmas                turmas                            @relation(fields: [turma_id], references: [id], onDelete: SetNull)
+}
+
+model oxetechwork_ciclos {
+  id                  Int                 @id @default(autoincrement())
+  num_ciclo           Int
+  start               DateTime            @db.Timestamptz(6)
+  end                 DateTime            @db.Timestamptz(6)
+  edital_id           Int
+  created_at          DateTime            @db.Timestamptz(6)
+  updated_at          DateTime            @db.Timestamptz(6)
+  status              Boolean?
+  contratacoes        contratacoes[]
+  oxetechwork_editals oxetechwork_editals @relation(fields: [edital_id], references: [id], onDelete: SetNull)
+  vagas               vagas[]
+}
+
+model oxetechwork_editals {
+  id                             Int                              @id @default(autoincrement())
+  qt_vagas                       Int
+  qt_vagas_em_oferta             Int
+  qt_vagas_preenchidas           Int
+  dt_inicio_edital               DateTime                         @db.Timestamptz(6)
+  dt_encerramento_edital         DateTime                         @db.Timestamptz(6)
+  dt_inicio_inscricao_empresa    DateTime                         @db.Timestamptz(6)
+  dt_fim_inscricao_empresa       DateTime                         @db.Timestamptz(6)
+  dt_inicio_inscricao_aluno      DateTime                         @db.Timestamptz(6)
+  dt_fim_inscricao_aluno         DateTime                         @db.Timestamptz(6)
+  title                          String                           @db.VarChar(255)
+  file_id                        String                           @db.VarChar(255)
+  created_at                     DateTime                         @db.Timestamptz(6)
+  updated_at                     DateTime                         @db.Timestamptz(6)
+  ultimo_ciclo                   Int?
+  status                         Boolean?
+  postos_de_trabalho_disponiveis Int                              @default(0)
+  oxetechwork_ciclos             oxetechwork_ciclos[]
+  oxetechwork_inscricao_alunos   oxetechwork_inscricao_alunos[]
+  oxetechwork_inscricao_empresas oxetechwork_inscricao_empresas[]
+}
+
+model oxetechwork_inscricao_alunos {
+  id                  Int                 @default(autoincrement())
+  edital_id           Int
+  area                String?             @db.VarChar(255)
+  experiencia_dev     String              @db.VarChar(255)
+  experiencia_ti      String              @db.VarChar(255)
+  nivel_escolaridade  String              @db.VarChar(255)
+  status              String?             @default("Validado") @db.VarChar(255)
+  num_inscricao       String              @db.VarChar(255)
+  rg                  String              @db.VarChar(255)
+  file_id             String              @db.VarChar(255)
+  motivo_de_rejeicao  String?             @db.VarChar(255)
+  aluno_id            Int
+  created_at          DateTime            @db.Timestamptz(6)
+  updated_at          DateTime            @db.Timestamptz(6)
+  alunos              alunos              @relation(fields: [aluno_id], references: [id], onDelete: SetNull)
+  oxetechwork_editals oxetechwork_editals @relation(fields: [edital_id], references: [id], onDelete: SetNull)
+
+  @@id([id, num_inscricao])
+}
+
+model oxetechwork_inscricao_empresas {
+  id                               Int                 @id @default(autoincrement())
+  num_funcionarios                 Int
+  tempo_de_atividade               String              @db.VarChar(255)
+  trabalhos                        String
+  objetivos                        String
+  areas_bolsista                   String
+  atividades_bolsista              String
+  anexo_comprovante_inscricao_cnpj String              @db.VarChar(255)
+  status                           String              @db.VarChar(255)
+  motivo_de_rejeicao               String              @db.VarChar(255)
+  num_inscricao                    String              @db.VarChar(255)
+  edital_id                        Int
+  empresa_id                       String              @db.VarChar(255)
+  created_at                       DateTime            @db.Timestamptz(6)
+  updated_at                       DateTime            @db.Timestamptz(6)
+  data_encerramento                DateTime?           @db.Timestamptz(6)
+  qt_vagas                         Int?
+  qt_vagas_em_oferta               Int?
+  qt_vagas_preenchidas             Int?
+  oxetechwork_editals              oxetechwork_editals @relation(fields: [edital_id], references: [id], onDelete: SetNull)
+  empresas                         empresas            @relation(fields: [empresa_id], references: [uuid], onDelete: SetNull)
+}
+
+model questoes_por_atividades {
+  id                 Int                @id @default(autoincrement())
+  questao_id         Int
+  atividade_id       Int
+  created_at         DateTime           @db.Timestamptz(6)
+  updated_at         DateTime           @db.Timestamptz(6)
+  atividades_trilhas atividades_trilhas @relation(fields: [atividade_id], references: [id], onDelete: Cascade)
+  questoes_trilhas   questoes_trilhas   @relation(fields: [questao_id], references: [id], onDelete: Cascade)
+}
+
+model questoes_trilhas {
+  id                      Int                        @id @default(autoincrement())
+  pergunta                String                     @db.VarChar(500)
+  tipo                    enum_questoes_trilhas_tipo @default(RESP_UNICA)
+  alternativas            String[]                   @db.VarChar(255)
+  resposta                Int[]
+  created_at              DateTime                   @db.Timestamptz(6)
+  updated_at              DateTime                   @db.Timestamptz(6)
+  questoes_por_atividades questoes_por_atividades[]
+}
+
+model trilhas_de_conhecimento {
+  id                        Int                         @id @default(autoincrement())
+  titulo                    String                      @db.VarChar(255)
+  descricao                 String                      @db.VarChar(255)
+  created_at                DateTime                    @db.Timestamptz(6)
+  updated_at                DateTime                    @db.Timestamptz(6)
+  carga_horaria             Int                         @default(0)
+  file_path                 String?                     @unique @db.VarChar(255)
+  inscricoes_trilhas_alunos inscricoes_trilhas_alunos[]
+  modulos_trilhas           modulos_trilhas[]
+}
+
+model turmas {
+  id                           Int                     @id @default(autoincrement())
+  titulo                       String                  @db.VarChar(255)
+  descricao                    String
+  info_adicionais              String?
+  data_inicio                  DateTime                @db.Date
+  data_encerramento            DateTime                @db.Date
+  data_encerramento_inscricoes DateTime                @db.Date
+  status                       enum_turmas_status      @default(dbgenerated("1"))
+  qtd_vagas_preenchidas        Int                     @default(0)
+  qtd_vagas_disponiveis        Int
+  qtd_vagas_total              Int
+  carga_horaria                Int
+  qtd_aulas                    Int
+  perguntas                    String[]                @db.VarChar(255)
+  laboratorio_id               Int
+  created_at                   DateTime                @db.Timestamptz(6)
+  updated_at                   DateTime                @db.Timestamptz(6)
+  data_resultado               DateTime?               @db.Date
+  aulas                        aulas[]
+  instrutores                  instrutores[]
+  matriculas                   matriculas[]
+  oxetechlab_inscricoes        oxetechlab_inscricoes[]
+  laboratorios                 laboratorios            @relation(fields: [laboratorio_id], references: [id], onDelete: SetNull)
+}
+
+model turmas_oxetech_edu {
+  id                            Int                             @id @default(autoincrement())
+  escola_id                     Int
+  titulo                        String                          @db.VarChar(255)
+  descricao                     String                          @db.VarChar(255)
+  encerramento_inscricoes       DateTime                        @db.Timestamptz(6)
+  dia_da_aula                   DateTime                        @db.Timestamptz(6)
+  carga_horaria                 Int
+  qtd_vagas_total               Int
+  qtd_vagas_preenchidas         Int                             @default(0)
+  hora_inicio                   String                          @db.VarChar(255)
+  hora_fim                      String                          @db.VarChar(255)
+  created_at                    DateTime                        @db.Timestamptz(6)
+  updated_at                    DateTime                        @db.Timestamptz(6)
+  encerrada                     Boolean                         @default(false)
+  inscricoes_turmas_oxetech_edu inscricoes_turmas_oxetech_edu[]
+  escolas_oxetech_edu           escolas_oxetech_edu             @relation(fields: [escola_id], references: [id], onDelete: SetNull)
+}
+
+model users {
+  id            Int      @id @default(autoincrement())
+  name          String   @db.VarChar(255)
+  email         String   @unique @db.VarChar(255)
+  cpf           String   @unique @db.VarChar(255)
+  reponsibility String   @db.VarChar(255)
+  municipio     String   @db.VarChar(255)
+  password_hash String   @db.VarChar(255)
+  created_at    DateTime @db.Timestamptz(6)
+  updated_at    DateTime @db.Timestamptz(6)
+  notificacoes  Json     @default("[]") @db.Json
+}
+
+model vagas {
+  id                      Int                 @id @default(autoincrement())
+  titulo                  String              @db.VarChar(255)
+  descricao               String
+  empresa_id              Int
+  created_at              DateTime            @db.Timestamptz(6)
+  updated_at              DateTime            @db.Timestamptz(6)
+  status                  enum_vagas_status   @default(ABERTA)
+  requisitos              Json?
+  qualificacoes           Json?
+  info_adicionais         String?
+  quantidade              Int
+  data_encerramento       DateTime            @db.Timestamptz(6)
+  remuneracao             Float?
+  tipo                    String?             @db.VarChar(255)
+  modalidade              String?             @db.VarChar(255)
+  carga_horaria           Int?
+  oxetech_work            Boolean
+  mentor_nome             String?             @db.VarChar(255)
+  mentor_cpf              String?             @db.VarChar(255)
+  mentor_email            String?             @db.VarChar(255)
+  mentor_cargo            String?             @db.VarChar(255)
+  status_oxetech_work     String?             @db.VarChar(255)
+  motivo_de_rejeicao      String?             @db.VarChar(255)
+  data_contratacao        DateTime?           @db.Timestamptz(6)
+  contratado_id           Int?
+  edital_id               Int?
+  mentor_curriculo        String?             @db.VarChar(255)
+  proposta_de_inovacao    String?             @db.VarChar(255)
+  houve_contratacao       Boolean?
+  contratacao_via_oxetech Boolean?
+  file_id                 String?             @db.VarChar(255)
+  qtd_em_oferta           Int?
+  qtd_preenchida          Int?
+  ciclo_id                Int?
+  candidaturas            candidaturas[]
+  oxetechwork_ciclos      oxetechwork_ciclos? @relation(fields: [ciclo_id], references: [id])
+  empresas                empresas            @relation(fields: [empresa_id], references: [id], onDelete: SetNull)
+}
+
+enum enum_alunos_responsabilidade {
+  ZERO      @map("0")
+  ONE       @map("1")
+  TWO       @map("2")
+  TEN       @map("10")
+  HUNDRED   @map("100")
+}
+
+enum enum_chamadas_status {
+  ABERTA
+  FECHADA
+}
+
+enum enum_contratacoes_status {
+  ZERO      @map("0")
+  ONE       @map("1")
+  TWO       @map("2")
+}
+
+enum enum_frequencias_status {
+  ZERO      @map("0")
+  ONE       @map("1")
+  TWO       @map("2")
+}
+
+enum enum_horas_por_bolsistas_cumpriu {
+  ZERO      @map("0")
+  ONE       @map("1")
+  TWO       @map("2")
+}
+
+enum enum_items_trilhas_tipo {
+  CURSO
+  ATIVIDADE
+}
+
+enum enum_matriculas_oxetech_edu_status {
+  ZERO      @map("0")
+  ONE       @map("1")
+  TWO       @map("2")
+  THREE     @map("3")
+}
+
+enum enum_matriculas_status {
+  ZERO      @map("0")
+  ONE       @map("1")
+  TWO       @map("2")
+}
+
+enum enum_oxetechlab_inscricoes_status {
+  ZERO      @map("0")
+  ONE       @map("1")
+  TWO       @map("2")
+  THREE     @map("3")
+}
+
+enum enum_questoes_trilhas_tipo {
+  VF
+  RESP_UNICA
+  RESP_MULTIPLA
+}
+
+enum enum_turmas_status {
+  ZERO      @map("0")
+  ONE       @map("1")
+  TWO       @map("2")
+}
+
+enum enum_vagas_status {
+  ABERTA
+  FECHADA
+  ARQUIVADA
+}

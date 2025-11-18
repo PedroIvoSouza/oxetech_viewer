@@ -1,0 +1,635 @@
+Carimbo de data/hora,Laboratório,Curso,Data de início,Data de encerramento,Número de alunos inscritos,Número de alunos formados (Certificados entregues),Taxa de Evasão
+21/11/2022 09:05:33,Murici,Informática Básica,02/08/2022,03/04/1901,30,30,0%
+15/12/2022 14:51:53,Delmiro Gouveia,Informática Básica,02/12/2022,12/02/2022,3,1,67%
+05/04/2023 17:13:54,Santana do Ipanema,Lógica de Programação,16/12/2022,16/02/2022,10,8,20%
+06/04/2023 22:06:09,Maceió - Centro de Inovação,Lógica de Programação,31/01/2023,26/03/2022,20,15,25%
+21/11/2022 10:36:42,Delmiro Gouveia,Lógica de Programação,18/04/2022,20/04/2022,5,5,0%
+21/11/2022 10:37:22,Delmiro Gouveia,Lógica de Programação,18/04/2022,20/04/2022,10,10,0%
+23/08/2023 01:01:10,Delmiro Gouveia,Lógica de Programação,18/04/2022,22/04/2022,9,6,33%
+23/08/2023 01:02:30,Delmiro Gouveia,Lógica de Programação,18/04/2022,22/04/2022,10,8,20%
+21/11/2022 10:45:26,Delmiro Gouveia,Lógica de Programação,23/04/2022,27/04/2022,5,5,0%
+21/11/2022 10:46:34,Delmiro Gouveia,Lógica de Programação,23/04/2022,27/04/2022,10,10,0%
+21/11/2022 10:53:45,Delmiro Gouveia,Lógica de Programação,09/05/2022,13/05/2022,6,6,0%
+21/11/2022 10:54:45,Delmiro Gouveia,Lógica de Programação,23/05/2022,27/05/2022,5,5,0%
+21/11/2022 11:04:05,Delmiro Gouveia,Desenvolvimento Front-End com HTML e CSS,06/06/2022,10/06/2022,5,5,0%
+21/11/2022 11:07:54,Delmiro Gouveia,Introdução ao JavaScript,13/06/2022,17/06/2022,4,4,0%
+21/11/2022 11:12:16,Delmiro Gouveia,Estrutura de Dados e Algoritmos,20/06/2022,24/06/2022,6,6,0%
+21/11/2022 11:49:17,São Miguel dos Campos,Desenvolvimento Front-End com HTML e CSS,09/05/2022,09/09/2022,15,10,33%
+01/02/2023 08:46:18,São Miguel dos Campos,Desenvolvimento Front-End com HTML e CSS,09/05/2022,09/09/2022,15,10,33%
+21/11/2022 09:03:59,Murici,Lógica de Programação,02/08/2022,29/09/2022,30,30,0%
+21/11/2022 09:07:52,Murici,Desenvolvimento Front-End com HTML e CSS,02/08/2022,29/09/2022,15,9,40%
+21/11/2022 09:10:19,Murici,Desenvolvimento Front-End com HTML e CSS,02/08/2022,29/09/2022,30,19,37%
+21/11/2022 09:17:42,Murici,Linux,01/09/2022,29/09/2022,30,16,47%
+21/11/2022 09:23:05,Murici,Linux,01/09/2022,29/09/2022,30,16,47%
+21/11/2022 09:29:16,Murici,Linux,01/09/2022,29/09/2022,30,16,47%
+21/11/2022 09:31:57,Murici,JavaScript,01/09/2022,29/09/2022,30,11,63%
+21/11/2022 10:22:53,Murici,Introdução ao VS Code,02/09/2022,29/09/2022,30,16,47%
+21/11/2022 10:46:16,Delmiro Gouveia,Introdução ao VS Code,29/09/2022,30/09/2022,16,16,0%
+23/11/2022 13:09:32,Maceió - Centro de Inovação,Introdução ao VS Code,11/10/2022,13/10/2022,20,12,40%
+21/11/2022 10:41:14,Delmiro Gouveia,Python,03/10/2022,14/10/2022,11,11,0%
+21/11/2022 10:12:05,Penedo,Informática Básica,19/09/2022,26/10/2022,15,12,20%
+21/11/2022 10:42:50,Delmiro Gouveia,Estrutura de Dados e Algoritmos,26/10/2022,28/10/2022,11,11,0%
+21/11/2022 10:59:59,Delmiro Gouveia,Linux,31/10/2022,04/11/2022,8,8,0%
+21/11/2022 10:13:23,Penedo,Informática Básica,10/10/2022,11/11/2022,15,11,27%
+23/11/2022 08:57:23,Maceió - Centro de Inovação,Lógica de Programação,14/10/2022,12/11/2022,20,13,35%
+23/11/2022 08:58:56,Maceió - Centro de Inovação,Lógica de Programação,16/10/2022,17/11/2022,15,6,60%
+05/04/2023 17:14:42,Santana do Ipanema,Lógica de Programação,27/09/2022,27/11/2022,12,12,0%
+05/04/2023 17:15:12,Santana do Ipanema,Lógica de Programação,28/09/2022,28/11/2022,10,8,20%
+05/04/2023 17:15:44,Santana do Ipanema,Lógica de Programação,28/09/2022,28/11/2022,10,7,30%
+05/04/2023 17:16:19,Santana do Ipanema,Informática Básica,29/09/2022,29/11/2022,10,8,20%
+05/04/2023 17:16:47,Santana do Ipanema,Informática Básica,29/09/2022,29/11/2022,15,12,20%
+05/04/2023 16:58:05,Santana do Ipanema,Informática Básica,01/10/2022,01/12/2022,15,11,27%
+15/12/2022 15:06:50,Delmiro Gouveia,Python,05/12/2022,12/12/2022,3,3,0%
+17/12/2022 16:42:20,Penedo,Informática Básica,16/11/2022,16/12/2022,15,12,20%
+17/12/2022 16:43:11,Penedo,Informática Básica,16/11/2022,16/12/2022,15,13,13%
+01/02/2023 08:41:17,São Miguel dos Campos,Introdução ao JavaScript,25/10/2022,16/12/2022,15,12,20%
+01/02/2023 08:43:55,São Miguel dos Campos,Excel Intermediário,24/10/2022,16/12/2022,15,11,27%
+23/12/2022 19:22:53,Delmiro Gouveia,Desenvolvimento Front-End com HTML e CSS,12/12/2022,19/12/2022,6,4,33%
+23/12/2022 19:24:00,Delmiro Gouveia,React JS,12/12/2022,19/12/2022,2,1,50%
+23/12/2022 19:25:33,Delmiro Gouveia,Lógica de Programação,12/12/2022,19/12/2022,4,2,50%
+22/12/2022 13:03:54,Maceió - Centro de Inovação,Linux,29/10/2022,22/12/2022,15,9,40%
+27/01/2023 15:24:52,Delmiro Gouveia,Desenvolvimento Front-End com HTML e CSS,12/01/2023,19/01/2023,6,3,50%
+27/01/2023 15:15:03,Delmiro Gouveia,Informática Básica,17/01/2023,20/01/2023,9,9,0%
+27/01/2023 15:22:29,Delmiro Gouveia,Linux,19/01/2023,26/01/2023,2,2,0%
+27/01/2023 15:32:59,Delmiro Gouveia,Estrutura de Dados e Algoritmos,23/01/2023,26/01/2023,2,2,0%
+27/01/2023 15:34:56,Delmiro Gouveia,Desenvolvimento Front-End com HTML e CSS,23/01/2023,26/01/2023,2,2,0%
+27/01/2023 15:35:55,Delmiro Gouveia,Introdução ao JavaScript,23/01/2023,26/01/2023,2,2,0%
+14/02/2023 20:14:17,Penedo,Informática Básica,19/12/2022,02/02/2023,15,4,73%
+14/02/2023 20:17:12,Penedo,Informática Básica,19/02/2023,02/02/2023,15,11,27%
+05/04/2023 16:58:46,Santana do Ipanema,Python,05/12/2022,05/02/2023,7,4,43%
+05/04/2023 17:01:16,Santana do Ipanema,Informática Básica,06/12/2022,06/02/2023,15,12,20%
+05/04/2023 17:01:52,Santana do Ipanema,Linux,06/12/2022,06/02/2023,4,4,0%
+05/04/2023 17:02:51,Santana do Ipanema,Informática Básica,07/12/2022,07/02/2023,10,5,50%
+09/02/2023 10:25:21,Maceió - Centro de Inovação,Python,10/01/2023,09/02/2023,20,14,30%
+05/04/2023 17:05:40,Santana do Ipanema,Informática Básica,12/12/2022,12/02/2023,14,11,21%
+05/04/2023 17:12:31,Santana do Ipanema,Informática Básica,15/12/2022,15/02/2023,10,7,30%
+27/02/2023 07:47:10,Maceió - Centro de Inovação,Python,17/01/2023,23/02/2023,17,12,29%
+05/04/2023 14:12:49,Maceió - Centro de Inovação,Análise de Dados com Python,27/02/2023,04/03/2023,20,15,25%
+07/03/2023 16:08:16,Murici,Informática Básica,24/01/2023,07/03/2023,12,12,0%
+07/03/2023 16:10:04,Murici,Informática Básica,24/01/2023,07/03/2023,12,12,0%
+07/03/2023 16:10:39,Murici,Informática Básica,24/01/2023,07/03/2023,10,10,0%
+30/03/2023 10:55:57,São Miguel dos Campos,Lógica de Programação,03/02/2023,15/03/2023,15,6,60%
+30/03/2023 10:57:35,São Miguel dos Campos,Lógica de Programação,06/02/2023,15/03/2023,15,10,33%
+30/03/2023 10:58:27,São Miguel dos Campos,Linux,07/02/2023,16/03/2023,15,9,40%
+30/03/2023 10:59:14,São Miguel dos Campos,Linux,07/02/2023,16/03/2023,15,10,33%
+19/03/2023 21:52:07,Delmiro Gouveia,Lógica de Programação,13/02/2023,17/03/2023,14,8,43%
+19/03/2023 21:53:44,Delmiro Gouveia,Lógica de Programação,13/02/2023,17/03/2023,15,5,67%
+08/08/2023 18:57:49,Delmiro Gouveia,Lógica de Programação,13/02/2023,17/03/2023,14,9,36%
+08/08/2023 18:59:24,Delmiro Gouveia,Lógica de Programação,13/02/2023,17/03/2023,15,6,60%
+06/04/2023 22:07:48,Maceió - Centro de Inovação,Lógica de Programação,07/02/2023,26/03/2023,20,18,10%
+05/04/2023 16:59:45,Santana do Ipanema,Linux,06/03/2023,03/04/2023,3,2,33%
+05/04/2023 17:00:23,Santana do Ipanema,Python,06/03/2023,03/04/2023,5,3,40%
+05/04/2023 17:03:30,Santana do Ipanema,Lógica de Programação,08/03/2023,05/04/2023,7,4,43%
+20/04/2023 15:13:14,Murici,Python,07/02/2023,06/04/2023,15,6,60%
+20/04/2023 15:13:54,Murici,Linux,04/02/2023,06/04/2023,15,13,13%
+05/04/2023 17:04:17,Santana do Ipanema,Informática Básica,10/03/2022,07/04/2023,20,17,15%
+05/04/2023 17:05:05,Santana do Ipanema,Informática Básica,10/03/2023,07/04/2023,20,16,20%
+05/04/2023 17:06:50,Santana do Ipanema,Desenvolvimento Web com Python e Django,15/03/2023,12/04/2023,10,7,30%
+20/04/2023 12:37:08,Penedo,Lógica de Programação,14/03/2023,19/04/2023,13,11,15%
+20/04/2023 12:38:31,Penedo,Informática Básica,14/03/2023,19/04/2023,15,13,13%
+20/04/2023 12:39:06,Penedo,Informática Básica,14/03/2023,19/04/2023,15,13,13%
+05/05/2023 16:15:54,Penedo,Lógica de Programação,23/03/2023,26/04/2023,15,9,40%
+05/05/2023 16:14:26,Penedo,Informática Básica,23/03/2023,27/04/2023,15,10,33%
+11/05/2023 16:44:38,Santana do Ipanema,Python,10/04/2023,09/05/2023,15,12,20%
+11/05/2023 16:45:42,Santana do Ipanema,Lógica de Programação,10/04/2023,09/05/2023,15,13,13%
+15/05/2023 09:28:32,São Miguel dos Campos,Python,03/04/2023,10/05/2023,13,13,0%
+15/05/2023 09:29:33,São Miguel dos Campos,Python,03/04/2023,10/05/2023,15,10,33%
+11/05/2023 16:47:03,Santana do Ipanema,Lógica de Programação,12/04/2023,11/05/2023,15,13,13%
+11/05/2023 19:43:12,Santana do Ipanema,Informática Básica,12/04/2023,11/05/2023,25,24,4%
+15/05/2023 09:30:29,São Miguel dos Campos,Excel Intermediário,04/04/2023,11/05/2023,14,11,21%
+15/05/2023 09:31:17,São Miguel dos Campos,Desenvolvimento Front-End com HTML e CSS,04/04/2023,11/05/2023,15,11,27%
+08/08/2023 18:03:09,Murici,Informática Básica,18/04/2023,01/06/2023,13,13,0%
+08/08/2023 18:03:47,Murici,Informática Básica,18/04/2023,01/06/2023,9,9,0%
+08/08/2023 18:52:49,Delmiro Gouveia,Lógica de Programação,22/03/2023,07/06/2023,20,9,55%
+08/08/2023 18:55:20,Delmiro Gouveia,Lógica de Programação,22/03/2023,07/06/2023,15,6,60%
+20/06/2023 20:49:05,Santana do Ipanema,Python,16/05/2023,13/06/2023,11,4,64%
+20/06/2023 20:50:15,Santana do Ipanema,Lógica de Programação,16/05/2023,14/06/2023,20,12,40%
+20/06/2023 20:47:01,Santana do Ipanema,Informática Básica,18/05/2023,16/06/2023,33,26,21%
+20/06/2023 20:47:57,Santana do Ipanema,Lógica de Programação,18/05/2023,16/06/2023,11,9,18%
+08/08/2023 18:50:01,Delmiro Gouveia,Python,28/03/2023,22/06/2023,16,6,63%
+08/08/2023 18:24:41,Penedo,Informática Básica,29/05/2023,14/07/2023,15,15,0%
+08/08/2023 18:25:17,Penedo,Informática Básica,29/05/2023,14/07/2023,15,11,27%
+08/08/2023 18:26:40,Penedo,Lógica de Programação,29/05/2023,14/07/2023,15,11,27%
+08/08/2023 18:27:40,Penedo,Lógica de Programação,29/05/2023,14/07/2023,15,11,27%
+30/07/2023 22:24:07,São Miguel dos Campos,Python,05/06/2023,19/07/2023,13,7,46%
+30/07/2023 22:25:36,São Miguel dos Campos,Lógica de Programação,05/06/2023,19/07/2023,14,9,36%
+08/08/2023 18:28:52,Penedo,Lógica de Programação,29/05/2023,19/07/2023,15,13,13%
+08/08/2023 18:29:55,Penedo,Lógica de Programação,29/05/2023,19/07/2023,15,13,13%
+08/08/2023 17:59:13,Murici,Informática Básica,06/06/2023,20/07/2023,9,9,0%
+08/08/2023 18:00:03,Murici,Informática Básica,06/06/2023,20/07/2023,12,12,0%
+30/07/2023 22:27:42,São Miguel dos Campos,Lógica de Programação,05/06/2023,27/07/2023,15,11,27%
+30/07/2023 22:28:46,São Miguel dos Campos,Excel Básico,06/06/2023,27/07/2023,15,8,47%
+08/08/2023 17:57:34,Murici,Lógica de Programação,11/07/2023,03/08/2023,8,5,38%
+08/08/2023 18:02:25,Murici,Lógica de Programação,17/07/2023,09/08/2023,12,8,33%
+08/08/2023 18:30:50,Santana do Ipanema,Informática Básica,30/06/2023,15/08/2023,29,24,17%
+08/08/2023 18:31:34,Santana do Ipanema,Lógica de Programação,30/06/2023,15/08/2023,8,5,38%
+06/11/2023 10:57:29,Maceió - Centro de Inovação,React JS,15/08/2023,19/08/2023,20,12,40%
+22/08/2023 23:48:46,Delmiro Gouveia,Lógica de Programação,14/06/2023,21/08/2023,15,10,33%
+22/08/2023 23:53:01,Delmiro Gouveia,Lógica de Programação,14/06/2023,21/08/2023,9,3,67%
+14/09/2023 19:30:44,Delmiro Gouveia,Python,04/07/2023,12/09/2023,10,6,40%
+28/09/2023 14:26:22,Murici,Informática Básica,14/08/2023,13/09/2023,13,10,23%
+28/09/2023 14:24:38,Murici,Lógica de Programação,15/08/2023,14/09/2023,11,9,18%
+28/09/2023 14:27:45,Murici,Python,15/08/2023,14/09/2023,11,8,27%
+29/09/2023 04:41:45,São Miguel dos Campos,Power BI,14/08/2023,20/09/2023,10,8,20%
+29/09/2023 04:42:36,São Miguel dos Campos,Python,14/08/2023,20/09/2023,13,12,8%
+28/09/2023 14:41:23,Murici,Python,22/08/2023,21/09/2023,3,3,0%
+29/09/2023 04:43:43,São Miguel dos Campos,Introdução ao JavaScript,14/08/2023,25/09/2023,14,10,29%
+07/11/2023 17:02:31,Maceió - Centro de Inovação,Arduino Básico,14/08/2023,30/09/2023,23,9,61%
+06/11/2023 16:36:08,Maceió - Benedito Bentes,Lógica de Programação,05/09/2023,03/10/2023,15,11,27%
+06/11/2023 13:54:56,Maceió - Benedito Bentes,Canva,11/09/2023,04/10/2023,15,9,40%
+28/09/2023 14:37:59,Murici,Informática Básica,15/08/2023,05/10/2023,12,7,42%
+09/11/2023 14:15:24,Santana do Ipanema,Lógica de Programação,01/09/2023,11/10/2023,6,6,0%
+11/10/2023 17:41:48,Maceió - Centro de Inovação,Python,15/08/2022,12/10/2023,20,16,20%
+05/04/2023 17:13:15,Santana do Ipanema,Lógica de Programação,15/12/2022,15/10/2023,10,9,10%
+11/10/2023 17:43:38,Maceió - Centro de Inovação,Lógica de Programação,14/08/2023,18/10/2023,20,17,15%
+06/11/2023 13:37:04,Maceió - Centro de Inovação,Fundamentos de Redes,22/08/2023,26/10/2023,20,10,50%
+08/11/2023 15:52:32,Delmiro Gouveia,Lógica de Programação,30/08/2023,01/11/2023,7,3,57%
+08/11/2023 15:56:29,Delmiro Gouveia,Lógica de Programação,30/08/2023,01/11/2023,10,8,20%
+09/11/2023 14:14:52,Santana do Ipanema,Lógica de Programação,29/08/2023,09/11/2023,11,11,0%
+09/11/2023 14:13:25,Santana do Ipanema,Informática Básica,29/08/2023,10/11/2023,14,14,0%
+09/11/2023 14:14:17,Santana do Ipanema,Informática Básica,01/09/2023,10/11/2023,18,18,0%
+05/06/2024 09:02:30,Maceió - Benedito Bentes,CapCut,06/11/2023,29/11/2023,15,9,40%
+05/06/2024 09:02:30,Maceió - Benedito Bentes,CapCut,06/11/2023,29/11/2023,15,9,40%
+05/12/2023 18:18:39,Delmiro Gouveia,Python,29/09/2023,30/11/2023,4,2,50%
+05/12/2023 18:18:39,Delmiro Gouveia,Python,29/09/2023,30/11/2023,28,20,29%
+05/12/2023 18:18:39,Penedo,Lógica de Programação,29/09/2023,30/11/2023,40,28,30%
+05/12/2023 18:18:39,São Miguel dos Campos,Lógica de Programação,29/09/2023,30/11/2023,40,28,30%
+05/12/2023 18:18:39,Delmiro Gouveia,Informática Básica,29/09/2023,30/11/2023,60,41,32%
+05/12/2023 18:18:39,Penedo,Informática Básica,29/09/2023,30/11/2023,60,41,32%
+18/12/2023 22:33:05,Murici,Lógica de Programação com Python,26/10/2023,30/11/2023,15,9,40%
+05/12/2023 18:13:27,Delmiro Gouveia,Desenvolvimento Front-End com HTML e CSS,04/08/2023,01/12/2023,7,4,43%
+05/12/2023 18:14:43,Delmiro Gouveia,Desenvolvimento Front-End com HTML e CSS,04/08/2023,01/12/2023,11,5,55%
+05/12/2023 18:14:43,Delmiro Gouveia,Desenvolvimento Front-End com HTML e CSS,04/08/2023,01/12/2023,25,18,28%
+05/06/2024 09:02:30,Maceió - Benedito Bentes,Python,08/11/2023,01/12/2023,15,5,67%
+05/06/2024 09:02:30,Maceió - Benedito Bentes,Python,08/11/2023,01/12/2023,15,5,67%
+04/01/2024 17:41:40,Maceió - Centro de Inovação,Fundamentos de Redes,14/10/2023,12/12/2023,20,12,40%
+04/01/2024 17:41:40,Maceió - Centro de Inovação,Lógica de Programação,14/10/2023,12/12/2023,80,48,40%
+02/01/2024 10:47:01,Murici,Informática Básica,16/10/2023,20/12/2023,15,11,27%
+02/01/2024 10:47:01,Murici,Lógica de Programação,16/10/2023,20/12/2023,38,27,29%
+02/01/2024 10:47:01,Murici,Informática Básica,16/10/2023,20/12/2023,45,32,29%
+25/12/2023 14:42:43,Murici,Lógica de Programação com Python,26/10/2023,21/12/2023,8,5,38%
+25/12/2023 14:44:00,Murici,Informática Básica,14/10/2023,21/12/2023,15,12,20%
+25/12/2023 14:44:44,Murici,Informática Básica,14/10/2023,21/12/2023,15,7,53%
+05/06/2024 09:02:30,Penedo,Lógica de Programação,24/01/2024,25/01/2024,7,7,0%
+05/06/2024 09:02:30,Penedo,Lógica de Programação,24/01/2024,25/01/2024,7,7,0%
+05/06/2024 09:02:30,Penedo,Informática Básica,30/01/2024,31/01/2024,9,9,0%
+05/06/2024 09:02:30,Penedo,Informática Básica,30/01/2024,31/01/2024,13,13,0%
+18/12/2023 22:33:05,Santana do Ipanema,Python,26/11/2023,02/02/2024,5,2,60%
+18/12/2023 22:33:05,Santana do Ipanema,Informática Básica,26/11/2023,02/02/2024,17,14,18%
+05/06/2024 09:02:30,Santana do Ipanema,Python,24/01/2024,02/02/2024,5,5,0%
+05/06/2024 09:02:30,Maceió - Centro de Inovação,Workshop Linguagens de Marcação,06/02/2024,08/02/2024,18,8,56%
+18/12/2023 22:33:05,Santana do Ipanema,Java,26/11/2023,01/03/2024,8,7,13%
+18/12/2023 22:33:05,Santana do Ipanema,Informática Básica,26/11/2023,01/03/2024,11,11,0%
+02/01/2024 10:47:01,Santana do Ipanema,Java,26/11/2023,01/03/2024,40,28,30%
+05/06/2024 09:02:30,Maceió - Benedito Bentes,Lógica de Programação,29/01/2024,06/03/2024,14,5,64%
+05/06/2024 09:02:30,Maceió - Benedito Bentes,Banco de Dados,30/01/2024,07/03/2024,15,4,73%
+05/06/2024 09:02:30,Maceió - Centro de Inovação,Java,10/01/2024,13/03/2024,20,8,60%
+05/06/2024 09:02:30,Maceió - Centro de Inovação,Banco de Dados,10/01/2024,14/03/2024,20,9,55%
+05/06/2024 09:02:30,São Miguel dos Campos,Power BI,06/02/2024,14/03/2024,17,12,29%
+05/06/2024 09:02:30,Penedo,Arduino Básico,22/02/2024,15/03/2024,14,14,0%
+05/06/2024 09:02:30,Maceió - Centro de Inovação,Hackathon,15/03/2024,16/03/2024,20,20,0%
+05/06/2024 09:02:30,Santana do Ipanema,Java,19/03/2024,20/03/2024,8,8,0%
+05/06/2024 09:02:30,Santana do Ipanema,Informática Básica,18/03/2024,20/03/2024,11,11,0%
+18/12/2023 22:33:05,Santana do Ipanema,Informática Básica,26/11/2023,22/03/2024,15,14,7%
+02/01/2024 10:47:01,Santana do Ipanema,Informática Básica,26/11/2023,22/03/2024,62,43,31%
+05/06/2024 09:02:30,Santana do Ipanema,Informática Básica,19/03/2024,22/03/2024,14,14,0%
+18/12/2023 22:33:05,Murici,Informática Básica,26/11/2023,27/03/2024,14,14,0%
+05/06/2024 09:02:30,Murici,Informática Básica,31/01/2024,27/03/2024,14,6,57%
+05/06/2024 09:02:30,Penedo,Informática Básica,12/03/2024,27/03/2024,11,10,9%
+05/06/2024 09:02:30,Penedo,Informática Básica,21/02/2024,27/03/2024,13,11,15%
+05/06/2024 09:02:30,Delmiro Gouveia,Lógica de Programação,04/03/2024,27/03/2024,14,14,0%
+18/12/2023 22:33:05,Murici,Informática Básica,26/11/2023,28/03/2024,11,9,18%
+05/06/2024 09:02:30,Murici,Informática Básica,30/01/2024,28/03/2024,9,7,22%
+05/06/2024 09:02:30,Penedo,Lógica de Programação,22/02/2024,29/03/2024,14,8,43%
+05/06/2024 09:02:30,Penedo,Lógica de Programação,22/02/2024,29/03/2024,13,11,15%
+05/06/2024 09:02:30,Traipu,Informática Básica,04/03/2024,29/03/2024,12,12,0%
+05/06/2024 09:02:30,Traipu,Informática Básica,04/03/2024,29/03/2024,14,13,7%
+05/06/2024 09:02:30,Traipu,Informática Básica,04/03/2024,29/03/2024,15,15,0%
+18/12/2023 22:33:05,Murici,Lógica de Programação com Python,26/11/2023,09/04/2024,12,5,58%
+18/12/2023 22:33:05,Maceió - Benedito Bentes,Banco de Dados,26/11/2023,10/04/2024,21,2,90%
+05/06/2024 09:02:30,Maceió - Benedito Bentes,Banco de Dados,18/03/2024,10/04/2024,15,2,87%
+18/12/2023 22:33:05,Maceió - Benedito Bentes,Python,26/11/2023,11/04/2024,26,7,73%
+02/01/2024 10:47:01,Maceió - Benedito Bentes,Python,26/11/2023,11/04/2024,35,25,29%
+05/06/2024 09:02:30,Maceió - Benedito Bentes,Python,19/03/2024,11/04/2024,15,7,53%
+18/12/2023 22:33:05,Maceió - Benedito Bentes,Workshop Introdução à Programação,26/11/2023,19/04/2024,23,9,61%
+17/06/2024 10:35:00,Delmiro Gouveia,Git e GitHub,15/04/2024,19/04/2024,3,3,0%
+04/07/2024 14:15:52,Maceió - Benedito Bentes,Workshop Introdução à Programação,15/04/2024,19/04/2024,15,9,40%
+19/07/2024 09:41:00,Maceió - Benedito Bentes,Workshop Introdução à Programação,15/04/2024,19/04/2024,15,9,40%
+05/06/2024 09:02:30,Delmiro Gouveia,Lógica de Programação com Python,20/03/2024,24/04/2024,4,4,0%
+05/06/2024 09:02:30,Maceió - Centro de Inovação,Lógica de Programação,19/02/2024,24/04/2024,19,15,21%
+05/06/2024 09:02:30,Murici,Lógica de Programação com Python,29/02/2024,25/04/2024,4,2,50%
+05/06/2024 09:02:30,Maceió - Centro de Inovação,Introdução ao Back-End com NodeJS,20/02/2024,25/04/2024,20,12,40%
+05/06/2024 09:02:30,Traipu,Pacote Office,08/04/2024,26/04/2024,15,15,0%
+05/06/2024 09:02:30,Delmiro Gouveia,JavaScript,27/03/2024,29/04/2024,14,10,29%
+05/06/2024 09:02:30,Penedo,Python,13/03/2024,30/04/2024,15,8,47%
+05/06/2024 09:02:30,Delmiro Gouveia,Lógica de Programação com Python,28/03/2024,30/04/2024,11,11,0%
+17/06/2024 10:35:00,Delmiro Gouveia,Lógica de Programação com Python,09/04/2024,02/05/2024,3,3,0%
+05/06/2024 09:02:30,Maceió - Centro de Inovação,Arduino Básico,19/03/2024,03/05/2024,20,5,75%
+05/06/2024 09:02:30,Traipu,Informática Básica,08/04/2024,03/05/2024,8,6,25%
+05/06/2024 09:02:30,Traipu,Eletrônica Básica,08/04/2024,03/05/2024,12,10,17%
+05/06/2024 09:02:30,Traipu,Informática Básica,08/04/2024,03/05/2024,12,12,0%
+05/06/2024 09:02:30,Traipu,Informática Básica,08/04/2024,03/05/2024,15,15,0%
+05/06/2024 09:02:30,Traipu,Informática Básica,08/04/2024,03/05/2024,15,15,0%
+17/06/2024 10:35:00,Santana do Ipanema,Informática Básica,26/04/2024,06/05/2024,11,11,0%
+05/06/2024 09:02:30,Maceió - Centro de Inovação,Fundamentos de Redes,04/03/2024,08/05/2024,20,6,70%
+05/06/2024 09:02:30,São Miguel dos Campos,Java,10/04/2024,08/05/2024,14,8,43%
+19/07/2024 09:41:00,Penedo,Lógica de Programação,19/04/2024,08/05/2024,6,4,33%
+19/07/2024 09:41:00,Penedo,Lógica de Programação,19/04/2024,08/05/2024,6,4,33%
+05/06/2024 09:02:30,São Miguel dos Campos,Power BI,15/03/2024,14/05/2024,14,10,29%
+19/07/2024 09:41:00,São Miguel dos Campos,Workshop Arduino + Python,19/05/2024,20/05/2024,10,10,0%
+19/07/2024 09:41:00,São Miguel dos Campos,Canva,19/05/2024,20/05/2024,10,10,0%
+17/06/2024 10:35:00,Penedo,Informática Básica,27/04/2024,24/05/2024,15,10,33%
+19/07/2024 09:41:00,Penedo,Informática Básica,27/04/2024,24/05/2024,15,7,53%
+19/07/2024 09:41:00,Penedo,Informática Básica,27/04/2024,24/05/2024,15,7,53%
+17/06/2024 10:35:00,Maceió - Benedito Bentes,Canva,30/04/2024,28/05/2024,15,7,53%
+29/05/2024 17:58:54,Santana do Ipanema,Informática Básica,06/05/2024,29/05/2024,15,11,27%
+29/05/2024 18:00:34,Santana do Ipanema,Lógica de Programação,06/05/2024,29/05/2024,7,5,29%
+04/07/2024 14:15:52,Delmiro Gouveia,JavaScript,30/04/2024,30/05/2024,4,2,50%
+19/07/2024 09:41:00,Delmiro Gouveia,JavaScript,30/04/2024,30/05/2024,4,2,50%
+05/06/2024 09:02:30,Maceió - Centro de Inovação,Flutter,27/05/2024,03/06/2024,20,12,40%
+05/06/2024 09:02:30,Penedo,Informática Básica,06/05/2024,03/06/2024,15,14,7%
+17/06/2024 10:35:00,Penedo,Introdução ao Desenvolvimento Web,09/05/2024,03/06/2024,14,10,29%
+05/06/2024 09:02:30,Penedo,Python,27/04/2024,05/06/2024,15,9,40%
+17/06/2024 10:35:00,Maceió - Centro de Inovação,Informática Básica,06/05/2024,05/06/2024,20,14,30%
+04/07/2024 14:15:52,Maceió - Centro de Inovação,Python POO,09/05/2024,05/06/2024,20,13,35%
+19/07/2024 09:41:00,Maceió - Centro de Inovação,Introdução ao Desenvolvimento Web,09/05/2024,05/06/2024,20,13,35%
+17/06/2024 10:35:00,Traipu,Power BI Avançado,13/05/2024,07/06/2024,6,1,83%
+17/06/2024 10:35:00,Traipu,Power BI Avançado,13/05/2024,07/06/2024,6,4,33%
+04/07/2024 14:15:52,Murici,Informática Básica,22/04/2024,13/06/2024,2,2,0%
+19/07/2024 09:41:00,Murici,Informática Básica,22/04/2024,13/06/2024,2,2,0%
+19/07/2024 09:41:00,Murici,Python,06/05/2024,13/06/2024,14,13,7%
+19/07/2024 09:41:00,Murici,Python,06/05/2024,13/06/2024,14,13,7%
+19/07/2024 09:41:00,Murici,Informática Básica,06/05/2024,14/06/2024,12,10,17%
+19/07/2024 09:41:00,Murici,Power BI,06/05/2024,14/06/2024,12,10,17%
+17/06/2024 10:35:00,Delmiro Gouveia,Informática Básica,20/05/2024,19/06/2024,4,2,50%
+19/07/2024 09:41:00,Delmiro Gouveia,Informática Básica,20/05/2024,19/06/2024,8,2,75%
+19/07/2024 09:41:00,Delmiro Gouveia,Flutter,20/05/2024,19/06/2024,8,2,75%
+19/07/2024 09:41:00,Maceió - Benedito Bentes,JavaScript,15/05/2024,19/06/2024,12,3,75%
+19/07/2024 09:41:00,Maceió - Benedito Bentes,JavaScript,15/05/2024,19/06/2024,12,3,75%
+17/06/2024 10:35:00,Santana do Ipanema,Lógica de Programação com Python,18/06/2024,30/06/2024,14,14,0%
+05/06/2024 09:02:30,Maceió - Benedito Bentes,Canva,11/06/2024,04/07/2024,11,2,82%
+17/06/2024 10:35:00,Maceió - Benedito Bentes,Lógica de Programação com Python,14/05/2024,04/07/2024,15,4,73%
+05/06/2024 09:02:30,Batalha,Informática Básica,02/05/2024,11/07/2024,13,6,54%
+17/06/2024 10:35:00,Maceió - Centro de Inovação,OSINT e Cibersegurança,02/05/2024,11/07/2024,20,13,35%
+04/07/2024 14:15:52,Batalha,Informática Básica,02/05/2024,11/07/2024,12,5,58%
+19/07/2024 09:41:00,Batalha,Informática Básica,02/05/2024,11/07/2024,12,5,58%
+01/07/2024 12:52:27,Batalha,Informática Básica,06/05/2024,15/07/2024,14,6,57%
+19/07/2024 09:41:00,Batalha,Informática Básica,06/05/2024,15/07/2024,15,9,40%
+19/07/2024 09:41:00,Batalha,Informática Básica,06/05/2024,15/07/2024,15,9,40%
+,São Miguel dos Campos,Power BI,20/06/2024,17/07/2024,15,11,27%
+05/06/2024 09:02:30,Santana do Ipanema,Informática Básica,07/07/2024,19/07/2024,8,8,0%
+04/07/2024 14:15:52,Maceió - Centro de Inovação,Workshop Automação com Python,15/07/2024,19/07/2024,18,8,56%
+,Santana do Ipanema,Informática Básica,07/07/2024,19/07/2024,8,8,0%
+,Maceió - Centro de Inovação,C,15/07/2024,19/07/2024,18,8,56%
+17/06/2024 10:35:00,São Miguel dos Campos,Lógica de Programação com Python,20/06/2024,24/07/2024,15,11,27%
+22/08/2024 15:06:00,São Miguel dos Campos,Lógica de Programação com Python,20/06/2024,24/07/2024,15,11,27%
+,São Miguel dos Campos,Power BI,20/06/2024,24/07/2024,15,11,27%
+05/06/2024 09:02:30,Delmiro Gouveia,Canva,01/07/2024,25/07/2024,4,4,0%
+22/08/2024 15:06:00,Delmiro Gouveia,Canva,01/07/2024,25/07/2024,4,4,0%
+,Delmiro Gouveia,Informática Básica,01/07/2024,25/07/2024,4,4,0%
+22/08/2024 15:06:00,Maceió - Benedito Bentes,Canva,23/07/2024,30/07/2024,13,8,38%
+22/08/2024 15:06:00,Santana do Ipanema,Introdução à Programação em Java,24/07/2024,30/07/2024,8,8,0%
+,Maceió - Benedito Bentes,Canva,23/07/2024,30/07/2024,13,8,38%
+,Santana do Ipanema,Informática Básica,24/07/2024,30/07/2024,8,8,0%
+22/08/2024 15:06:00,Santana do Ipanema,Informática Básica,25/07/2024,31/07/2024,9,9,0%
+,Santana do Ipanema,Canva,25/07/2024,31/07/2024,9,9,0%
+22/08/2024 15:06:00,Penedo,Informática Básica,09/07/2024,06/08/2024,13,7,46%
+22/08/2024 15:06:00,Penedo,Workshop Python (Tkinter),09/07/2024,06/08/2024,11,8,27%
+22/08/2024 15:06:00,Penedo,Workshop Python (Tkinter),09/07/2024,06/08/2024,15,12,20%
+,Penedo,Desenvolvimento Front-End com HTML e CSS,09/07/2024,06/08/2024,13,7,46%
+,Penedo,Desenvolvimento Front-End com HTML e CSS,09/07/2024,06/08/2024,11,8,27%
+,Penedo,Workshop Automação com Python,09/07/2024,06/08/2024,15,12,20%
+22/08/2024 15:06:00,Penedo,Informática Básica,08/07/2024,12/08/2024,15,13,13%
+22/08/2024 15:06:00,Penedo,Informática Básica,18/07/2024,12/08/2024,15,13,13%
+,Penedo,Informática Básica,08/07/2024,12/08/2024,15,13,13%
+,Penedo,Informática Básica,18/07/2024,12/08/2024,15,13,13%
+22/08/2024 15:06:00,Santana do Ipanema,Introdução ao JavaScript,10/08/2024,16/08/2024,3,3,0%
+22/08/2024 15:06:00,Batalha,React JS,14/06/2024,16/08/2024,15,7,53%
+22/08/2024 15:06:00,Santana do Ipanema,Canva,08/08/2024,16/08/2024,10,10,0%
+,Santana do Ipanema,Canva,08/08/2024,16/08/2024,10,10,0%
+09/01/2025 10:52:00,Pão de Açucar,Informática Básica,21/08/2024,22/08/2024,15,6,60%
+09/01/2025 10:52:00,Penedo,Canva,23/08/2024,24/08/2024,15,3,80%
+09/01/2025 10:52:00,Penedo,Introdução ao JavaScript,23/08/2024,24/08/2024,15,11,27%
+09/01/2025 10:52:00,Delmiro Gouveia,Informática Básica,26/08/2024,28/08/2024,5,5,0%
+09/01/2025 10:52:00,Delmiro Gouveia,Lógica de Programação,26/08/2024,28/08/2024,9,9,0%
+09/01/2025 10:52:00,Penedo,Introdução à Programação em Go,05/09/2024,06/09/2024,2,2,0%
+20/09/2024 08:37:39,Maceió - Benedito Bentes,Informática Básica,20/08/2024,19/09/2024,15,4,73%
+22/09/2024 19:59:44,Maceió - Benedito Bentes,Introdução à Programação em Go,24/07/2024,20/09/2024,9,9,0%
+06/11/2024 15:28:00,Maceió - Centro de Inovação,Lógica de Programação com Python,05/08/2024,09/10/2024,18,8,56%
+06/11/2024 15:28:00,Maceió - Centro de Inovação,Informática Básica,06/08/2024,10/10/2024,20,7,65%
+09/01/2025 10:52:00,Murici,Informática Básica,03/10/2024,06/11/2024,10,10,0%
+09/01/2025 10:52:00,Maceió - Benedito Bentes,Python,08/10/2024,07/11/2024,14,5,64%
+09/01/2025 10:52:00,Maceió - Benedito Bentes,Informática Básica,26/11/2024,28/11/2024,7,1,86%
+09/01/2025 10:52:00,Santana do Ipanema,Informática Básica,02/10/2024,30/11/2024,15,6,60%
+09/01/2025 10:52:00,Santana do Ipanema,Lógica de Programação,02/10/2024,30/11/2024,15,10,33%
+09/01/2025 10:52:00,Maceió - Benedito Bentes,Informática Básica,02/10/2024,03/12/2024,15,5,67%
+09/01/2025 10:52:00,Murici,Informática Básica,03/10/2024,04/12/2024,9,9,0%
+09/01/2025 10:52:00,Delmiro Gouveia,Informática Básica,01/10/2024,05/12/2024,15,2,87%
+09/01/2025 10:52:00,Murici,Python,03/10/2024,05/12/2024,5,5,0%
+09/01/2025 10:52:00,Maceió - Centro de Inovação,Java,01/10/2024,05/12/2024,20,6,70%
+09/01/2025 10:52:00,Maceió - Centro de Inovação,Lógica de Programação,01/10/2024,05/12/2024,20,6,70%
+09/01/2025 10:52:00,Maceió - Centro de Inovação,Informática Básica,01/10/2024,05/12/2024,20,6,70%
+09/01/2025 10:52:00,Penedo,Informática Básica,02/10/2024,05/12/2024,13,7,46%
+09/01/2025 10:52:00,São Miguel dos Campos,Informática Básica,03/10/2024,05/12/2024,15,11,27%
+09/01/2025 10:52:00,Penedo,Informática Básica,02/10/2024,05/12/2024,14,13,7%
+09/01/2025 10:52:00,Murici,Fundamentos de Redes,03/10/2024,05/12/2024,14,14,0%
+09/01/2025 10:52:00,São Miguel dos Campos,Lógica de Programação,02/10/2024,09/12/2024,16,7,56%
+09/01/2025 10:52:00,São Miguel dos Campos,Informática Básica,14/10/2024,09/12/2024,16,10,38%
+09/01/2025 10:52:00,Delmiro Gouveia,Informática Básica,01/10/2024,10/12/2024,15,7,53%
+09/01/2025 10:52:00,Pão de Açucar,Informática Básica,08/10/2024,10/12/2024,15,15,0%
+09/01/2025 10:52:00,Pão de Açucar,Lógica de Programação,26/08/2024,11/12/2024,14,1,93%
+09/01/2025 10:52:00,Delmiro Gouveia,Informática Básica,02/10/2024,11/12/2024,15,2,87%
+09/01/2025 10:52:00,Pão de Açucar,Python,08/10/2024,11/12/2024,15,5,67%
+09/01/2025 10:52:00,Batalha,Informática Básica,03/10/2024,12/12/2024,14,8,43%
+09/01/2025 10:52:00,Penedo,Power BI,01/10/2024,12/12/2024,12,9,25%
+09/01/2025 10:52:00,Batalha,Informática Básica,03/10/2024,12/12/2024,14,11,21%
+09/01/2025 10:52:00,Batalha,Python,03/10/2024,12/12/2024,15,12,20%
+09/01/2025 10:52:00,Pão de Açucar,React JS,10/10/2024,13/12/2024,11,3,73%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Python,14/02/2025,14/04/2025,20,6,70%
+09/07/2025 10:46:00,Penedo,Lógica de Programação,10/02/2025,15/04/2025,15,15,0%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,JavaScript,26/02/2025,16/04/2025,12,3,75%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Informática Básica,26/02/2025,16/04/2025,15,6,60%
+09/07/2025 10:46:00,Penedo,Python Automação,13/02/2025,16/04/2025,15,10,33%
+09/07/2025 10:46:00,Penedo,Informática Básica,11/02/2025,16/04/2025,15,12,20%
+09/07/2025 10:46:00,Penedo,Fundamentos de Cibersegurança,24/02/2025,17/04/2025,12,11,8%
+09/07/2025 10:46:00,Penedo,Workshop Inteligência Artificial,28/02/2025,17/04/2025,15,12,20%
+09/07/2025 10:46:00,Arapiraca,C,25/02/2025,18/04/2025,6,2,67%
+09/07/2025 10:46:00,Arapiraca,Informática Básica,24/02/2025,18/04/2025,4,3,25%
+09/07/2025 10:46:00,Arapiraca,Informática Básica,25/02/2025,18/04/2025,7,3,57%
+09/07/2025 10:46:00,Arapiraca,Desenvolvimento Front-End com HTML e CSS,26/02/2025,18/04/2025,7,3,57%
+09/07/2025 10:46:00,Arapiraca,Informática Básica,24/02/2025,18/04/2025,11,5,55%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Informática Básica,26/02/2025,18/04/2025,15,8,47%
+09/07/2025 10:46:00,Penedo,JavaScript,24/02/2025,18/04/2025,12,11,8%
+09/07/2025 10:46:00,Delmiro Gouveia,Workshop Introdução à Programação,22/04/2025,23/04/2025,3,3,0%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Informática Básica,10/02/2025,23/04/2025,20,4,80%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Fundamentos de IA,22/04/2025,23/04/2025,6,4,33%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Informática Básica,11/02/2025,23/04/2025,15,5,70%
+09/07/2025 10:46:00,Batalha,Power BI,10/02/2025,23/04/2025,12,12,0%
+09/07/2025 10:46:00,Batalha,Fundamentos de Cibersegurança,10/02/2025,23/04/2025,15,12,20%
+09/07/2025 10:46:00,Batalha,Lógica de Programação com Python,10/02/2025,23/04/2025,15,13,13%
+09/07/2025 10:46:00,Batalha,Lógica de Programação,11/02/2025,24/04/2025,7,2,71%
+09/07/2025 10:46:00,Delmiro Gouveia,Workshop Inteligência Artificial,23/04/2025,24/04/2025,3,2,33%
+09/07/2025 10:46:00,Batalha,Redes e Infraestrutura,11/02/2025,24/04/2025,6,3,50%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Arduino,23/04/2025,24/04/2025,5,3,40%
+09/07/2025 10:46:00,Batalha,Lógica de Programação,11/02/2025,24/04/2025,7,6,14%
+09/07/2025 10:46:00,São Miguel dos Campos,Workshop Informática Básica,23/04/2025,24/04/2025,15,15,0%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Lógica de Programação,26/02/2025,25/04/2025,13,3,77%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Fundamentos de IA,24/04/2025,25/04/2025,15,3,80%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Python,26/02/2025,25/04/2025,15,9,40%
+09/07/2025 10:46:00,Delmiro Gouveia,Workshop Desenvolvimento Web,25/04/2025,26/04/2025,1,1,0%
+09/07/2025 10:46:00,Santana do Ipanema,Workshop Introdução à Programação,25/04/2025,26/04/2025,7,2,71%
+09/07/2025 10:46:00,Delmiro Gouveia,Workshop React Native,25/04/2025,26/04/2025,2,2,0%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Workshop Gestão de Mídias Sociais,25/04/2025,26/04/2025,3,2,33%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Google Planilhas,25/04/2025,26/04/2025,11,3,70%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Arduino,25/04/2025,26/04/2025,15,5,70%
+09/07/2025 10:46:00,Delmiro Gouveia,Workshop Inteligência Artificial,26/04/2025,27/04/2025,2,1,50%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Desenvolvimento Web,28/04/2025,29/04/2025,11,3,70%
+09/07/2025 10:46:00,São Miguel dos Campos,Workshop JavaScript do Zero,28/04/2025,29/04/2025,12,12,0%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Introdução à Programação,29/04/2025,30/04/2025,3,1,70%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Front-End com HTML e CSS,29/04/2025,30/04/2025,4,1,75%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Idosos,29/04/2025,30/04/2025,15,5,70%
+09/07/2025 10:46:00,Penedo,Python,28/04/2025,30/04/2025,17,14,18%
+09/07/2025 10:46:00,São Miguel dos Campos,Workshop Inteligência Artificial,29/04/2025,30/04/2025,15,15,0%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Python Automação,30/04/2025,01/05/2025,5,2,70%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Inteligência Artificial,30/04/2025,01/05/2025,8,2,70%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Arduino,30/04/2025,01/05/2025,6,4,33%
+09/07/2025 10:46:00,Arapiraca,Workshop Fundamentos de IA,22/04/2025,02/05/2025,2,1,70%
+09/07/2025 10:46:00,Arapiraca,Workshop JavaScript do Zero,22/04/2025,02/05/2025,2,1,70%
+09/07/2025 10:46:00,Arapiraca,Workshop Introdução à Programação,22/04/2025,02/05/2025,3,1,70%
+09/07/2025 10:46:00,Arapiraca,Workshop Gestão de Mídias Sociais,22/04/2025,02/05/2025,1,1,0%
+09/07/2025 10:46:00,Arapiraca,Workshop Introdução à Programação,22/04/2025,02/05/2025,1,1,0%
+09/07/2025 10:46:00,Penedo,Workshop JavaScript do Zero,30/04/2025,02/05/2025,1,1,0%
+09/07/2025 10:46:00,Penedo,Workshop Inteligência Artificial,30/04/2025,02/05/2025,1,1,0%
+09/07/2025 10:46:00,Penedo,Workshop Desenvolvimento Web,30/04/2025,02/05/2025,1,1,0%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Workshop Git e GitHub,23/04/2025,02/05/2025,6,2,70%
+09/07/2025 10:46:00,Batalha,Workshop Introdução à Programação,28/04/2025,02/05/2025,9,7,22%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Workshop Automação com Python,25/04/2025,02/05/2025,12,12,0%
+09/07/2025 10:46:00,Penedo,Workshop Gestão de Mídias Sociais,23/04/2025,02/05/2025,14,14,0%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Introdução à Programação,02/05/2025,03/05/2025,5,2,70%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Introdução à Programação,02/05/2025,03/05/2025,7,2,70%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Informática Básica,02/05/2025,03/05/2025,6,3,50%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Fundamentos de HTML e CSS,02/05/2025,03/05/2025,7,6,14%
+09/07/2025 10:46:00,Penedo,Lógica de Programação com Python,02/05/2025,05/05/2025,4,4,0%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Workshop Lógica de Programação,29/04/2025,08/05/2025,9,5,44%
+09/07/2025 10:46:00,Delmiro Gouveia,Lógica de Programação,14/02/2025,09/05/2025,15,2,87%
+09/07/2025 10:46:00,Delmiro Gouveia,Lógica de Programação,19/02/2025,09/05/2025,15,2,87%
+09/07/2025 10:46:00,Murici,Informática Básica,10/02/2025,12/05/2025,4,1,70%
+09/07/2025 10:46:00,Murici,Informática Básica,10/02/2025,12/05/2025,5,2,70%
+09/07/2025 10:46:00,Santana do Ipanema,Informática Básica,10/02/2025,12/05/2025,6,2,67%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Programador Web,13/02/2025,12/05/2025,18,2,89%
+09/07/2025 10:46:00,Santana do Ipanema,JavaScript,19/02/2025,12/05/2025,12,2,83%
+09/07/2025 10:46:00,Murici,JavaScript,10/02/2025,12/05/2025,9,3,70%
+09/07/2025 10:46:00,Delmiro Gouveia,Lógica de Programação com Python,10/02/2025,12/05/2025,15,3,80%
+09/07/2025 10:46:00,Santana do Ipanema,Redes e Infraestrutura,10/02/2025,12/05/2025,8,3,63%
+09/07/2025 10:46:00,Santana do Ipanema,Lógica de Programação,10/02/2025,12/05/2025,6,3,50%
+09/07/2025 10:46:00,Delmiro Gouveia,Desenvolvimento Front-End com HTML e CSS,21/02/2025,12/05/2025,15,3,80%
+09/07/2025 10:46:00,São Miguel dos Campos,Informática Básica,18/02/2025,12/05/2025,15,5,70%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Fundamentos de Cibersegurança,10/02/2025,12/05/2025,20,5,75%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Informática Básica,14/02/2025,12/05/2025,20,5,75%
+09/07/2025 10:46:00,Pão de Açucar,Informática Básica,10/02/2025,12/05/2025,15,6,60%
+09/07/2025 10:46:00,Santana do Ipanema,Python,26/02/2025,12/05/2025,14,6,57%
+09/07/2025 10:46:00,São Miguel dos Campos,Workshop Segurança da Informação,16/03/2025,12/05/2025,14,6,57%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Banco de Dados,15/02/2025,12/05/2025,20,9,55%
+09/07/2025 10:46:00,São Miguel dos Campos,Fundamentos de HTML e CSS,14/02/2025,12/05/2025,15,10,33%
+09/07/2025 10:46:00,São Miguel dos Campos,Informática Básica,25/02/2025,12/05/2025,14,10,29%
+09/07/2025 10:46:00,Santana do Ipanema,Python,26/02/2025,12/05/2025,14,10,29%
+09/07/2025 10:46:00,Delmiro Gouveia,Lógica de Programação,12/02/2025,12/05/2025,15,11,27%
+09/07/2025 10:46:00,São Miguel dos Campos,Power BI,14/02/2025,12/05/2025,15,11,27%
+09/07/2025 10:46:00,Delmiro Gouveia,Arduino Básico,19/02/2025,12/05/2025,14,11,21%
+09/07/2025 10:46:00,Murici,JavaScript,10/02/2025,12/05/2025,12,12,0%
+09/07/2025 10:46:00,São Miguel dos Campos,Workshop Fundamentos de IA,11/03/2025,12/05/2025,15,12,20%
+09/07/2025 10:46:00,Pão de Açucar,Excel Intermediário,14/02/2025,14/05/2025,15,6,60%
+09/07/2025 10:46:00,Batalha,Desenvolvimento Front-End com HTML e CSS,14/05/2025,15/05/2025,2,1,
+09/07/2025 10:46:00,Batalha,Lógica de Programação,14/05/2025,15/05/2025,1,1,
+09/07/2025 10:46:00,Pão de Açucar,Informática Básica,12/02/2025,15/05/2025,15,5,67%
+09/07/2025 10:46:00,Pão de Açucar,Excel Intermediário,12/02/2025,15/05/2025,15,7,53%
+09/07/2025 10:46:00,Batalha,Gestão de Mídias Sociais,15/05/2025,16/05/2025,8,2,
+09/07/2025 10:46:00,Pão de Açucar,Desenvolvimento Front-End com HTML e CSS,13/02/2025,16/05/2025,15,6,60%
+09/07/2025 10:46:00,Batalha,Informática Básica,16/05/2025,17/05/2025,4,1,
+09/07/2025 10:46:00,Traipu,Workshop Fundamentos de IA,28/02/2025,19/05/2025,13,9,31%
+09/07/2025 10:46:00,Traipu,Informática Básica,20/02/2025,19/05/2025,12,10,17%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Lógica de Programação,25/02/2025,20/05/2025,15,6,60%
+09/07/2025 10:46:00,Batalha,Excel Intermediário,04/06/2025,11/06/2025,1,1,
+09/07/2025 10:46:00,Batalha,Google Planilhas,02/06/2025,19/06/2025,1,1,
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Redes e Infraestrutura,09/05/2025,27/06/2025,20,20,0%
+09/07/2025 10:46:00,Batalha,Desenvolvimento Front-End com HTML e CSS,14/05/2025,30/06/2025,7,7,
+09/07/2025 10:46:00,Arapiraca,Informática Básica,06/05/2025,01/07/2025,2,1,70%
+09/07/2025 10:46:00,Arapiraca,Lógica de Programação,06/05/2025,01/07/2025,6,4,33%
+09/07/2025 10:46:00,Arapiraca,Lógica de Programação,05/05/2025,02/07/2025,5,1,80%
+09/07/2025 10:46:00,Penedo,Informática Básica,12/05/2025,02/07/2025,6,6,0%
+09/07/2025 10:46:00,Penedo,Redes e Infraestrutura,29/05/2025,02/07/2025,6,6,
+09/07/2025 10:46:00,Murici,Introdução ao Desenvolvimento Backend com Go,05/05/2025,02/07/2025,15,8,47%
+09/07/2025 10:46:00,Penedo,Análise de Dados com Python,06/05/2025,02/07/2025,15,11,27%
+09/07/2025 10:46:00,Murici,Informática Básica,05/05/2025,02/07/2025,15,15,0%
+09/07/2025 10:46:00,Arapiraca,Informática Básica,15/05/2025,03/07/2025,3,2,
+09/07/2025 10:46:00,Batalha,Python,13/05/2025,03/07/2025,9,6,33%
+09/07/2025 10:46:00,Batalha,Gestão de Mídias Sociais,13/05/2025,03/07/2025,8,8,0%
+09/07/2025 10:46:00,Batalha,Java,13/05/2025,03/07/2025,12,12,0%
+09/07/2025 10:46:00,Pão de Açucar,Workshop Inteligência Artificial,02/07/2025,04/07/2025,1,1,
+09/07/2025 10:46:00,Pão de Açucar,Workshop Introdução à Programação,02/07/2025,04/07/2025,13,4,
+09/07/2025 10:46:00,Penedo,C,13/05/2025,04/07/2025,11,9,18%
+09/07/2025 10:46:00,Penedo,JavaScript,13/05/2025,04/07/2025,10,9,10%
+09/07/2025 10:46:00,Murici,Excel Avançado,16/05/2025,04/07/2025,9,9,
+09/07/2025 10:46:00,Penedo,Arduino Básico,08/05/2025,04/07/2025,15,12,20%
+09/07/2025 10:46:00,Pão de Açucar,Workshop Gestão de Mídias Sociais,04/07/2025,05/07/2025,1,1,
+09/07/2025 10:46:00,Pão de Açucar,Workshop Fundamentos de IA,04/07/2025,05/07/2025,1,1,
+09/07/2025 10:46:00,Traipu,Workshop Introdução à Programação,30/05/2025,07/07/2025,2,1,
+09/07/2025 10:46:00,Traipu,Arduino Básico,19/05/2025,07/07/2025,6,2,
+09/07/2025 10:46:00,Penedo,Workshop Informática Básica,25/06/2025,07/07/2025,14,8,
+09/07/2025 10:46:00,Penedo,Workshop Gestão de Mídias Sociais,25/06/2025,07/07/2025,19,16,
+09/07/2025 10:46:00,Traipu,Informática Básica,30/05/2025,08/07/2025,1,1,
+09/07/2025 10:46:00,Traipu,Lógica de Programação,30/05/2025,08/07/2025,1,1,
+09/07/2025 10:46:00,Traipu,Redes e Infraestrutura,20/05/2025,08/07/2025,6,2,
+09/07/2025 10:46:00,Penedo,Desenvolvimento Front-End com HTML e CSS,12/05/2025,08/07/2025,15,9,40%
+09/07/2025 10:46:00,Penedo,Python,13/05/2025,08/07/2025,14,13,7%
+09/07/2025 10:46:00,Traipu,Workshop Informática Básica,30/05/2025,09/07/2025,1,1,
+09/07/2025 10:46:00,Pão de Açucar,Google Planilhas,03/06/2025,09/07/2025,6,2,
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Informática Básica,12/05/2025,09/07/2025,12,4,67%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Fundamentos de IA,14/05/2025,09/07/2025,15,5,
+09/07/2025 10:46:00,Maceió - Benedito Bentes,JavaScript,14/05/2025,10/07/2025,11,3,73%
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Workshop Segurança da Informação,14/05/2025,10/07/2025,15,8,
+01/10/2025 09:26:30,Maceió - Benedito Bentes,Workshop Python Avançado,14/05/2025,10/07/2025,11,3,
+01/10/2025 09:26:30,Santana do Ipanema,Informática Básica,09/07/2025,10/07/2025,8,5,
+01/10/2025 09:26:30,Maceió - Benedito Bentes,Workshop Desenvolvimento Web,14/05/2025,10/07/2025,15,8,
+01/10/2025 09:26:30,São Miguel dos Campos,Workshop Desenvolvimento de Games,24/05/2025,10/07/2025,14,10,
+09/07/2025 10:46:00,Traipu,Informática Básica,30/05/2025,11/07/2025,3,1,
+09/07/2025 10:46:00,Pão de Açucar,Workshop Introdução à Programação,19/06/2025,11/07/2025,3,1,
+09/07/2025 10:46:00,Santana do Ipanema,Análise de Dados com Python,05/05/2025,11/07/2025,4,3,25%
+09/07/2025 10:46:00,Santana do Ipanema,Git e GitHub,05/05/2025,11/07/2025,8,4,50%
+09/07/2025 10:46:00,Santana do Ipanema,JavaScript,05/05/2025,11/07/2025,15,5,67%
+09/07/2025 10:46:00,Santana do Ipanema,Lógica de Programação,05/05/2025,11/07/2025,5,5,0%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Lógica de Programação,05/05/2025,11/07/2025,20,6,70%
+09/07/2025 10:46:00,Santana do Ipanema,Informática Básica,05/05/2025,11/07/2025,15,6,60%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,JavaScript,12/05/2025,11/07/2025,11,6,45%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Python,09/05/2025,11/07/2025,20,7,65%
+09/07/2025 10:46:00,Batalha,Informática Básica,12/05/2025,11/07/2025,8,8,0%
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Metodologia Ágil,06/05/2025,11/07/2025,25,9,64%
+09/07/2025 10:46:00,São Miguel dos Campos,Informática Básica,28/05/2025,11/07/2025,15,9,
+09/07/2025 10:46:00,Maceió - Benedito Bentes,Informática Básica,08/05/2025,11/07/2025,15,10,33%
+09/07/2025 10:46:00,Batalha,Redes e Infraestrutura,12/05/2025,11/07/2025,14,10,29%
+09/07/2025 10:46:00,São Miguel dos Campos,Redes e Infraestrutura,27/05/2025,11/07/2025,15,10,
+01/10/2025 09:26:30,Traipu,Redes e Infraestrutura,30/05/2025,11/07/2025,3,2,
+01/10/2025 09:26:30,Penedo,Informática Básica,10/07/2025,11/07/2025,2,2,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Python Automação,15/05/2025,11/07/2025,20,3,
+01/10/2025 09:26:30,Pão de Açucar,JavaScript,19/06/2025,11/07/2025,3,3,
+01/10/2025 09:26:30,Santana do Ipanema,Informática Básica,05/05/2025,11/07/2025,4,3,
+01/10/2025 09:26:30,Santana do Ipanema,JavaScript,05/05/2025,11/07/2025,8,4,
+01/10/2025 09:26:30,Penedo,Google Planilhas,10/07/2025,11/07/2025,8,5,
+01/10/2025 09:26:30,Santana do Ipanema,Informática Básica,10/07/2025,11/07/2025,15,5,
+01/10/2025 09:26:30,Santana do Ipanema,JavaScript,05/05/2025,11/07/2025,15,5,
+01/10/2025 09:26:30,Santana do Ipanema,Power BI,05/05/2025,11/07/2025,5,5,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Design Web (UX/UI),05/05/2025,11/07/2025,20,6,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Spring Boot,12/05/2025,11/07/2025,11,6,
+01/10/2025 09:26:30,Santana do Ipanema,Informática Básica,05/05/2025,11/07/2025,15,6,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Fundamentos de HTML e CSS,09/05/2025,11/07/2025,20,7,
+01/10/2025 09:26:30,Batalha,Excel Intermediário,12/05/2025,11/07/2025,8,8,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Automação Google Sheets,06/05/2025,11/07/2025,25,9,
+01/10/2025 09:26:30,São Miguel dos Campos,Arduino Básico,28/05/2025,11/07/2025,15,9,
+01/10/2025 09:26:30,Batalha,Workshop Gestão de Mídias Sociais,12/05/2025,11/07/2025,14,10,
+01/10/2025 09:26:30,Maceió - Benedito Bentes,Python Avançado,08/05/2025,11/07/2025,15,10,
+01/10/2025 09:26:30,São Miguel dos Campos,Workshop Robótica Arduino,27/05/2025,11/07/2025,15,10,
+09/07/2025 10:46:00,São Miguel dos Campos,Informática Básica,27/05/2025,12/07/2025,15,12,
+01/10/2025 09:26:30,São Miguel dos Campos,Workshop Power BI,27/05/2025,12/07/2025,15,12,
+09/07/2025 10:46:00,Delmiro Gouveia,Python Avançado (DRF),12/05/2025,15/07/2025,15,8,47%
+09/07/2025 10:46:00,Delmiro Gouveia,Lógica de Programação,12/05/2025,15/07/2025,15,10,33%
+01/10/2025 09:26:30,Arapiraca,Workshop Introdução à Programação,14/07/2025,15/07/2025,6,1,
+01/10/2025 09:26:30,Arapiraca,Workshop Segurança da Informação,14/07/2025,15/07/2025,7,1,
+01/10/2025 09:26:30,Maceió - Benedito Bentes,Python,14/07/2025,15/07/2025,15,5,
+01/10/2025 09:26:30,Delmiro Gouveia,Workshop Introdução ao JavaScript,12/05/2025,15/07/2025,15,8,
+01/10/2025 09:26:30,Delmiro Gouveia,Workshop Introdução ao Python,12/05/2025,15/07/2025,15,10,
+09/07/2025 10:46:00,Delmiro Gouveia,Lógica de Programação,14/05/2025,17/07/2025,5,1,
+09/07/2025 10:46:00,Pão de Açucar,Informática Básica,05/06/2025,17/07/2025,15,5,
+09/07/2025 10:46:00,Delmiro Gouveia,Python,19/05/2025,17/07/2025,15,11,
+01/10/2025 09:26:30,São Miguel dos Campos,Curso de Canva,16/07/2025,17/07/2025,4,3,
+01/10/2025 09:26:30,Delmiro Gouveia,Workshop React Native,14/05/2025,17/07/2025,5,1,
+01/10/2025 09:26:30,Delmiro Gouveia,Workshop Arduino,19/05/2025,17/07/2025,15,11,
+01/10/2025 09:26:30,Pão de Açucar,Lógica de Programação,05/06/2025,17/07/2025,15,15,
+01/10/2025 09:26:30,São Miguel dos Campos,Workshop Introdução à Programação,16/07/2025,17/07/2025,15,15,
+01/10/2025 09:26:30,São Miguel dos Campos,Java,16/07/2025,17/07/2025,15,15,
+09/07/2025 10:46:00,Delmiro Gouveia,Informática Básica,16/05/2025,18/07/2025,7,3,
+09/07/2025 10:46:00,Delmiro Gouveia,Informática Básica,16/05/2025,18/07/2025,11,6,
+01/10/2025 09:26:30,Arapiraca,Informática Básica,17/07/2025,18/07/2025,2,1,
+01/10/2025 09:26:30,Maceió - Benedito Bentes,Fundamentos de HTML e CSS,17/07/2025,18/07/2025,2,2,
+01/10/2025 09:26:30,Maceió - Benedito Bentes,Lógica de Programação,17/07/2025,18/07/2025,2,2,
+01/10/2025 09:26:30,Delmiro Gouveia,Python,16/05/2025,18/07/2025,7,3,
+01/10/2025 09:26:30,Batalha,Canva,14/07/2025,18/07/2025,5,4,
+01/10/2025 09:26:30,Batalha,Informática Básica,14/07/2025,18/07/2025,5,4,
+01/10/2025 09:26:30,Delmiro Gouveia,Informática Básica,16/05/2025,18/07/2025,11,6,
+01/10/2025 09:26:30,Batalha,Excel Intermediário,14/07/2025,18/07/2025,9,6,
+01/10/2025 09:26:30,Batalha,Informática Básica,14/07/2025,18/07/2025,9,6,
+01/10/2025 09:26:30,Batalha,Informática Básica,14/07/2025,18/07/2025,9,6,
+01/10/2025 09:26:30,São Miguel dos Campos,Informática Básica,17/07/2025,18/07/2025,15,15,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Lógica de Programação,11/07/2025,18/07/2025,20,20,
+01/10/2025 09:26:30,São Miguel dos Campos,Power BI,18/07/2025,19/07/2025,15,11,
+01/10/2025 09:26:30,Maceió - Benedito Bentes,Introdução ao Desenvolvimento Backend com Go,18/07/2025,19/07/2025,12,6,
+01/10/2025 09:26:30,São Miguel dos Campos,Java,22/07/2025,23/07/2025,1,1,
+01/10/2025 09:26:30,São Miguel dos Campos,Excel Intermediário,22/07/2025,23/07/2025,1,1,
+01/10/2025 09:26:30,São Miguel dos Campos,Redes e Infraestrutura,22/07/2025,23/07/2025,1,1,
+09/07/2025 10:46:00,Maceió - Centro de Inovação,Python,02/05/2025,25/07/2025,1,1,0%
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Metodologia Ágil,02/05/2025,25/07/2025,1,1,
+01/10/2025 09:26:30,Delmiro Gouveia,Informática Básica,28/07/2025,29/07/2025,8,3,
+01/10/2025 09:26:30,Delmiro Gouveia,JavaScript,29/07/2025,30/07/2025,3,2,
+01/10/2025 09:26:30,Maceió - Benedito Bentes,Python Avançado (DRF),29/07/2025,30/07/2025,3,3,
+01/10/2025 09:26:30,Delmiro Gouveia,React Native,30/07/2025,31/07/2025,5,3,
+01/10/2025 09:26:30,Delmiro Gouveia,Arduino Básico,31/07/2025,01/08/2025,5,3,
+01/10/2025 09:26:30,Delmiro Gouveia,Informática Básica,01/08/2025,02/08/2025,3,2,
+01/10/2025 09:26:30,Arapiraca,Python,13/08/2025,14/08/2025,1,1,
+01/10/2025 09:26:30,Arapiraca,Lógica de Programação,13/08/2025,14/08/2025,1,1,
+01/10/2025 09:26:30,Arapiraca,Lógica de Programação,14/08/2025,15/08/2025,1,1,
+01/10/2025 09:26:30,Arapiraca,Redes e Infraestrutura,13/08/2025,15/08/2025,1,1,
+01/10/2025 09:26:30,Penedo,Workshop Power BI,14/08/2025,18/08/2025,20,14,
+01/10/2025 09:26:30,Arapiraca,Redes e Infraestrutura,20/08/2025,27/08/2025,1,1,
+01/10/2025 09:26:30,Batalha,Workshop Redes de Computadores,28/07/2025,27/08/2025,15,7,
+01/10/2025 09:26:30,Batalha,Workshop Segurança da Informação,28/07/2025,27/08/2025,12,8,
+01/10/2025 09:26:30,Batalha,Workshop Lógica de Programação,28/07/2025,27/08/2025,15,8,
+01/10/2025 09:26:30,Batalha,C,29/07/2025,28/08/2025,14,11,
+01/10/2025 09:26:30,Batalha,Workshop Fundamentos de IA,29/07/2025,28/08/2025,15,12,
+01/10/2025 09:26:30,Batalha,Workshop Gestão de Mídias Sociais,29/07/2025,28/08/2025,15,12,
+01/10/2025 09:26:30,Arapiraca,Informática Básica,29/07/2025,09/09/2025,3,2,
+01/10/2025 09:26:30,Penedo,Workshop Fundamentos de IA,04/08/2025,09/09/2025,14,10,
+01/10/2025 09:26:30,Penedo,Informática Básica,02/08/2025,09/09/2025,15,12,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Lógica de Programação,28/07/2025,10/09/2025,11,6,
+01/10/2025 09:26:30,Arapiraca,Workshop Lógica de Programação,28/07/2025,10/09/2025,12,7,
+01/10/2025 09:26:30,Penedo,Informática Básica,07/08/2025,10/09/2025,15,11,
+01/10/2025 09:26:30,Arapiraca,Workshop Redes de Computadores,31/07/2025,11/09/2025,3,1,
+01/10/2025 09:26:30,Arapiraca,Workshop Canva,29/07/2025,11/09/2025,10,4,
+01/10/2025 09:26:30,Penedo,Lógica de Programação,04/08/2025,11/09/2025,12,5,
+01/10/2025 09:26:30,Arapiraca,Workshop Fundamentos de IA,01/08/2025,12/09/2025,4,2,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Informática Básica,30/07/2025,12/09/2025,12,6,
+01/10/2025 09:26:30,Penedo,Lógica de Programação,18/08/2025,12/09/2025,15,11,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Python,29/07/2025,16/09/2025,20,10,
+01/10/2025 09:26:30,Maceió - Benedito Bentes,Workshop Docker,21/07/2025,17/09/2025,14,10,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,JavaScript,15/07/2025,18/09/2025,20,10,
+01/10/2025 09:26:30,Murici,Workshop HTML e CSS,28/07/2025,19/09/2025,15,11,
+01/10/2025 09:26:30,Murici,Desenvolvimento Front-End com HTML e CSS,28/07/2025,19/09/2025,2,1,
+01/10/2025 09:26:30,Santana do Ipanema,Workshop Java,28/07/2025,19/09/2025,5,2,
+01/10/2025 09:26:30,Santana do Ipanema,Workshop Criação de Imagens,28/07/2025,19/09/2025,12,7,
+01/10/2025 09:26:30,Santana do Ipanema,Excel Avançado,06/08/2025,19/09/2025,15,8,
+01/10/2025 09:26:30,Santana do Ipanema,Workshop Inteligência Artificial,06/08/2025,19/09/2025,15,10,
+01/10/2025 09:26:30,Murici,Google Planilhas,28/07/2025,19/09/2025,11,11,
+01/10/2025 09:26:30,Santana do Ipanema,Python,06/08/2025,19/09/2025,15,13,
+01/10/2025 09:26:30,Murici,Lógica de Programação,21/07/2025,19/09/2025,15,15,
+01/10/2025 09:26:30,São Miguel dos Campos,Informática Básica,24/09/2025,25/09/2025,1,1,
+01/10/2025 09:26:30,São Miguel dos Campos,Redes e Infraestrutura,07/09/2025,26/09/2025,15,4,
+01/10/2025 09:26:30,Traipu,Redes e Infraestrutura,28/07/2025,26/09/2025,7,6,
+01/10/2025 09:26:30,Traipu,Informática Básica,28/07/2025,26/09/2025,15,9,
+01/10/2025 09:26:30,Traipu,Informática Básica,28/07/2025,26/09/2025,15,13,
+01/10/2025 09:26:30,São Miguel dos Campos,Curso de Power B.I.,07/09/2025,26/09/2025,15,14,
+01/10/2025 09:26:30,São Miguel dos Campos,Informática Básica,07/09/2025,26/09/2025,15,15,
+01/10/2025 09:26:30,Batalha,Análise de Dados com Python,27/09/2025,29/09/2025,6,4,
+01/10/2025 09:26:30,Batalha,Workshop Inteligência Artificial,27/09/2025,29/09/2025,5,4,
+01/10/2025 09:26:30,Batalha,Workshop C++,27/09/2025,29/09/2025,7,5,
+01/10/2025 09:26:30,Batalha,JavaScript,27/09/2025,29/09/2025,7,1,
+01/10/2025 09:26:30,São Miguel dos Campos,Curso de Excel - Básico ao intermediário,07/09/2025,29/09/2025,15,8,
+01/10/2025 09:26:30,São Miguel dos Campos,Curso de Java Básico,04/09/2025,29/09/2025,13,11,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Desenvolvimento Front-End com HTML e CSS,01/08/2025,03/10/2025,20,8,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Desenvolvimento Front-End com HTML e CSS,01/08/2025,03/10/2025,20,11,
+01/10/2025 09:26:30,Delmiro Gouveia,Lógica de Programação com Python,04/08/2025,07/10/2025,15,5,
+01/10/2025 09:26:30,Delmiro Gouveia,Informática Básica,04/08/2025,07/10/2025,15,9,
+01/10/2025 09:26:30,Delmiro Gouveia,Lógica de Programação,06/08/2025,09/10/2025,7,5,
+01/10/2025 09:26:30,Delmiro Gouveia,Lógica de Programação com Python,06/08/2025,09/10/2025,15,8,
+01/10/2025 09:26:30,Delmiro Gouveia,Informática Básica,08/08/2025,10/10/2025,6,1,
+01/10/2025 09:26:30,Delmiro Gouveia,Workshop Git e GitHub,08/08/2025,10/10/2025,7,2,
+01/10/2025 09:26:30,Batalha,Workshop Desenvolvimento Web,29/09/2025,29/10/2025,9,6,
+01/10/2025 09:26:30,Penedo,JavaScript,29/09/2025,31/10/2025,26,26,
+01/10/2025 09:26:30,Maceió - Centro de Inovação,Workshop Fundamentos de IA,30/09/2025,20/11/2025,10,8,

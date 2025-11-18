@@ -1,0 +1,1716 @@
+2025-11-17 12:45:13.003 [error] Error getting repo info: Failed to execute git
+2025-11-17 12:45:13.003 [error] Error: Failed to execute git
+	at t.Git._exec (/home/oxetech_mcz/.cursor-server/bin/ba90f2f88e4911312761abab9492c42442117cf0/extensions/git/dist/main.js:2:34772)
+	at async t.Git.exec (/home/oxetech_mcz/.cursor-server/bin/ba90f2f88e4911312761abab9492c42442117cf0/extensions/git/dist/main.js:2:33895)
+	at async t.GitProvider.executeGitCommandStable (/home/oxetech_mcz/.cursor-server/bin/ba90f2f88e4911312761abab9492c42442117cf0/extensions/cursor-retrieval/dist/main.js:2:1338976)
+	at async t.GitProvider.getRepoInfo (/home/oxetech_mcz/.cursor-server/bin/ba90f2f88e4911312761abab9492c42442117cf0/extensions/cursor-retrieval/dist/main.js:2:1314928)
+2025-11-17 12:45:13.003 [info] Creating Indexing Repo client:  https://repo42.cursor.sh
+2025-11-17 12:45:13.003 [info] Creating repo client with backend url: https://repo42.cursor.sh
+2025-11-17 12:45:13.250 [info] Using existing keys for an index
+2025-11-17 12:45:13.250 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-11-17 12:45:13.365 [info] Using existing keys for an index
+2025-11-17 12:45:13.366 [info] InternalRepoInfo constructor with preferredEmbeddingModel 0
+2025-11-17 12:45:13.445 [info] Starting RepoIndexWatcher for repo: d96a8838-9a75-46a8-83b3-18ef30dc7fe6, owner: google-oauth2|user_01K9SXRH0RSFZVG5NZ3ZXPT92F
+2025-11-17 12:45:13.445 [error] We currently do not allow indexing the home directory.
+2025-11-17 12:45:13.445 [info] Indexing job successfully done or aborted.
+2025-11-17 12:49:50.446 [info] multiCodebaseIndexingJob dispose
+2025-11-17 12:49:50.447 [info] Aborting indexing job.
+2025-11-17 12:49:50.447 [error] We currently do not allow indexing the home directory.
+2025-11-17 12:49:50.447 [info] Indexing job successfully done or aborted.
+2025-11-17 12:54:27.446 [info] multiCodebaseIndexingJob dispose
+2025-11-17 12:54:27.446 [info] Aborting indexing job.
+2025-11-17 12:54:27.446 [error] We currently do not allow indexing the home directory.
+2025-11-17 12:54:27.446 [info] Indexing job successfully done or aborted.
+2025-11-17 12:54:46.425 [error] Error getting user commits: Failed to execute git
+2025-11-17 12:59:04.446 [info] multiCodebaseIndexingJob dispose
+2025-11-17 12:59:04.446 [info] Aborting indexing job.
+2025-11-17 12:59:04.446 [error] We currently do not allow indexing the home directory.
+2025-11-17 12:59:04.446 [info] Indexing job successfully done or aborted.
+2025-11-17 13:03:41.446 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:03:41.446 [info] Aborting indexing job.
+2025-11-17 13:03:41.447 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:03:41.447 [info] Indexing job successfully done or aborted.
+2025-11-17 13:04:46.478 [error] Error getting user commits: Failed to execute git
+2025-11-17 13:08:18.447 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:08:18.447 [info] Aborting indexing job.
+2025-11-17 13:08:18.447 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:08:18.447 [info] Indexing job successfully done or aborted.
+2025-11-17 13:12:55.446 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:12:55.446 [info] Aborting indexing job.
+2025-11-17 13:12:55.446 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:12:55.446 [info] Indexing job successfully done or aborted.
+2025-11-17 13:14:46.420 [error] Error getting user commits: Failed to execute git
+2025-11-17 13:17:32.449 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:17:32.449 [info] Aborting indexing job.
+2025-11-17 13:17:32.449 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:17:32.450 [info] Indexing job successfully done or aborted.
+2025-11-17 13:22:09.448 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:22:09.488 [info] Aborting indexing job.
+2025-11-17 13:22:09.488 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:22:09.488 [info] Indexing job successfully done or aborted.
+2025-11-17 13:24:46.415 [error] Error getting user commits: Failed to execute git
+2025-11-17 13:26:46.449 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:26:46.449 [info] Aborting indexing job.
+2025-11-17 13:26:46.449 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:26:46.450 [info] Indexing job successfully done or aborted.
+2025-11-17 13:31:23.450 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:31:23.450 [info] Aborting indexing job.
+2025-11-17 13:31:23.451 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:31:23.451 [info] Indexing job successfully done or aborted.
+2025-11-17 13:34:46.469 [error] Error getting user commits: Failed to execute git
+2025-11-17 13:36:00.451 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:36:00.451 [info] Aborting indexing job.
+2025-11-17 13:36:00.451 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:36:00.451 [info] Indexing job successfully done or aborted.
+2025-11-17 13:40:37.451 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:40:37.452 [info] Aborting indexing job.
+2025-11-17 13:40:37.452 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:40:37.452 [info] Indexing job successfully done or aborted.
+2025-11-17 13:44:46.468 [error] Error getting user commits: Failed to execute git
+2025-11-17 13:45:14.452 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:45:14.452 [info] Aborting indexing job.
+2025-11-17 13:45:14.452 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:45:14.452 [info] Indexing job successfully done or aborted.
+2025-11-17 13:49:51.452 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:49:51.452 [info] Aborting indexing job.
+2025-11-17 13:49:51.452 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:49:51.452 [info] Indexing job successfully done or aborted.
+2025-11-17 13:54:28.452 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:54:28.452 [info] Aborting indexing job.
+2025-11-17 13:54:28.452 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:54:28.453 [info] Indexing job successfully done or aborted.
+2025-11-17 13:54:46.418 [error] Error getting user commits: Failed to execute git
+2025-11-17 13:59:05.453 [info] multiCodebaseIndexingJob dispose
+2025-11-17 13:59:05.454 [info] Aborting indexing job.
+2025-11-17 13:59:05.454 [error] We currently do not allow indexing the home directory.
+2025-11-17 13:59:05.454 [info] Indexing job successfully done or aborted.
+2025-11-17 14:03:42.454 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:03:42.454 [info] Aborting indexing job.
+2025-11-17 14:03:42.454 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:03:42.454 [info] Indexing job successfully done or aborted.
+2025-11-17 14:04:46.418 [error] Error getting user commits: Failed to execute git
+2025-11-17 14:08:19.453 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:08:19.453 [info] Aborting indexing job.
+2025-11-17 14:08:19.453 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:08:19.453 [info] Indexing job successfully done or aborted.
+2025-11-17 14:12:56.454 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:12:56.454 [info] Aborting indexing job.
+2025-11-17 14:12:56.454 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:12:56.454 [info] Indexing job successfully done or aborted.
+2025-11-17 14:14:46.440 [error] Error getting user commits: Failed to execute git
+2025-11-17 14:17:33.455 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:17:33.455 [info] Aborting indexing job.
+2025-11-17 14:17:33.455 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:17:33.455 [info] Indexing job successfully done or aborted.
+2025-11-17 14:22:10.455 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:22:10.455 [info] Aborting indexing job.
+2025-11-17 14:22:10.455 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:22:10.456 [info] Indexing job successfully done or aborted.
+2025-11-17 14:24:46.423 [error] Error getting user commits: Failed to execute git
+2025-11-17 14:26:47.461 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:26:47.461 [info] Aborting indexing job.
+2025-11-17 14:26:47.461 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:26:47.461 [info] Indexing job successfully done or aborted.
+2025-11-17 14:31:24.461 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:31:24.461 [info] Aborting indexing job.
+2025-11-17 14:31:24.461 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:31:24.461 [info] Indexing job successfully done or aborted.
+2025-11-17 14:34:46.402 [error] Error getting user commits: Failed to execute git
+2025-11-17 14:36:01.461 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:36:01.461 [info] Aborting indexing job.
+2025-11-17 14:36:01.461 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:36:01.461 [info] Indexing job successfully done or aborted.
+2025-11-17 14:40:38.462 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:40:38.462 [info] Aborting indexing job.
+2025-11-17 14:40:38.462 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:40:38.462 [info] Indexing job successfully done or aborted.
+2025-11-17 14:44:46.397 [error] Error getting user commits: Failed to execute git
+2025-11-17 14:45:15.462 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:45:15.462 [info] Aborting indexing job.
+2025-11-17 14:45:15.462 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:45:15.463 [info] Indexing job successfully done or aborted.
+2025-11-17 14:49:52.463 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:49:52.463 [info] Aborting indexing job.
+2025-11-17 14:49:52.463 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:49:52.463 [info] Indexing job successfully done or aborted.
+2025-11-17 14:54:29.463 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:54:29.463 [info] Aborting indexing job.
+2025-11-17 14:54:29.463 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:54:29.463 [info] Indexing job successfully done or aborted.
+2025-11-17 14:54:46.625 [error] Error getting user commits: Failed to execute git
+2025-11-17 14:59:06.463 [info] multiCodebaseIndexingJob dispose
+2025-11-17 14:59:06.505 [info] Aborting indexing job.
+2025-11-17 14:59:06.505 [error] We currently do not allow indexing the home directory.
+2025-11-17 14:59:06.505 [info] Indexing job successfully done or aborted.
+2025-11-17 15:03:43.463 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:03:43.463 [info] Aborting indexing job.
+2025-11-17 15:03:43.463 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:03:43.463 [info] Indexing job successfully done or aborted.
+2025-11-17 15:04:46.417 [error] Error getting user commits: Failed to execute git
+2025-11-17 15:08:20.463 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:08:20.463 [info] Aborting indexing job.
+2025-11-17 15:08:20.463 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:08:20.463 [info] Indexing job successfully done or aborted.
+2025-11-17 15:12:57.463 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:12:57.463 [info] Aborting indexing job.
+2025-11-17 15:12:57.463 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:12:57.463 [info] Indexing job successfully done or aborted.
+2025-11-17 15:14:46.389 [error] Error getting user commits: Failed to execute git
+2025-11-17 15:17:34.463 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:17:34.463 [info] Aborting indexing job.
+2025-11-17 15:17:34.463 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:17:34.464 [info] Indexing job successfully done or aborted.
+2025-11-17 15:22:11.464 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:22:11.465 [info] Aborting indexing job.
+2025-11-17 15:22:11.465 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:22:11.465 [info] Indexing job successfully done or aborted.
+2025-11-17 15:24:46.424 [error] Error getting user commits: Failed to execute git
+2025-11-17 15:26:48.464 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:26:48.464 [info] Aborting indexing job.
+2025-11-17 15:26:48.464 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:26:48.464 [info] Indexing job successfully done or aborted.
+2025-11-17 15:31:25.464 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:31:25.464 [info] Aborting indexing job.
+2025-11-17 15:31:25.464 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:31:25.464 [info] Indexing job successfully done or aborted.
+2025-11-17 15:36:02.465 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:36:02.465 [info] Aborting indexing job.
+2025-11-17 15:36:02.465 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:36:02.465 [info] Indexing job successfully done or aborted.
+2025-11-17 15:36:20.150 [error] Error getting user commits: Failed to execute git
+2025-11-17 15:40:39.465 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:40:39.465 [info] Aborting indexing job.
+2025-11-17 15:40:39.465 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:40:39.465 [info] Indexing job successfully done or aborted.
+2025-11-17 15:45:16.465 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:45:16.465 [info] Aborting indexing job.
+2025-11-17 15:45:16.465 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:45:16.465 [info] Indexing job successfully done or aborted.
+2025-11-17 15:46:20.114 [error] Error getting user commits: Failed to execute git
+2025-11-17 15:49:53.466 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:49:53.466 [info] Aborting indexing job.
+2025-11-17 15:49:53.466 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:49:53.466 [info] Indexing job successfully done or aborted.
+2025-11-17 15:54:30.467 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:54:30.467 [info] Aborting indexing job.
+2025-11-17 15:54:30.467 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:54:30.467 [info] Indexing job successfully done or aborted.
+2025-11-17 15:56:20.112 [error] Error getting user commits: Failed to execute git
+2025-11-17 15:59:07.468 [info] multiCodebaseIndexingJob dispose
+2025-11-17 15:59:07.468 [info] Aborting indexing job.
+2025-11-17 15:59:07.468 [error] We currently do not allow indexing the home directory.
+2025-11-17 15:59:07.468 [info] Indexing job successfully done or aborted.
+2025-11-17 16:03:44.469 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:03:44.469 [info] Aborting indexing job.
+2025-11-17 16:03:44.469 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:03:44.469 [info] Indexing job successfully done or aborted.
+2025-11-17 16:06:20.110 [error] Error getting user commits: Failed to execute git
+2025-11-17 16:08:21.470 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:08:21.470 [info] Aborting indexing job.
+2025-11-17 16:08:21.470 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:08:21.470 [info] Indexing job successfully done or aborted.
+2025-11-17 16:12:58.470 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:12:58.470 [info] Aborting indexing job.
+2025-11-17 16:12:58.470 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:12:58.470 [info] Indexing job successfully done or aborted.
+2025-11-17 16:16:20.124 [error] Error getting user commits: Failed to execute git
+2025-11-17 16:17:35.470 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:17:35.470 [info] Aborting indexing job.
+2025-11-17 16:17:35.470 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:17:35.470 [info] Indexing job successfully done or aborted.
+2025-11-17 16:22:12.471 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:22:12.471 [info] Aborting indexing job.
+2025-11-17 16:22:12.471 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:22:12.471 [info] Indexing job successfully done or aborted.
+2025-11-17 16:26:20.087 [error] Error getting user commits: Failed to execute git
+2025-11-17 16:26:49.471 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:26:49.471 [info] Aborting indexing job.
+2025-11-17 16:26:49.471 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:26:49.471 [info] Indexing job successfully done or aborted.
+2025-11-17 16:31:26.472 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:31:26.472 [info] Aborting indexing job.
+2025-11-17 16:31:26.472 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:31:26.472 [info] Indexing job successfully done or aborted.
+2025-11-17 16:36:03.472 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:36:03.472 [info] Aborting indexing job.
+2025-11-17 16:36:03.472 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:36:03.472 [info] Indexing job successfully done or aborted.
+2025-11-17 16:36:20.094 [error] Error getting user commits: Failed to execute git
+2025-11-17 16:40:40.472 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:40:40.472 [info] Aborting indexing job.
+2025-11-17 16:40:40.472 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:40:40.472 [info] Indexing job successfully done or aborted.
+2025-11-17 16:45:17.473 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:45:17.473 [info] Aborting indexing job.
+2025-11-17 16:45:17.473 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:45:17.473 [info] Indexing job successfully done or aborted.
+2025-11-17 16:46:20.095 [error] Error getting user commits: Failed to execute git
+2025-11-17 16:49:54.473 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:49:54.473 [info] Aborting indexing job.
+2025-11-17 16:49:54.473 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:49:54.473 [info] Indexing job successfully done or aborted.
+2025-11-17 16:54:31.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:54:31.474 [info] Aborting indexing job.
+2025-11-17 16:54:31.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:54:31.474 [info] Indexing job successfully done or aborted.
+2025-11-17 16:56:20.109 [error] Error getting user commits: Failed to execute git
+2025-11-17 16:59:08.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 16:59:08.474 [info] Aborting indexing job.
+2025-11-17 16:59:08.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 16:59:08.474 [info] Indexing job successfully done or aborted.
+2025-11-17 17:03:45.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:03:45.474 [info] Aborting indexing job.
+2025-11-17 17:03:45.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:03:45.474 [info] Indexing job successfully done or aborted.
+2025-11-17 17:06:20.104 [error] Error getting user commits: Failed to execute git
+2025-11-17 17:08:22.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:08:22.474 [info] Aborting indexing job.
+2025-11-17 17:08:22.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:08:22.474 [info] Indexing job successfully done or aborted.
+2025-11-17 17:12:59.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:12:59.474 [info] Aborting indexing job.
+2025-11-17 17:12:59.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:12:59.474 [info] Indexing job successfully done or aborted.
+2025-11-17 17:16:20.089 [error] Error getting user commits: Failed to execute git
+2025-11-17 17:17:36.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:17:36.474 [info] Aborting indexing job.
+2025-11-17 17:17:36.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:17:36.475 [info] Indexing job successfully done or aborted.
+2025-11-17 17:22:13.473 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:22:13.473 [info] Aborting indexing job.
+2025-11-17 17:22:13.473 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:22:13.473 [info] Indexing job successfully done or aborted.
+2025-11-17 17:26:20.084 [error] Error getting user commits: Failed to execute git
+2025-11-17 17:26:50.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:26:50.474 [info] Aborting indexing job.
+2025-11-17 17:26:50.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:26:50.474 [info] Indexing job successfully done or aborted.
+2025-11-17 17:31:27.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:31:27.474 [info] Aborting indexing job.
+2025-11-17 17:31:27.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:31:27.474 [info] Indexing job successfully done or aborted.
+2025-11-17 17:36:04.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:36:04.474 [info] Aborting indexing job.
+2025-11-17 17:36:04.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:36:04.474 [info] Indexing job successfully done or aborted.
+2025-11-17 17:36:20.090 [error] Error getting user commits: Failed to execute git
+2025-11-17 17:40:41.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:40:41.474 [info] Aborting indexing job.
+2025-11-17 17:40:41.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:40:41.474 [info] Indexing job successfully done or aborted.
+2025-11-17 17:45:18.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:45:18.474 [info] Aborting indexing job.
+2025-11-17 17:45:18.474 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:45:18.474 [info] Indexing job successfully done or aborted.
+2025-11-17 17:46:20.123 [error] Error getting user commits: Failed to execute git
+2025-11-17 17:49:55.475 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:49:55.476 [info] Aborting indexing job.
+2025-11-17 17:49:55.476 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:49:55.476 [info] Indexing job successfully done or aborted.
+2025-11-17 17:54:32.474 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:54:32.475 [info] Aborting indexing job.
+2025-11-17 17:54:32.475 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:54:32.475 [info] Indexing job successfully done or aborted.
+2025-11-17 17:56:20.108 [error] Error getting user commits: Failed to execute git
+2025-11-17 17:59:09.475 [info] multiCodebaseIndexingJob dispose
+2025-11-17 17:59:09.475 [info] Aborting indexing job.
+2025-11-17 17:59:09.475 [error] We currently do not allow indexing the home directory.
+2025-11-17 17:59:09.475 [info] Indexing job successfully done or aborted.
+2025-11-17 18:03:46.475 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:03:46.475 [info] Aborting indexing job.
+2025-11-17 18:03:46.475 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:03:46.475 [info] Indexing job successfully done or aborted.
+2025-11-17 18:06:20.069 [error] Error getting user commits: Failed to execute git
+2025-11-17 18:08:23.475 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:08:23.475 [info] Aborting indexing job.
+2025-11-17 18:08:23.475 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:08:23.475 [info] Indexing job successfully done or aborted.
+2025-11-17 18:13:00.476 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:13:00.476 [info] Aborting indexing job.
+2025-11-17 18:13:00.476 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:13:00.476 [info] Indexing job successfully done or aborted.
+2025-11-17 18:16:20.062 [error] Error getting user commits: Failed to execute git
+2025-11-17 18:17:37.477 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:17:37.477 [info] Aborting indexing job.
+2025-11-17 18:17:37.477 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:17:37.477 [info] Indexing job successfully done or aborted.
+2025-11-17 18:22:14.477 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:22:14.478 [info] Aborting indexing job.
+2025-11-17 18:22:14.478 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:22:14.478 [info] Indexing job successfully done or aborted.
+2025-11-17 18:26:20.065 [error] Error getting user commits: Failed to execute git
+2025-11-17 18:26:51.479 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:26:51.479 [info] Aborting indexing job.
+2025-11-17 18:26:51.479 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:26:51.479 [info] Indexing job successfully done or aborted.
+2025-11-17 18:31:28.479 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:31:28.479 [info] Aborting indexing job.
+2025-11-17 18:31:28.479 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:31:28.479 [info] Indexing job successfully done or aborted.
+2025-11-17 18:36:05.479 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:36:05.479 [info] Aborting indexing job.
+2025-11-17 18:36:05.479 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:36:05.479 [info] Indexing job successfully done or aborted.
+2025-11-17 18:36:20.064 [error] Error getting user commits: Failed to execute git
+2025-11-17 18:40:42.479 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:40:42.480 [info] Aborting indexing job.
+2025-11-17 18:40:42.480 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:40:42.480 [info] Indexing job successfully done or aborted.
+2025-11-17 18:45:19.480 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:45:19.480 [info] Aborting indexing job.
+2025-11-17 18:45:19.480 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:45:19.480 [info] Indexing job successfully done or aborted.
+2025-11-17 18:46:20.067 [error] Error getting user commits: Failed to execute git
+2025-11-17 18:49:56.482 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:49:56.482 [info] Aborting indexing job.
+2025-11-17 18:49:56.482 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:49:56.482 [info] Indexing job successfully done or aborted.
+2025-11-17 18:54:33.482 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:54:33.482 [info] Aborting indexing job.
+2025-11-17 18:54:33.482 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:54:33.482 [info] Indexing job successfully done or aborted.
+2025-11-17 18:56:20.078 [error] Error getting user commits: Failed to execute git
+2025-11-17 18:59:10.483 [info] multiCodebaseIndexingJob dispose
+2025-11-17 18:59:10.483 [info] Aborting indexing job.
+2025-11-17 18:59:10.483 [error] We currently do not allow indexing the home directory.
+2025-11-17 18:59:10.483 [info] Indexing job successfully done or aborted.
+2025-11-17 19:03:47.484 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:03:47.484 [info] Aborting indexing job.
+2025-11-17 19:03:47.484 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:03:47.484 [info] Indexing job successfully done or aborted.
+2025-11-17 19:06:20.066 [error] Error getting user commits: Failed to execute git
+2025-11-17 19:08:24.485 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:08:24.485 [info] Aborting indexing job.
+2025-11-17 19:08:24.485 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:08:24.485 [info] Indexing job successfully done or aborted.
+2025-11-17 19:13:01.485 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:13:01.485 [info] Aborting indexing job.
+2025-11-17 19:13:01.485 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:13:01.485 [info] Indexing job successfully done or aborted.
+2025-11-17 19:16:20.051 [error] Error getting user commits: Failed to execute git
+2025-11-17 19:17:38.485 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:17:38.485 [info] Aborting indexing job.
+2025-11-17 19:17:38.485 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:17:38.485 [info] Indexing job successfully done or aborted.
+2025-11-17 19:22:15.485 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:22:15.485 [info] Aborting indexing job.
+2025-11-17 19:22:15.485 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:22:15.485 [info] Indexing job successfully done or aborted.
+2025-11-17 19:26:20.040 [error] Error getting user commits: Failed to execute git
+2025-11-17 19:26:52.487 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:26:52.487 [info] Aborting indexing job.
+2025-11-17 19:26:52.487 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:26:52.487 [info] Indexing job successfully done or aborted.
+2025-11-17 19:31:29.487 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:31:29.487 [info] Aborting indexing job.
+2025-11-17 19:31:29.487 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:31:29.487 [info] Indexing job successfully done or aborted.
+2025-11-17 19:36:06.489 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:36:06.489 [info] Aborting indexing job.
+2025-11-17 19:36:06.489 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:36:06.489 [info] Indexing job successfully done or aborted.
+2025-11-17 19:36:20.052 [error] Error getting user commits: Failed to execute git
+2025-11-17 19:40:43.489 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:40:43.489 [info] Aborting indexing job.
+2025-11-17 19:40:43.489 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:40:43.489 [info] Indexing job successfully done or aborted.
+2025-11-17 19:45:20.490 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:45:20.490 [info] Aborting indexing job.
+2025-11-17 19:45:20.490 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:45:20.490 [info] Indexing job successfully done or aborted.
+2025-11-17 19:46:20.072 [error] Error getting user commits: Failed to execute git
+2025-11-17 19:49:57.491 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:49:57.491 [info] Aborting indexing job.
+2025-11-17 19:49:57.491 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:49:57.491 [info] Indexing job successfully done or aborted.
+2025-11-17 19:54:34.492 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:54:34.492 [info] Aborting indexing job.
+2025-11-17 19:54:34.492 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:54:34.492 [info] Indexing job successfully done or aborted.
+2025-11-17 19:56:20.030 [error] Error getting user commits: Failed to execute git
+2025-11-17 19:59:11.493 [info] multiCodebaseIndexingJob dispose
+2025-11-17 19:59:11.493 [info] Aborting indexing job.
+2025-11-17 19:59:11.493 [error] We currently do not allow indexing the home directory.
+2025-11-17 19:59:11.493 [info] Indexing job successfully done or aborted.
+2025-11-17 20:03:48.491 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:03:48.491 [info] Aborting indexing job.
+2025-11-17 20:03:48.491 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:03:48.491 [info] Indexing job successfully done or aborted.
+2025-11-17 20:06:20.057 [error] Error getting user commits: Failed to execute git
+2025-11-17 20:08:25.492 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:08:25.492 [info] Aborting indexing job.
+2025-11-17 20:08:25.492 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:08:25.492 [info] Indexing job successfully done or aborted.
+2025-11-17 20:13:02.492 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:13:02.492 [info] Aborting indexing job.
+2025-11-17 20:13:02.492 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:13:02.492 [info] Indexing job successfully done or aborted.
+2025-11-17 20:16:20.104 [error] Error getting user commits: Failed to execute git
+2025-11-17 20:17:39.492 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:17:39.492 [info] Aborting indexing job.
+2025-11-17 20:17:39.492 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:17:39.492 [info] Indexing job successfully done or aborted.
+2025-11-17 20:22:16.492 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:22:16.492 [info] Aborting indexing job.
+2025-11-17 20:22:16.492 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:22:16.492 [info] Indexing job successfully done or aborted.
+2025-11-17 20:26:20.029 [error] Error getting user commits: Failed to execute git
+2025-11-17 20:26:53.492 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:26:53.492 [info] Aborting indexing job.
+2025-11-17 20:26:53.492 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:26:53.492 [info] Indexing job successfully done or aborted.
+2025-11-17 20:31:30.492 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:31:30.492 [info] Aborting indexing job.
+2025-11-17 20:31:30.492 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:31:30.492 [info] Indexing job successfully done or aborted.
+2025-11-17 20:36:07.492 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:36:07.492 [info] Aborting indexing job.
+2025-11-17 20:36:07.492 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:36:07.492 [info] Indexing job successfully done or aborted.
+2025-11-17 20:36:20.027 [error] Error getting user commits: Failed to execute git
+2025-11-17 20:40:44.492 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:40:44.492 [info] Aborting indexing job.
+2025-11-17 20:40:44.492 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:40:44.492 [info] Indexing job successfully done or aborted.
+2025-11-17 20:45:21.492 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:45:21.492 [info] Aborting indexing job.
+2025-11-17 20:45:21.492 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:45:21.492 [info] Indexing job successfully done or aborted.
+2025-11-17 20:46:20.030 [error] Error getting user commits: Failed to execute git
+2025-11-17 20:49:58.493 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:49:58.493 [info] Aborting indexing job.
+2025-11-17 20:49:58.493 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:49:58.493 [info] Indexing job successfully done or aborted.
+2025-11-17 20:54:35.493 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:54:35.493 [info] Aborting indexing job.
+2025-11-17 20:54:35.493 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:54:35.493 [info] Indexing job successfully done or aborted.
+2025-11-17 20:56:20.027 [error] Error getting user commits: Failed to execute git
+2025-11-17 20:59:12.494 [info] multiCodebaseIndexingJob dispose
+2025-11-17 20:59:12.494 [info] Aborting indexing job.
+2025-11-17 20:59:12.494 [error] We currently do not allow indexing the home directory.
+2025-11-17 20:59:12.494 [info] Indexing job successfully done or aborted.
+2025-11-17 21:03:49.494 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:03:49.494 [info] Aborting indexing job.
+2025-11-17 21:03:49.494 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:03:49.494 [info] Indexing job successfully done or aborted.
+2025-11-17 21:06:20.004 [error] Error getting user commits: Failed to execute git
+2025-11-17 21:08:26.495 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:08:26.495 [info] Aborting indexing job.
+2025-11-17 21:08:26.495 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:08:26.495 [info] Indexing job successfully done or aborted.
+2025-11-17 21:13:03.496 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:13:03.496 [info] Aborting indexing job.
+2025-11-17 21:13:03.496 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:13:03.496 [info] Indexing job successfully done or aborted.
+2025-11-17 21:16:20.026 [error] Error getting user commits: Failed to execute git
+2025-11-17 21:17:40.496 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:17:40.496 [info] Aborting indexing job.
+2025-11-17 21:17:40.496 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:17:40.496 [info] Indexing job successfully done or aborted.
+2025-11-17 21:22:17.497 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:22:17.497 [info] Aborting indexing job.
+2025-11-17 21:22:17.497 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:22:17.497 [info] Indexing job successfully done or aborted.
+2025-11-17 21:26:20.003 [error] Error getting user commits: Failed to execute git
+2025-11-17 21:26:54.498 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:26:54.498 [info] Aborting indexing job.
+2025-11-17 21:26:54.498 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:26:54.498 [info] Indexing job successfully done or aborted.
+2025-11-17 21:31:31.498 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:31:31.498 [info] Aborting indexing job.
+2025-11-17 21:31:31.498 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:31:31.498 [info] Indexing job successfully done or aborted.
+2025-11-17 21:36:08.499 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:36:08.499 [info] Aborting indexing job.
+2025-11-17 21:36:08.499 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:36:08.499 [info] Indexing job successfully done or aborted.
+2025-11-17 21:36:20.020 [error] Error getting user commits: Failed to execute git
+2025-11-17 21:40:45.500 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:40:45.500 [info] Aborting indexing job.
+2025-11-17 21:40:45.500 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:40:45.500 [info] Indexing job successfully done or aborted.
+2025-11-17 21:45:22.499 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:45:22.499 [info] Aborting indexing job.
+2025-11-17 21:45:22.499 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:45:22.499 [info] Indexing job successfully done or aborted.
+2025-11-17 21:46:20.001 [error] Error getting user commits: Failed to execute git
+2025-11-17 21:49:59.500 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:49:59.500 [info] Aborting indexing job.
+2025-11-17 21:49:59.500 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:49:59.500 [info] Indexing job successfully done or aborted.
+2025-11-17 21:54:36.500 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:54:36.500 [info] Aborting indexing job.
+2025-11-17 21:54:36.500 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:54:36.500 [info] Indexing job successfully done or aborted.
+2025-11-17 21:56:20.009 [error] Error getting user commits: Failed to execute git
+2025-11-17 21:59:13.500 [info] multiCodebaseIndexingJob dispose
+2025-11-17 21:59:13.500 [info] Aborting indexing job.
+2025-11-17 21:59:13.500 [error] We currently do not allow indexing the home directory.
+2025-11-17 21:59:13.500 [info] Indexing job successfully done or aborted.
+2025-11-17 22:03:50.501 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:03:50.501 [info] Aborting indexing job.
+2025-11-17 22:03:50.501 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:03:50.501 [info] Indexing job successfully done or aborted.
+2025-11-17 22:06:19.998 [error] Error getting user commits: Failed to execute git
+2025-11-17 22:08:27.501 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:08:27.501 [info] Aborting indexing job.
+2025-11-17 22:08:27.501 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:08:27.501 [info] Indexing job successfully done or aborted.
+2025-11-17 22:13:04.502 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:13:04.502 [info] Aborting indexing job.
+2025-11-17 22:13:04.502 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:13:04.502 [info] Indexing job successfully done or aborted.
+2025-11-17 22:16:19.988 [error] Error getting user commits: Failed to execute git
+2025-11-17 22:17:41.502 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:17:41.503 [info] Aborting indexing job.
+2025-11-17 22:17:41.503 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:17:41.503 [info] Indexing job successfully done or aborted.
+2025-11-17 22:22:18.503 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:22:18.503 [info] Aborting indexing job.
+2025-11-17 22:22:18.503 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:22:18.503 [info] Indexing job successfully done or aborted.
+2025-11-17 22:26:19.989 [error] Error getting user commits: Failed to execute git
+2025-11-17 22:26:55.504 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:26:55.504 [info] Aborting indexing job.
+2025-11-17 22:26:55.504 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:26:55.504 [info] Indexing job successfully done or aborted.
+2025-11-17 22:31:32.504 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:31:32.504 [info] Aborting indexing job.
+2025-11-17 22:31:32.504 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:31:32.504 [info] Indexing job successfully done or aborted.
+2025-11-17 22:36:09.504 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:36:09.504 [info] Aborting indexing job.
+2025-11-17 22:36:09.504 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:36:09.504 [info] Indexing job successfully done or aborted.
+2025-11-17 22:36:19.985 [error] Error getting user commits: Failed to execute git
+2025-11-17 22:40:46.504 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:40:46.504 [info] Aborting indexing job.
+2025-11-17 22:40:46.504 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:40:46.504 [info] Indexing job successfully done or aborted.
+2025-11-17 22:45:23.504 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:45:23.504 [info] Aborting indexing job.
+2025-11-17 22:45:23.504 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:45:23.504 [info] Indexing job successfully done or aborted.
+2025-11-17 22:46:19.985 [error] Error getting user commits: Failed to execute git
+2025-11-17 22:50:00.506 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:50:00.506 [info] Aborting indexing job.
+2025-11-17 22:50:00.506 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:50:00.506 [info] Indexing job successfully done or aborted.
+2025-11-17 22:54:37.507 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:54:37.507 [info] Aborting indexing job.
+2025-11-17 22:54:37.507 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:54:37.507 [info] Indexing job successfully done or aborted.
+2025-11-17 22:56:19.981 [error] Error getting user commits: Failed to execute git
+2025-11-17 22:59:14.507 [info] multiCodebaseIndexingJob dispose
+2025-11-17 22:59:14.507 [info] Aborting indexing job.
+2025-11-17 22:59:14.507 [error] We currently do not allow indexing the home directory.
+2025-11-17 22:59:14.507 [info] Indexing job successfully done or aborted.
+2025-11-17 23:03:51.506 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:03:51.506 [info] Aborting indexing job.
+2025-11-17 23:03:51.507 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:03:51.507 [info] Indexing job successfully done or aborted.
+2025-11-17 23:06:19.983 [error] Error getting user commits: Failed to execute git
+2025-11-17 23:08:28.508 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:08:28.508 [info] Aborting indexing job.
+2025-11-17 23:08:28.508 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:08:28.508 [info] Indexing job successfully done or aborted.
+2025-11-17 23:13:05.508 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:13:05.508 [info] Aborting indexing job.
+2025-11-17 23:13:05.508 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:13:05.508 [info] Indexing job successfully done or aborted.
+2025-11-17 23:16:19.977 [error] Error getting user commits: Failed to execute git
+2025-11-17 23:17:42.508 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:17:42.509 [info] Aborting indexing job.
+2025-11-17 23:17:42.509 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:17:42.509 [info] Indexing job successfully done or aborted.
+2025-11-17 23:22:19.509 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:22:19.509 [info] Aborting indexing job.
+2025-11-17 23:22:19.509 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:22:19.509 [info] Indexing job successfully done or aborted.
+2025-11-17 23:26:19.961 [error] Error getting user commits: Failed to execute git
+2025-11-17 23:26:56.509 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:26:56.509 [info] Aborting indexing job.
+2025-11-17 23:26:56.509 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:26:56.509 [info] Indexing job successfully done or aborted.
+2025-11-17 23:31:33.510 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:31:33.511 [info] Aborting indexing job.
+2025-11-17 23:31:33.511 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:31:33.511 [info] Indexing job successfully done or aborted.
+2025-11-17 23:36:10.511 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:36:10.511 [info] Aborting indexing job.
+2025-11-17 23:36:10.511 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:36:10.511 [info] Indexing job successfully done or aborted.
+2025-11-17 23:36:19.973 [error] Error getting user commits: Failed to execute git
+2025-11-17 23:40:47.512 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:40:47.512 [info] Aborting indexing job.
+2025-11-17 23:40:47.512 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:40:47.512 [info] Indexing job successfully done or aborted.
+2025-11-17 23:45:24.513 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:45:24.513 [info] Aborting indexing job.
+2025-11-17 23:45:24.513 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:45:24.513 [info] Indexing job successfully done or aborted.
+2025-11-17 23:46:19.971 [error] Error getting user commits: Failed to execute git
+2025-11-17 23:50:01.513 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:50:01.513 [info] Aborting indexing job.
+2025-11-17 23:50:01.513 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:50:01.513 [info] Indexing job successfully done or aborted.
+2025-11-17 23:54:38.513 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:54:38.513 [info] Aborting indexing job.
+2025-11-17 23:54:38.513 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:54:38.513 [info] Indexing job successfully done or aborted.
+2025-11-17 23:56:19.961 [error] Error getting user commits: Failed to execute git
+2025-11-17 23:59:15.513 [info] multiCodebaseIndexingJob dispose
+2025-11-17 23:59:15.513 [info] Aborting indexing job.
+2025-11-17 23:59:15.513 [error] We currently do not allow indexing the home directory.
+2025-11-17 23:59:15.513 [info] Indexing job successfully done or aborted.
+2025-11-18 00:03:52.513 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:03:52.513 [info] Aborting indexing job.
+2025-11-18 00:03:52.513 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:03:52.513 [info] Indexing job successfully done or aborted.
+2025-11-18 00:06:19.962 [error] Error getting user commits: Failed to execute git
+2025-11-18 00:08:29.513 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:08:29.513 [info] Aborting indexing job.
+2025-11-18 00:08:29.514 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:08:29.514 [info] Indexing job successfully done or aborted.
+2025-11-18 00:13:06.514 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:13:06.514 [info] Aborting indexing job.
+2025-11-18 00:13:06.514 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:13:06.514 [info] Indexing job successfully done or aborted.
+2025-11-18 00:16:19.966 [error] Error getting user commits: Failed to execute git
+2025-11-18 00:17:43.515 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:17:43.515 [info] Aborting indexing job.
+2025-11-18 00:17:43.515 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:17:43.515 [info] Indexing job successfully done or aborted.
+2025-11-18 00:22:20.515 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:22:20.515 [info] Aborting indexing job.
+2025-11-18 00:22:20.515 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:22:20.515 [info] Indexing job successfully done or aborted.
+2025-11-18 00:26:19.953 [error] Error getting user commits: Failed to execute git
+2025-11-18 00:26:57.516 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:26:57.516 [info] Aborting indexing job.
+2025-11-18 00:26:57.516 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:26:57.516 [info] Indexing job successfully done or aborted.
+2025-11-18 00:31:34.515 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:31:34.515 [info] Aborting indexing job.
+2025-11-18 00:31:34.515 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:31:34.515 [info] Indexing job successfully done or aborted.
+2025-11-18 00:36:11.516 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:36:11.516 [info] Aborting indexing job.
+2025-11-18 00:36:11.516 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:36:11.516 [info] Indexing job successfully done or aborted.
+2025-11-18 00:36:19.974 [error] Error getting user commits: Failed to execute git
+2025-11-18 00:40:48.517 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:40:48.517 [info] Aborting indexing job.
+2025-11-18 00:40:48.517 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:40:48.517 [info] Indexing job successfully done or aborted.
+2025-11-18 00:45:25.518 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:45:25.518 [info] Aborting indexing job.
+2025-11-18 00:45:25.518 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:45:25.518 [info] Indexing job successfully done or aborted.
+2025-11-18 00:46:19.973 [error] Error getting user commits: Failed to execute git
+2025-11-18 00:50:02.520 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:50:02.520 [info] Aborting indexing job.
+2025-11-18 00:50:02.520 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:50:02.520 [info] Indexing job successfully done or aborted.
+2025-11-18 00:54:39.520 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:54:39.520 [info] Aborting indexing job.
+2025-11-18 00:54:39.520 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:54:39.520 [info] Indexing job successfully done or aborted.
+2025-11-18 00:56:19.969 [error] Error getting user commits: Failed to execute git
+2025-11-18 00:59:16.520 [info] multiCodebaseIndexingJob dispose
+2025-11-18 00:59:16.520 [info] Aborting indexing job.
+2025-11-18 00:59:16.520 [error] We currently do not allow indexing the home directory.
+2025-11-18 00:59:16.520 [info] Indexing job successfully done or aborted.
+2025-11-18 01:03:53.521 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:03:53.521 [info] Aborting indexing job.
+2025-11-18 01:03:53.521 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:03:53.521 [info] Indexing job successfully done or aborted.
+2025-11-18 01:06:19.938 [error] Error getting user commits: Failed to execute git
+2025-11-18 01:08:30.522 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:08:30.522 [info] Aborting indexing job.
+2025-11-18 01:08:30.522 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:08:30.522 [info] Indexing job successfully done or aborted.
+2025-11-18 01:13:07.522 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:13:07.522 [info] Aborting indexing job.
+2025-11-18 01:13:07.522 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:13:07.522 [info] Indexing job successfully done or aborted.
+2025-11-18 01:16:19.941 [error] Error getting user commits: Failed to execute git
+2025-11-18 01:17:44.523 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:17:44.523 [info] Aborting indexing job.
+2025-11-18 01:17:44.523 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:17:44.523 [info] Indexing job successfully done or aborted.
+2025-11-18 01:22:21.523 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:22:21.523 [info] Aborting indexing job.
+2025-11-18 01:22:21.523 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:22:21.523 [info] Indexing job successfully done or aborted.
+2025-11-18 01:26:19.927 [error] Error getting user commits: Failed to execute git
+2025-11-18 01:26:58.525 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:26:58.525 [info] Aborting indexing job.
+2025-11-18 01:26:58.525 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:26:58.525 [info] Indexing job successfully done or aborted.
+2025-11-18 01:31:35.525 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:31:35.525 [info] Aborting indexing job.
+2025-11-18 01:31:35.525 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:31:35.525 [info] Indexing job successfully done or aborted.
+2025-11-18 01:36:12.525 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:36:12.525 [info] Aborting indexing job.
+2025-11-18 01:36:12.525 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:36:12.525 [info] Indexing job successfully done or aborted.
+2025-11-18 01:36:19.935 [error] Error getting user commits: Failed to execute git
+2025-11-18 01:40:49.526 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:40:49.526 [info] Aborting indexing job.
+2025-11-18 01:40:49.526 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:40:49.526 [info] Indexing job successfully done or aborted.
+2025-11-18 01:45:26.525 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:45:26.525 [info] Aborting indexing job.
+2025-11-18 01:45:26.525 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:45:26.525 [info] Indexing job successfully done or aborted.
+2025-11-18 01:46:19.965 [error] Error getting user commits: Failed to execute git
+2025-11-18 01:50:03.525 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:50:03.525 [info] Aborting indexing job.
+2025-11-18 01:50:03.525 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:50:03.525 [info] Indexing job successfully done or aborted.
+2025-11-18 01:54:40.526 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:54:40.526 [info] Aborting indexing job.
+2025-11-18 01:54:40.527 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:54:40.527 [info] Indexing job successfully done or aborted.
+2025-11-18 01:56:19.951 [error] Error getting user commits: Failed to execute git
+2025-11-18 01:59:17.526 [info] multiCodebaseIndexingJob dispose
+2025-11-18 01:59:17.526 [info] Aborting indexing job.
+2025-11-18 01:59:17.526 [error] We currently do not allow indexing the home directory.
+2025-11-18 01:59:17.526 [info] Indexing job successfully done or aborted.
+2025-11-18 02:03:54.526 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:03:54.526 [info] Aborting indexing job.
+2025-11-18 02:03:54.526 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:03:54.526 [info] Indexing job successfully done or aborted.
+2025-11-18 02:06:19.939 [error] Error getting user commits: Failed to execute git
+2025-11-18 02:08:31.526 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:08:31.527 [info] Aborting indexing job.
+2025-11-18 02:08:31.527 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:08:31.527 [info] Indexing job successfully done or aborted.
+2025-11-18 02:13:08.528 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:13:08.528 [info] Aborting indexing job.
+2025-11-18 02:13:08.528 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:13:08.528 [info] Indexing job successfully done or aborted.
+2025-11-18 02:16:19.926 [error] Error getting user commits: Failed to execute git
+2025-11-18 02:17:45.529 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:17:45.529 [info] Aborting indexing job.
+2025-11-18 02:17:45.529 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:17:45.529 [info] Indexing job successfully done or aborted.
+2025-11-18 02:22:22.529 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:22:22.529 [info] Aborting indexing job.
+2025-11-18 02:22:22.529 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:22:22.529 [info] Indexing job successfully done or aborted.
+2025-11-18 02:26:19.917 [error] Error getting user commits: Failed to execute git
+2025-11-18 02:26:59.531 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:26:59.531 [info] Aborting indexing job.
+2025-11-18 02:26:59.531 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:26:59.531 [info] Indexing job successfully done or aborted.
+2025-11-18 02:31:36.531 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:31:36.531 [info] Aborting indexing job.
+2025-11-18 02:31:36.531 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:31:36.531 [info] Indexing job successfully done or aborted.
+2025-11-18 02:36:13.531 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:36:13.531 [info] Aborting indexing job.
+2025-11-18 02:36:13.531 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:36:13.531 [info] Indexing job successfully done or aborted.
+2025-11-18 02:36:19.924 [error] Error getting user commits: Failed to execute git
+2025-11-18 02:40:50.535 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:40:50.535 [info] Aborting indexing job.
+2025-11-18 02:40:50.535 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:40:50.535 [info] Indexing job successfully done or aborted.
+2025-11-18 02:45:27.537 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:45:27.537 [info] Aborting indexing job.
+2025-11-18 02:45:27.537 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:45:27.537 [info] Indexing job successfully done or aborted.
+2025-11-18 02:46:19.930 [error] Error getting user commits: Failed to execute git
+2025-11-18 02:50:04.537 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:50:04.537 [info] Aborting indexing job.
+2025-11-18 02:50:04.537 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:50:04.537 [info] Indexing job successfully done or aborted.
+2025-11-18 02:54:41.536 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:54:41.536 [info] Aborting indexing job.
+2025-11-18 02:54:41.536 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:54:41.536 [info] Indexing job successfully done or aborted.
+2025-11-18 02:56:19.911 [error] Error getting user commits: Failed to execute git
+2025-11-18 02:59:18.538 [info] multiCodebaseIndexingJob dispose
+2025-11-18 02:59:18.538 [info] Aborting indexing job.
+2025-11-18 02:59:18.538 [error] We currently do not allow indexing the home directory.
+2025-11-18 02:59:18.538 [info] Indexing job successfully done or aborted.
+2025-11-18 03:03:55.538 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:03:55.538 [info] Aborting indexing job.
+2025-11-18 03:03:55.538 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:03:55.538 [info] Indexing job successfully done or aborted.
+2025-11-18 03:06:19.903 [error] Error getting user commits: Failed to execute git
+2025-11-18 03:08:32.538 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:08:32.539 [info] Aborting indexing job.
+2025-11-18 03:08:32.539 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:08:32.539 [info] Indexing job successfully done or aborted.
+2025-11-18 03:13:09.540 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:13:09.540 [info] Aborting indexing job.
+2025-11-18 03:13:09.540 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:13:09.540 [info] Indexing job successfully done or aborted.
+2025-11-18 03:16:19.899 [error] Error getting user commits: Failed to execute git
+2025-11-18 03:17:46.540 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:17:46.540 [info] Aborting indexing job.
+2025-11-18 03:17:46.540 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:17:46.540 [info] Indexing job successfully done or aborted.
+2025-11-18 03:22:23.540 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:22:23.540 [info] Aborting indexing job.
+2025-11-18 03:22:23.540 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:22:23.540 [info] Indexing job successfully done or aborted.
+2025-11-18 03:26:19.927 [error] Error getting user commits: Failed to execute git
+2025-11-18 03:27:00.540 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:27:00.540 [info] Aborting indexing job.
+2025-11-18 03:27:00.540 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:27:00.540 [info] Indexing job successfully done or aborted.
+2025-11-18 03:31:37.541 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:31:37.541 [info] Aborting indexing job.
+2025-11-18 03:31:37.542 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:31:37.542 [info] Indexing job successfully done or aborted.
+2025-11-18 03:36:14.541 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:36:14.541 [info] Aborting indexing job.
+2025-11-18 03:36:14.541 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:36:14.541 [info] Indexing job successfully done or aborted.
+2025-11-18 03:36:19.893 [error] Error getting user commits: Failed to execute git
+2025-11-18 03:40:51.541 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:40:51.541 [info] Aborting indexing job.
+2025-11-18 03:40:51.542 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:40:51.542 [info] Indexing job successfully done or aborted.
+2025-11-18 03:45:28.542 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:45:28.543 [info] Aborting indexing job.
+2025-11-18 03:45:28.543 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:45:28.543 [info] Indexing job successfully done or aborted.
+2025-11-18 03:46:19.906 [error] Error getting user commits: Failed to execute git
+2025-11-18 03:50:05.542 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:50:05.542 [info] Aborting indexing job.
+2025-11-18 03:50:05.542 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:50:05.542 [info] Indexing job successfully done or aborted.
+2025-11-18 03:54:42.542 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:54:42.542 [info] Aborting indexing job.
+2025-11-18 03:54:42.542 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:54:42.542 [info] Indexing job successfully done or aborted.
+2025-11-18 03:56:19.914 [error] Error getting user commits: Failed to execute git
+2025-11-18 03:59:19.542 [info] multiCodebaseIndexingJob dispose
+2025-11-18 03:59:19.542 [info] Aborting indexing job.
+2025-11-18 03:59:19.542 [error] We currently do not allow indexing the home directory.
+2025-11-18 03:59:19.542 [info] Indexing job successfully done or aborted.
+2025-11-18 04:03:56.542 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:03:56.542 [info] Aborting indexing job.
+2025-11-18 04:03:56.542 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:03:56.542 [info] Indexing job successfully done or aborted.
+2025-11-18 04:06:19.894 [error] Error getting user commits: Failed to execute git
+2025-11-18 04:08:33.542 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:08:33.542 [info] Aborting indexing job.
+2025-11-18 04:08:33.542 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:08:33.542 [info] Indexing job successfully done or aborted.
+2025-11-18 04:13:10.543 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:13:10.544 [info] Aborting indexing job.
+2025-11-18 04:13:10.544 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:13:10.544 [info] Indexing job successfully done or aborted.
+2025-11-18 04:16:19.893 [error] Error getting user commits: Failed to execute git
+2025-11-18 04:17:47.543 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:17:47.543 [info] Aborting indexing job.
+2025-11-18 04:17:47.543 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:17:47.543 [info] Indexing job successfully done or aborted.
+2025-11-18 04:22:24.544 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:22:24.544 [info] Aborting indexing job.
+2025-11-18 04:22:24.544 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:22:24.544 [info] Indexing job successfully done or aborted.
+2025-11-18 04:26:19.890 [error] Error getting user commits: Failed to execute git
+2025-11-18 04:27:01.544 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:27:01.545 [info] Aborting indexing job.
+2025-11-18 04:27:01.545 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:27:01.545 [info] Indexing job successfully done or aborted.
+2025-11-18 04:31:38.545 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:31:38.545 [info] Aborting indexing job.
+2025-11-18 04:31:38.545 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:31:38.545 [info] Indexing job successfully done or aborted.
+2025-11-18 04:36:15.546 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:36:15.546 [info] Aborting indexing job.
+2025-11-18 04:36:15.546 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:36:15.546 [info] Indexing job successfully done or aborted.
+2025-11-18 04:36:19.871 [error] Error getting user commits: Failed to execute git
+2025-11-18 04:40:52.546 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:40:52.546 [info] Aborting indexing job.
+2025-11-18 04:40:52.546 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:40:52.546 [info] Indexing job successfully done or aborted.
+2025-11-18 04:45:29.546 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:45:29.546 [info] Aborting indexing job.
+2025-11-18 04:45:29.546 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:45:29.546 [info] Indexing job successfully done or aborted.
+2025-11-18 04:46:19.892 [error] Error getting user commits: Failed to execute git
+2025-11-18 04:50:06.548 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:50:06.548 [info] Aborting indexing job.
+2025-11-18 04:50:06.548 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:50:06.548 [info] Indexing job successfully done or aborted.
+2025-11-18 04:54:43.548 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:54:43.548 [info] Aborting indexing job.
+2025-11-18 04:54:43.549 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:54:43.549 [info] Indexing job successfully done or aborted.
+2025-11-18 04:56:19.872 [error] Error getting user commits: Failed to execute git
+2025-11-18 04:59:20.549 [info] multiCodebaseIndexingJob dispose
+2025-11-18 04:59:20.549 [info] Aborting indexing job.
+2025-11-18 04:59:20.549 [error] We currently do not allow indexing the home directory.
+2025-11-18 04:59:20.549 [info] Indexing job successfully done or aborted.
+2025-11-18 05:03:57.550 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:03:57.550 [info] Aborting indexing job.
+2025-11-18 05:03:57.550 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:03:57.550 [info] Indexing job successfully done or aborted.
+2025-11-18 05:06:19.909 [error] Error getting user commits: Failed to execute git
+2025-11-18 05:08:34.549 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:08:34.549 [info] Aborting indexing job.
+2025-11-18 05:08:34.549 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:08:34.549 [info] Indexing job successfully done or aborted.
+2025-11-18 05:13:11.549 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:13:11.549 [info] Aborting indexing job.
+2025-11-18 05:13:11.549 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:13:11.549 [info] Indexing job successfully done or aborted.
+2025-11-18 05:16:19.889 [error] Error getting user commits: Failed to execute git
+2025-11-18 05:17:48.549 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:17:48.549 [info] Aborting indexing job.
+2025-11-18 05:17:48.550 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:17:48.550 [info] Indexing job successfully done or aborted.
+2025-11-18 05:22:25.549 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:22:25.549 [info] Aborting indexing job.
+2025-11-18 05:22:25.549 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:22:25.549 [info] Indexing job successfully done or aborted.
+2025-11-18 05:26:19.860 [error] Error getting user commits: Failed to execute git
+2025-11-18 05:27:02.550 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:27:02.550 [info] Aborting indexing job.
+2025-11-18 05:27:02.550 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:27:02.550 [info] Indexing job successfully done or aborted.
+2025-11-18 05:31:39.551 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:31:39.551 [info] Aborting indexing job.
+2025-11-18 05:31:39.551 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:31:39.551 [info] Indexing job successfully done or aborted.
+2025-11-18 05:36:16.551 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:36:16.551 [info] Aborting indexing job.
+2025-11-18 05:36:16.551 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:36:16.551 [info] Indexing job successfully done or aborted.
+2025-11-18 05:36:19.849 [error] Error getting user commits: Failed to execute git
+2025-11-18 05:40:53.551 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:40:53.551 [info] Aborting indexing job.
+2025-11-18 05:40:53.551 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:40:53.551 [info] Indexing job successfully done or aborted.
+2025-11-18 05:45:30.551 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:45:30.551 [info] Aborting indexing job.
+2025-11-18 05:45:30.551 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:45:30.552 [info] Indexing job successfully done or aborted.
+2025-11-18 05:46:19.852 [error] Error getting user commits: Failed to execute git
+2025-11-18 05:50:07.552 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:50:07.552 [info] Aborting indexing job.
+2025-11-18 05:50:07.552 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:50:07.552 [info] Indexing job successfully done or aborted.
+2025-11-18 05:54:44.552 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:54:44.552 [info] Aborting indexing job.
+2025-11-18 05:54:44.552 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:54:44.552 [info] Indexing job successfully done or aborted.
+2025-11-18 05:56:19.858 [error] Error getting user commits: Failed to execute git
+2025-11-18 05:59:21.553 [info] multiCodebaseIndexingJob dispose
+2025-11-18 05:59:21.553 [info] Aborting indexing job.
+2025-11-18 05:59:21.553 [error] We currently do not allow indexing the home directory.
+2025-11-18 05:59:21.553 [info] Indexing job successfully done or aborted.
+2025-11-18 06:03:58.554 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:03:58.554 [info] Aborting indexing job.
+2025-11-18 06:03:58.554 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:03:58.554 [info] Indexing job successfully done or aborted.
+2025-11-18 06:06:19.850 [error] Error getting user commits: Failed to execute git
+2025-11-18 06:08:35.553 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:08:35.554 [info] Aborting indexing job.
+2025-11-18 06:08:35.554 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:08:35.554 [info] Indexing job successfully done or aborted.
+2025-11-18 06:13:12.554 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:13:12.555 [info] Aborting indexing job.
+2025-11-18 06:13:12.555 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:13:12.555 [info] Indexing job successfully done or aborted.
+2025-11-18 06:16:19.857 [error] Error getting user commits: Failed to execute git
+2025-11-18 06:17:49.555 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:17:49.555 [info] Aborting indexing job.
+2025-11-18 06:17:49.555 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:17:49.555 [info] Indexing job successfully done or aborted.
+2025-11-18 06:22:26.556 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:22:26.556 [info] Aborting indexing job.
+2025-11-18 06:22:26.556 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:22:26.556 [info] Indexing job successfully done or aborted.
+2025-11-18 06:26:19.837 [error] Error getting user commits: Failed to execute git
+2025-11-18 06:27:03.556 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:27:03.556 [info] Aborting indexing job.
+2025-11-18 06:27:03.556 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:27:03.556 [info] Indexing job successfully done or aborted.
+2025-11-18 06:31:40.562 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:31:40.562 [info] Aborting indexing job.
+2025-11-18 06:31:40.562 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:31:40.562 [info] Indexing job successfully done or aborted.
+2025-11-18 06:36:17.562 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:36:17.562 [info] Aborting indexing job.
+2025-11-18 06:36:17.562 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:36:17.562 [info] Indexing job successfully done or aborted.
+2025-11-18 06:36:19.860 [error] Error getting user commits: Failed to execute git
+2025-11-18 06:40:54.561 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:40:54.562 [info] Aborting indexing job.
+2025-11-18 06:40:54.562 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:40:54.562 [info] Indexing job successfully done or aborted.
+2025-11-18 06:45:31.561 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:45:31.561 [info] Aborting indexing job.
+2025-11-18 06:45:31.561 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:45:31.561 [info] Indexing job successfully done or aborted.
+2025-11-18 06:46:19.845 [error] Error getting user commits: Failed to execute git
+2025-11-18 06:50:08.562 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:50:08.563 [info] Aborting indexing job.
+2025-11-18 06:50:08.563 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:50:08.563 [info] Indexing job successfully done or aborted.
+2025-11-18 06:54:45.563 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:54:45.563 [info] Aborting indexing job.
+2025-11-18 06:54:45.563 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:54:45.563 [info] Indexing job successfully done or aborted.
+2025-11-18 06:56:19.838 [error] Error getting user commits: Failed to execute git
+2025-11-18 06:59:22.564 [info] multiCodebaseIndexingJob dispose
+2025-11-18 06:59:22.564 [info] Aborting indexing job.
+2025-11-18 06:59:22.564 [error] We currently do not allow indexing the home directory.
+2025-11-18 06:59:22.564 [info] Indexing job successfully done or aborted.
+2025-11-18 07:03:59.563 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:03:59.564 [info] Aborting indexing job.
+2025-11-18 07:03:59.564 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:03:59.564 [info] Indexing job successfully done or aborted.
+2025-11-18 07:06:19.832 [error] Error getting user commits: Failed to execute git
+2025-11-18 07:08:36.563 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:08:36.563 [info] Aborting indexing job.
+2025-11-18 07:08:36.563 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:08:36.563 [info] Indexing job successfully done or aborted.
+2025-11-18 07:13:13.565 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:13:13.565 [info] Aborting indexing job.
+2025-11-18 07:13:13.565 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:13:13.565 [info] Indexing job successfully done or aborted.
+2025-11-18 07:16:19.827 [error] Error getting user commits: Failed to execute git
+2025-11-18 07:17:50.566 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:17:50.567 [info] Aborting indexing job.
+2025-11-18 07:17:50.567 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:17:50.567 [info] Indexing job successfully done or aborted.
+2025-11-18 07:22:27.566 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:22:27.566 [info] Aborting indexing job.
+2025-11-18 07:22:27.566 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:22:27.566 [info] Indexing job successfully done or aborted.
+2025-11-18 07:26:19.842 [error] Error getting user commits: Failed to execute git
+2025-11-18 07:27:04.567 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:27:04.567 [info] Aborting indexing job.
+2025-11-18 07:27:04.567 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:27:04.567 [info] Indexing job successfully done or aborted.
+2025-11-18 07:31:41.567 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:31:41.567 [info] Aborting indexing job.
+2025-11-18 07:31:41.567 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:31:41.568 [info] Indexing job successfully done or aborted.
+2025-11-18 07:36:18.567 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:36:18.567 [info] Aborting indexing job.
+2025-11-18 07:36:18.567 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:36:18.567 [info] Indexing job successfully done or aborted.
+2025-11-18 07:36:19.830 [error] Error getting user commits: Failed to execute git
+2025-11-18 07:40:55.568 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:40:55.568 [info] Aborting indexing job.
+2025-11-18 07:40:55.568 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:40:55.568 [info] Indexing job successfully done or aborted.
+2025-11-18 07:45:32.568 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:45:32.568 [info] Aborting indexing job.
+2025-11-18 07:45:32.568 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:45:32.568 [info] Indexing job successfully done or aborted.
+2025-11-18 07:46:19.824 [error] Error getting user commits: Failed to execute git
+2025-11-18 07:50:09.568 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:50:09.568 [info] Aborting indexing job.
+2025-11-18 07:50:09.568 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:50:09.568 [info] Indexing job successfully done or aborted.
+2025-11-18 07:54:46.568 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:54:46.568 [info] Aborting indexing job.
+2025-11-18 07:54:46.569 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:54:46.569 [info] Indexing job successfully done or aborted.
+2025-11-18 07:56:19.836 [error] Error getting user commits: Failed to execute git
+2025-11-18 07:59:23.569 [info] multiCodebaseIndexingJob dispose
+2025-11-18 07:59:23.569 [info] Aborting indexing job.
+2025-11-18 07:59:23.569 [error] We currently do not allow indexing the home directory.
+2025-11-18 07:59:23.569 [info] Indexing job successfully done or aborted.
+2025-11-18 08:04:00.569 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:04:00.569 [info] Aborting indexing job.
+2025-11-18 08:04:00.569 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:04:00.569 [info] Indexing job successfully done or aborted.
+2025-11-18 08:06:19.826 [error] Error getting user commits: Failed to execute git
+2025-11-18 08:08:37.570 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:08:37.570 [info] Aborting indexing job.
+2025-11-18 08:08:37.570 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:08:37.570 [info] Indexing job successfully done or aborted.
+2025-11-18 08:13:14.571 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:13:14.571 [info] Aborting indexing job.
+2025-11-18 08:13:14.571 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:13:14.571 [info] Indexing job successfully done or aborted.
+2025-11-18 08:16:19.826 [error] Error getting user commits: Failed to execute git
+2025-11-18 08:17:51.572 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:17:51.572 [info] Aborting indexing job.
+2025-11-18 08:17:51.572 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:17:51.572 [info] Indexing job successfully done or aborted.
+2025-11-18 08:22:28.573 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:22:28.573 [info] Aborting indexing job.
+2025-11-18 08:22:28.573 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:22:28.573 [info] Indexing job successfully done or aborted.
+2025-11-18 08:26:19.821 [error] Error getting user commits: Failed to execute git
+2025-11-18 08:27:05.572 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:27:05.573 [info] Aborting indexing job.
+2025-11-18 08:27:05.573 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:27:05.573 [info] Indexing job successfully done or aborted.
+2025-11-18 08:31:42.573 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:31:42.573 [info] Aborting indexing job.
+2025-11-18 08:31:42.573 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:31:42.573 [info] Indexing job successfully done or aborted.
+2025-11-18 08:36:19.574 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:36:19.574 [info] Aborting indexing job.
+2025-11-18 08:36:19.574 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:36:19.574 [info] Indexing job successfully done or aborted.
+2025-11-18 08:36:19.796 [error] Error getting user commits: Failed to execute git
+2025-11-18 08:40:56.575 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:40:56.575 [info] Aborting indexing job.
+2025-11-18 08:40:56.575 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:40:56.575 [info] Indexing job successfully done or aborted.
+2025-11-18 08:45:33.576 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:45:33.576 [info] Aborting indexing job.
+2025-11-18 08:45:33.576 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:45:33.576 [info] Indexing job successfully done or aborted.
+2025-11-18 08:46:19.825 [error] Error getting user commits: Failed to execute git
+2025-11-18 08:50:10.575 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:50:10.575 [info] Aborting indexing job.
+2025-11-18 08:50:10.575 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:50:10.575 [info] Indexing job successfully done or aborted.
+2025-11-18 08:54:47.576 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:54:47.576 [info] Aborting indexing job.
+2025-11-18 08:54:47.576 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:54:47.576 [info] Indexing job successfully done or aborted.
+2025-11-18 08:56:19.791 [error] Error getting user commits: Failed to execute git
+2025-11-18 08:59:24.576 [info] multiCodebaseIndexingJob dispose
+2025-11-18 08:59:24.576 [info] Aborting indexing job.
+2025-11-18 08:59:24.576 [error] We currently do not allow indexing the home directory.
+2025-11-18 08:59:24.576 [info] Indexing job successfully done or aborted.
+2025-11-18 09:04:01.576 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:04:01.577 [info] Aborting indexing job.
+2025-11-18 09:04:01.577 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:04:01.577 [info] Indexing job successfully done or aborted.
+2025-11-18 09:06:19.813 [error] Error getting user commits: Failed to execute git
+2025-11-18 09:08:38.576 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:08:38.577 [info] Aborting indexing job.
+2025-11-18 09:08:38.577 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:08:38.577 [info] Indexing job successfully done or aborted.
+2025-11-18 09:13:15.578 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:13:15.578 [info] Aborting indexing job.
+2025-11-18 09:13:15.578 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:13:15.578 [info] Indexing job successfully done or aborted.
+2025-11-18 09:16:19.816 [error] Error getting user commits: Failed to execute git
+2025-11-18 09:17:52.578 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:17:52.578 [info] Aborting indexing job.
+2025-11-18 09:17:52.578 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:17:52.578 [info] Indexing job successfully done or aborted.
+2025-11-18 09:22:29.579 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:22:29.579 [info] Aborting indexing job.
+2025-11-18 09:22:29.579 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:22:29.579 [info] Indexing job successfully done or aborted.
+2025-11-18 09:26:19.792 [error] Error getting user commits: Failed to execute git
+2025-11-18 09:27:06.577 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:27:06.577 [info] Aborting indexing job.
+2025-11-18 09:27:06.577 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:27:06.577 [info] Indexing job successfully done or aborted.
+2025-11-18 09:31:43.577 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:31:43.577 [info] Aborting indexing job.
+2025-11-18 09:31:43.578 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:31:43.578 [info] Indexing job successfully done or aborted.
+2025-11-18 09:36:19.822 [error] Error getting user commits: Failed to execute git
+2025-11-18 09:36:20.578 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:36:20.578 [info] Aborting indexing job.
+2025-11-18 09:36:20.578 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:36:20.578 [info] Indexing job successfully done or aborted.
+2025-11-18 09:40:57.580 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:40:57.580 [info] Aborting indexing job.
+2025-11-18 09:40:57.580 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:40:57.580 [info] Indexing job successfully done or aborted.
+2025-11-18 09:45:34.580 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:45:34.580 [info] Aborting indexing job.
+2025-11-18 09:45:34.580 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:45:34.580 [info] Indexing job successfully done or aborted.
+2025-11-18 09:46:19.788 [error] Error getting user commits: Failed to execute git
+2025-11-18 09:50:11.581 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:50:11.581 [info] Aborting indexing job.
+2025-11-18 09:50:11.581 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:50:11.581 [info] Indexing job successfully done or aborted.
+2025-11-18 09:54:48.582 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:54:48.582 [info] Aborting indexing job.
+2025-11-18 09:54:48.582 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:54:48.582 [info] Indexing job successfully done or aborted.
+2025-11-18 09:56:19.796 [error] Error getting user commits: Failed to execute git
+2025-11-18 09:59:25.583 [info] multiCodebaseIndexingJob dispose
+2025-11-18 09:59:25.583 [info] Aborting indexing job.
+2025-11-18 09:59:25.583 [error] We currently do not allow indexing the home directory.
+2025-11-18 09:59:25.583 [info] Indexing job successfully done or aborted.
+2025-11-18 10:04:02.584 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:04:02.584 [info] Aborting indexing job.
+2025-11-18 10:04:02.584 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:04:02.584 [info] Indexing job successfully done or aborted.
+2025-11-18 10:06:19.791 [error] Error getting user commits: Failed to execute git
+2025-11-18 10:08:39.583 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:08:39.583 [info] Aborting indexing job.
+2025-11-18 10:08:39.584 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:08:39.584 [info] Indexing job successfully done or aborted.
+2025-11-18 10:13:16.585 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:13:16.585 [info] Aborting indexing job.
+2025-11-18 10:13:16.585 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:13:16.585 [info] Indexing job successfully done or aborted.
+2025-11-18 10:16:19.775 [error] Error getting user commits: Failed to execute git
+2025-11-18 10:17:53.584 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:17:53.584 [info] Aborting indexing job.
+2025-11-18 10:17:53.584 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:17:53.584 [info] Indexing job successfully done or aborted.
+2025-11-18 10:22:30.584 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:22:30.584 [info] Aborting indexing job.
+2025-11-18 10:22:30.584 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:22:30.584 [info] Indexing job successfully done or aborted.
+2025-11-18 10:26:19.770 [error] Error getting user commits: Failed to execute git
+2025-11-18 10:27:07.585 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:27:07.585 [info] Aborting indexing job.
+2025-11-18 10:27:07.585 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:27:07.585 [info] Indexing job successfully done or aborted.
+2025-11-18 10:31:44.588 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:31:44.588 [info] Aborting indexing job.
+2025-11-18 10:31:44.588 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:31:44.588 [info] Indexing job successfully done or aborted.
+2025-11-18 10:36:19.768 [error] Error getting user commits: Failed to execute git
+2025-11-18 10:36:21.586 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:36:21.586 [info] Aborting indexing job.
+2025-11-18 10:36:21.586 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:36:21.586 [info] Indexing job successfully done or aborted.
+2025-11-18 10:40:58.587 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:40:58.587 [info] Aborting indexing job.
+2025-11-18 10:40:58.587 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:40:58.587 [info] Indexing job successfully done or aborted.
+2025-11-18 10:45:35.587 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:45:35.587 [info] Aborting indexing job.
+2025-11-18 10:45:35.587 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:45:35.587 [info] Indexing job successfully done or aborted.
+2025-11-18 10:46:19.766 [error] Error getting user commits: Failed to execute git
+2025-11-18 10:50:12.588 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:50:12.588 [info] Aborting indexing job.
+2025-11-18 10:50:12.588 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:50:12.588 [info] Indexing job successfully done or aborted.
+2025-11-18 10:54:49.588 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:54:49.588 [info] Aborting indexing job.
+2025-11-18 10:54:49.588 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:54:49.588 [info] Indexing job successfully done or aborted.
+2025-11-18 10:56:19.766 [error] Error getting user commits: Failed to execute git
+2025-11-18 10:59:26.588 [info] multiCodebaseIndexingJob dispose
+2025-11-18 10:59:26.588 [info] Aborting indexing job.
+2025-11-18 10:59:26.588 [error] We currently do not allow indexing the home directory.
+2025-11-18 10:59:26.588 [info] Indexing job successfully done or aborted.
+2025-11-18 11:04:03.589 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:04:03.589 [info] Aborting indexing job.
+2025-11-18 11:04:03.589 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:04:03.589 [info] Indexing job successfully done or aborted.
+2025-11-18 11:06:19.755 [error] Error getting user commits: Failed to execute git
+2025-11-18 11:08:40.589 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:08:40.589 [info] Aborting indexing job.
+2025-11-18 11:08:40.589 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:08:40.589 [info] Indexing job successfully done or aborted.
+2025-11-18 11:13:17.590 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:13:17.591 [info] Aborting indexing job.
+2025-11-18 11:13:17.591 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:13:17.591 [info] Indexing job successfully done or aborted.
+2025-11-18 11:16:19.781 [error] Error getting user commits: Failed to execute git
+2025-11-18 11:17:54.590 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:17:54.590 [info] Aborting indexing job.
+2025-11-18 11:17:54.590 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:17:54.590 [info] Indexing job successfully done or aborted.
+2025-11-18 11:22:31.589 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:22:31.589 [info] Aborting indexing job.
+2025-11-18 11:22:31.589 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:22:31.590 [info] Indexing job successfully done or aborted.
+2025-11-18 11:26:19.775 [error] Error getting user commits: Failed to execute git
+2025-11-18 11:27:08.591 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:27:08.591 [info] Aborting indexing job.
+2025-11-18 11:27:08.591 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:27:08.591 [info] Indexing job successfully done or aborted.
+2025-11-18 11:31:45.591 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:31:45.591 [info] Aborting indexing job.
+2025-11-18 11:31:45.591 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:31:45.591 [info] Indexing job successfully done or aborted.
+2025-11-18 11:36:19.749 [error] Error getting user commits: Failed to execute git
+2025-11-18 11:36:22.591 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:36:22.591 [info] Aborting indexing job.
+2025-11-18 11:36:22.591 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:36:22.591 [info] Indexing job successfully done or aborted.
+2025-11-18 11:40:59.592 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:40:59.592 [info] Aborting indexing job.
+2025-11-18 11:40:59.592 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:40:59.592 [info] Indexing job successfully done or aborted.
+2025-11-18 11:45:36.595 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:45:36.595 [info] Aborting indexing job.
+2025-11-18 11:45:36.595 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:45:36.595 [info] Indexing job successfully done or aborted.
+2025-11-18 11:46:19.769 [error] Error getting user commits: Failed to execute git
+2025-11-18 11:50:13.593 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:50:13.594 [info] Aborting indexing job.
+2025-11-18 11:50:13.594 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:50:13.594 [info] Indexing job successfully done or aborted.
+2025-11-18 11:54:46.304 [error] Error getting user commits: Failed to execute git
+2025-11-18 11:54:50.594 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:54:50.594 [info] Aborting indexing job.
+2025-11-18 11:54:50.594 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:54:50.594 [info] Indexing job successfully done or aborted.
+2025-11-18 11:59:27.595 [info] multiCodebaseIndexingJob dispose
+2025-11-18 11:59:27.595 [info] Aborting indexing job.
+2025-11-18 11:59:27.595 [error] We currently do not allow indexing the home directory.
+2025-11-18 11:59:27.595 [info] Indexing job successfully done or aborted.
+2025-11-18 12:04:04.595 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:04:04.595 [info] Aborting indexing job.
+2025-11-18 12:04:04.595 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:04:04.595 [info] Indexing job successfully done or aborted.
+2025-11-18 12:04:46.024 [error] Error getting user commits: Failed to execute git
+2025-11-18 12:08:41.594 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:08:41.594 [info] Aborting indexing job.
+2025-11-18 12:08:41.594 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:08:41.594 [info] Indexing job successfully done or aborted.
+2025-11-18 12:13:18.595 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:13:18.595 [info] Aborting indexing job.
+2025-11-18 12:13:18.595 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:13:18.595 [info] Indexing job successfully done or aborted.
+2025-11-18 12:14:46.004 [error] Error getting user commits: Failed to execute git
+2025-11-18 12:17:55.594 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:17:55.711 [info] Aborting indexing job.
+2025-11-18 12:17:55.711 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:17:55.711 [info] Indexing job successfully done or aborted.
+2025-11-18 12:22:32.595 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:22:32.595 [info] Aborting indexing job.
+2025-11-18 12:22:32.595 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:22:32.595 [info] Indexing job successfully done or aborted.
+2025-11-18 12:24:46.000 [error] Error getting user commits: Failed to execute git
+2025-11-18 12:27:09.596 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:27:09.596 [info] Aborting indexing job.
+2025-11-18 12:27:09.596 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:27:09.596 [info] Indexing job successfully done or aborted.
+2025-11-18 12:31:46.596 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:31:46.596 [info] Aborting indexing job.
+2025-11-18 12:31:46.596 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:31:46.596 [info] Indexing job successfully done or aborted.
+2025-11-18 12:34:46.000 [error] Error getting user commits: Failed to execute git
+2025-11-18 12:36:23.597 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:36:23.597 [info] Aborting indexing job.
+2025-11-18 12:36:23.597 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:36:23.597 [info] Indexing job successfully done or aborted.
+2025-11-18 12:41:00.597 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:41:00.602 [info] Aborting indexing job.
+2025-11-18 12:41:00.602 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:41:00.602 [info] Indexing job successfully done or aborted.
+2025-11-18 12:44:46.005 [error] Error getting user commits: Failed to execute git
+2025-11-18 12:45:37.599 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:45:37.599 [info] Aborting indexing job.
+2025-11-18 12:45:37.599 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:45:37.599 [info] Indexing job successfully done or aborted.
+2025-11-18 12:50:14.599 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:50:14.599 [info] Aborting indexing job.
+2025-11-18 12:50:14.599 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:50:14.599 [info] Indexing job successfully done or aborted.
+2025-11-18 12:54:45.993 [error] Error getting user commits: Failed to execute git
+2025-11-18 12:54:51.599 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:54:51.599 [info] Aborting indexing job.
+2025-11-18 12:54:51.599 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:54:51.599 [info] Indexing job successfully done or aborted.
+2025-11-18 12:59:28.598 [info] multiCodebaseIndexingJob dispose
+2025-11-18 12:59:28.598 [info] Aborting indexing job.
+2025-11-18 12:59:28.598 [error] We currently do not allow indexing the home directory.
+2025-11-18 12:59:28.598 [info] Indexing job successfully done or aborted.
+2025-11-18 13:04:05.599 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:04:05.599 [info] Aborting indexing job.
+2025-11-18 13:04:05.599 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:04:05.599 [info] Indexing job successfully done or aborted.
+2025-11-18 13:04:45.992 [error] Error getting user commits: Failed to execute git
+2025-11-18 13:08:42.598 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:08:42.598 [info] Aborting indexing job.
+2025-11-18 13:08:42.599 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:08:42.599 [info] Indexing job successfully done or aborted.
+2025-11-18 13:13:19.599 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:13:19.599 [info] Aborting indexing job.
+2025-11-18 13:13:19.599 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:13:19.599 [info] Indexing job successfully done or aborted.
+2025-11-18 13:14:46.001 [error] Error getting user commits: Failed to execute git
+2025-11-18 13:17:56.601 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:17:56.601 [info] Aborting indexing job.
+2025-11-18 13:17:56.601 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:17:56.601 [info] Indexing job successfully done or aborted.
+2025-11-18 13:22:33.601 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:22:33.601 [info] Aborting indexing job.
+2025-11-18 13:22:33.601 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:22:33.601 [info] Indexing job successfully done or aborted.
+2025-11-18 13:24:45.988 [error] Error getting user commits: Failed to execute git
+2025-11-18 13:27:10.600 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:27:10.601 [info] Aborting indexing job.
+2025-11-18 13:27:10.601 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:27:10.601 [info] Indexing job successfully done or aborted.
+2025-11-18 13:31:47.601 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:31:47.601 [info] Aborting indexing job.
+2025-11-18 13:31:47.601 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:31:47.601 [info] Indexing job successfully done or aborted.
+2025-11-18 13:34:45.996 [error] Error getting user commits: Failed to execute git
+2025-11-18 13:36:24.602 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:36:24.602 [info] Aborting indexing job.
+2025-11-18 13:36:24.602 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:36:24.602 [info] Indexing job successfully done or aborted.
+2025-11-18 13:41:01.602 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:41:01.602 [info] Aborting indexing job.
+2025-11-18 13:41:01.602 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:41:01.602 [info] Indexing job successfully done or aborted.
+2025-11-18 13:44:45.974 [error] Error getting user commits: Failed to execute git
+2025-11-18 13:45:38.603 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:45:38.603 [info] Aborting indexing job.
+2025-11-18 13:45:38.603 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:45:38.603 [info] Indexing job successfully done or aborted.
+2025-11-18 13:50:15.604 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:50:15.604 [info] Aborting indexing job.
+2025-11-18 13:50:15.604 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:50:15.604 [info] Indexing job successfully done or aborted.
+2025-11-18 13:54:45.970 [error] Error getting user commits: Failed to execute git
+2025-11-18 13:54:52.604 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:54:52.604 [info] Aborting indexing job.
+2025-11-18 13:54:52.604 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:54:52.604 [info] Indexing job successfully done or aborted.
+2025-11-18 13:59:29.604 [info] multiCodebaseIndexingJob dispose
+2025-11-18 13:59:29.604 [info] Aborting indexing job.
+2025-11-18 13:59:29.604 [error] We currently do not allow indexing the home directory.
+2025-11-18 13:59:29.604 [info] Indexing job successfully done or aborted.
+2025-11-18 14:04:06.604 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:04:06.604 [info] Aborting indexing job.
+2025-11-18 14:04:06.604 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:04:06.604 [info] Indexing job successfully done or aborted.
+2025-11-18 14:04:45.966 [error] Error getting user commits: Failed to execute git
+2025-11-18 14:08:43.605 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:08:43.605 [info] Aborting indexing job.
+2025-11-18 14:08:43.605 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:08:43.605 [info] Indexing job successfully done or aborted.
+2025-11-18 14:13:20.605 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:13:20.649 [info] Aborting indexing job.
+2025-11-18 14:13:20.649 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:13:20.649 [info] Indexing job successfully done or aborted.
+2025-11-18 14:14:46.001 [error] Error getting user commits: Failed to execute git
+2025-11-18 14:17:57.605 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:17:57.605 [info] Aborting indexing job.
+2025-11-18 14:17:57.605 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:17:57.605 [info] Indexing job successfully done or aborted.
+2025-11-18 14:22:34.606 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:22:34.606 [info] Aborting indexing job.
+2025-11-18 14:22:34.606 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:22:34.606 [info] Indexing job successfully done or aborted.
+2025-11-18 14:24:45.957 [error] Error getting user commits: Failed to execute git
+2025-11-18 14:27:11.606 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:27:11.606 [info] Aborting indexing job.
+2025-11-18 14:27:11.606 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:27:11.606 [info] Indexing job successfully done or aborted.
+2025-11-18 14:31:48.607 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:31:48.607 [info] Aborting indexing job.
+2025-11-18 14:31:48.607 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:31:48.607 [info] Indexing job successfully done or aborted.
+2025-11-18 14:34:45.960 [error] Error getting user commits: Failed to execute git
+2025-11-18 14:36:25.608 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:36:25.608 [info] Aborting indexing job.
+2025-11-18 14:36:25.608 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:36:25.608 [info] Indexing job successfully done or aborted.
+2025-11-18 14:41:02.608 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:41:02.608 [info] Aborting indexing job.
+2025-11-18 14:41:02.608 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:41:02.608 [info] Indexing job successfully done or aborted.
+2025-11-18 14:44:45.964 [error] Error getting user commits: Failed to execute git
+2025-11-18 14:45:39.608 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:45:39.608 [info] Aborting indexing job.
+2025-11-18 14:45:39.608 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:45:39.608 [info] Indexing job successfully done or aborted.
+2025-11-18 14:50:16.609 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:50:16.609 [info] Aborting indexing job.
+2025-11-18 14:50:16.609 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:50:16.609 [info] Indexing job successfully done or aborted.
+2025-11-18 14:54:45.948 [error] Error getting user commits: Failed to execute git
+2025-11-18 14:54:53.608 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:54:53.608 [info] Aborting indexing job.
+2025-11-18 14:54:53.608 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:54:53.608 [info] Indexing job successfully done or aborted.
+2025-11-18 14:59:30.609 [info] multiCodebaseIndexingJob dispose
+2025-11-18 14:59:30.609 [info] Aborting indexing job.
+2025-11-18 14:59:30.609 [error] We currently do not allow indexing the home directory.
+2025-11-18 14:59:30.609 [info] Indexing job successfully done or aborted.
+2025-11-18 15:04:07.610 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:04:07.626 [info] Aborting indexing job.
+2025-11-18 15:04:07.626 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:04:07.626 [info] Indexing job successfully done or aborted.
+2025-11-18 15:04:45.955 [error] Error getting user commits: Failed to execute git
+2025-11-18 15:08:44.610 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:08:44.610 [info] Aborting indexing job.
+2025-11-18 15:08:44.610 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:08:44.610 [info] Indexing job successfully done or aborted.
+2025-11-18 15:13:21.611 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:13:21.611 [info] Aborting indexing job.
+2025-11-18 15:13:21.611 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:13:21.611 [info] Indexing job successfully done or aborted.
+2025-11-18 15:14:45.977 [error] Error getting user commits: Failed to execute git
+2025-11-18 15:17:58.611 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:17:58.611 [info] Aborting indexing job.
+2025-11-18 15:17:58.611 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:17:58.611 [info] Indexing job successfully done or aborted.
+2025-11-18 15:22:35.613 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:22:35.613 [info] Aborting indexing job.
+2025-11-18 15:22:35.613 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:22:35.613 [info] Indexing job successfully done or aborted.
+2025-11-18 15:24:45.943 [error] Error getting user commits: Failed to execute git
+2025-11-18 15:27:12.613 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:27:12.613 [info] Aborting indexing job.
+2025-11-18 15:27:12.613 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:27:12.613 [info] Indexing job successfully done or aborted.
+2025-11-18 15:31:49.613 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:31:49.613 [info] Aborting indexing job.
+2025-11-18 15:31:49.613 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:31:49.613 [info] Indexing job successfully done or aborted.
+2025-11-18 15:34:45.979 [error] Error getting user commits: Failed to execute git
+2025-11-18 15:36:26.618 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:36:26.618 [info] Aborting indexing job.
+2025-11-18 15:36:26.618 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:36:26.618 [info] Indexing job successfully done or aborted.
+2025-11-18 15:41:03.619 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:41:03.619 [info] Aborting indexing job.
+2025-11-18 15:41:03.619 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:41:03.619 [info] Indexing job successfully done or aborted.
+2025-11-18 15:44:45.935 [error] Error getting user commits: Failed to execute git
+2025-11-18 15:45:40.619 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:45:40.620 [info] Aborting indexing job.
+2025-11-18 15:45:40.620 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:45:40.620 [info] Indexing job successfully done or aborted.
+2025-11-18 15:50:17.620 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:50:17.620 [info] Aborting indexing job.
+2025-11-18 15:50:17.620 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:50:17.620 [info] Indexing job successfully done or aborted.
+2025-11-18 15:54:45.941 [error] Error getting user commits: Failed to execute git
+2025-11-18 15:54:54.620 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:54:54.620 [info] Aborting indexing job.
+2025-11-18 15:54:54.620 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:54:54.620 [info] Indexing job successfully done or aborted.
+2025-11-18 15:59:31.622 [info] multiCodebaseIndexingJob dispose
+2025-11-18 15:59:31.622 [info] Aborting indexing job.
+2025-11-18 15:59:31.622 [error] We currently do not allow indexing the home directory.
+2025-11-18 15:59:31.622 [info] Indexing job successfully done or aborted.
+2025-11-18 16:04:08.622 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:04:08.622 [info] Aborting indexing job.
+2025-11-18 16:04:08.622 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:04:08.622 [info] Indexing job successfully done or aborted.
+2025-11-18 16:04:45.948 [error] Error getting user commits: Failed to execute git
+2025-11-18 16:08:45.622 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:08:45.622 [info] Aborting indexing job.
+2025-11-18 16:08:45.622 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:08:45.622 [info] Indexing job successfully done or aborted.
+2025-11-18 16:13:22.623 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:13:22.623 [info] Aborting indexing job.
+2025-11-18 16:13:22.623 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:13:22.623 [info] Indexing job successfully done or aborted.
+2025-11-18 16:14:45.928 [error] Error getting user commits: Failed to execute git
+2025-11-18 16:17:59.624 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:17:59.624 [info] Aborting indexing job.
+2025-11-18 16:17:59.624 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:17:59.624 [info] Indexing job successfully done or aborted.
+2025-11-18 16:22:36.623 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:22:36.624 [info] Aborting indexing job.
+2025-11-18 16:22:36.624 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:22:36.624 [info] Indexing job successfully done or aborted.
+2025-11-18 16:24:45.921 [error] Error getting user commits: Failed to execute git
+2025-11-18 16:27:13.624 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:27:13.624 [info] Aborting indexing job.
+2025-11-18 16:27:13.624 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:27:13.624 [info] Indexing job successfully done or aborted.
+2025-11-18 16:31:50.623 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:31:50.623 [info] Aborting indexing job.
+2025-11-18 16:31:50.623 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:31:50.623 [info] Indexing job successfully done or aborted.
+2025-11-18 16:34:45.915 [error] Error getting user commits: Failed to execute git
+2025-11-18 16:36:27.624 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:36:27.624 [info] Aborting indexing job.
+2025-11-18 16:36:27.624 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:36:27.624 [info] Indexing job successfully done or aborted.
+2025-11-18 16:41:04.625 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:41:04.678 [info] Aborting indexing job.
+2025-11-18 16:41:04.678 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:41:04.678 [info] Indexing job successfully done or aborted.
+2025-11-18 16:44:45.917 [error] Error getting user commits: Failed to execute git
+2025-11-18 16:45:41.625 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:45:41.625 [info] Aborting indexing job.
+2025-11-18 16:45:41.625 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:45:41.625 [info] Indexing job successfully done or aborted.
+2025-11-18 16:50:18.625 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:50:18.625 [info] Aborting indexing job.
+2025-11-18 16:50:18.625 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:50:18.625 [info] Indexing job successfully done or aborted.
+2025-11-18 16:54:45.914 [error] Error getting user commits: Failed to execute git
+2025-11-18 16:54:55.626 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:54:55.626 [info] Aborting indexing job.
+2025-11-18 16:54:55.626 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:54:55.626 [info] Indexing job successfully done or aborted.
+2025-11-18 16:59:32.625 [info] multiCodebaseIndexingJob dispose
+2025-11-18 16:59:32.644 [info] Aborting indexing job.
+2025-11-18 16:59:32.644 [error] We currently do not allow indexing the home directory.
+2025-11-18 16:59:32.644 [info] Indexing job successfully done or aborted.
+2025-11-18 17:04:09.627 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:04:09.627 [info] Aborting indexing job.
+2025-11-18 17:04:09.627 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:04:09.627 [info] Indexing job successfully done or aborted.
+2025-11-18 17:04:45.957 [error] Error getting user commits: Failed to execute git
+2025-11-18 17:08:46.630 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:08:46.630 [info] Aborting indexing job.
+2025-11-18 17:08:46.630 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:08:46.630 [info] Indexing job successfully done or aborted.
+2025-11-18 17:13:23.628 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:13:23.628 [info] Aborting indexing job.
+2025-11-18 17:13:23.628 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:13:23.628 [info] Indexing job successfully done or aborted.
+2025-11-18 17:14:45.912 [error] Error getting user commits: Failed to execute git
+2025-11-18 17:18:00.627 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:18:00.628 [info] Aborting indexing job.
+2025-11-18 17:18:00.628 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:18:00.628 [info] Indexing job successfully done or aborted.
+2025-11-18 17:22:37.628 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:22:37.664 [info] Aborting indexing job.
+2025-11-18 17:22:37.664 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:22:37.664 [info] Indexing job successfully done or aborted.
+2025-11-18 17:24:45.995 [error] Error getting user commits: Failed to execute git
+2025-11-18 17:27:14.627 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:27:14.627 [info] Aborting indexing job.
+2025-11-18 17:27:14.627 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:27:14.627 [info] Indexing job successfully done or aborted.
+2025-11-18 17:31:51.628 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:31:51.628 [info] Aborting indexing job.
+2025-11-18 17:31:51.628 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:31:51.628 [info] Indexing job successfully done or aborted.
+2025-11-18 17:34:45.936 [error] Error getting user commits: Failed to execute git
+2025-11-18 17:36:28.628 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:36:28.628 [info] Aborting indexing job.
+2025-11-18 17:36:28.628 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:36:28.628 [info] Indexing job successfully done or aborted.
+2025-11-18 17:41:05.629 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:41:05.666 [info] Aborting indexing job.
+2025-11-18 17:41:05.666 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:41:05.666 [info] Indexing job successfully done or aborted.
+2025-11-18 17:44:45.957 [error] Error getting user commits: Failed to execute git
+2025-11-18 17:45:42.630 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:45:42.630 [info] Aborting indexing job.
+2025-11-18 17:45:42.630 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:45:42.630 [info] Indexing job successfully done or aborted.
+2025-11-18 17:50:19.630 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:50:19.630 [info] Aborting indexing job.
+2025-11-18 17:50:19.630 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:50:19.630 [info] Indexing job successfully done or aborted.
+2025-11-18 17:54:45.967 [error] Error getting user commits: Failed to execute git
+2025-11-18 17:54:56.629 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:54:56.629 [info] Aborting indexing job.
+2025-11-18 17:54:56.629 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:54:56.629 [info] Indexing job successfully done or aborted.
+2025-11-18 17:59:04.330 [error] Error getting submodules: A system error occurred (ENOENT: no such file or directory, open '/home/oxetech_mcz/.gitmodules')
+2025-11-18 17:59:33.630 [info] multiCodebaseIndexingJob dispose
+2025-11-18 17:59:33.630 [info] Aborting indexing job.
+2025-11-18 17:59:33.630 [error] We currently do not allow indexing the home directory.
+2025-11-18 17:59:33.630 [info] Indexing job successfully done or aborted.
+2025-11-18 18:04:10.629 [info] multiCodebaseIndexingJob dispose
+2025-11-18 18:04:10.630 [info] Aborting indexing job.
+2025-11-18 18:04:10.630 [error] We currently do not allow indexing the home directory.
+2025-11-18 18:04:10.630 [info] Indexing job successfully done or aborted.
+2025-11-18 18:04:46.011 [error] Error getting user commits: Failed to execute git
