@@ -1,55 +1,72 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
-import { Separator } from '@/components/ui/separator'
-import { ModuleType, getModuleColor } from '@/lib/design-system'
-import { cn } from '@/lib/utils'
+import { Bell, Search } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 
-const pathMap: Record<string, { title: string; module?: ModuleType }> = {
-  '/': { title: 'Dashboard OxeTech' },
-  '/work': { title: 'OxeTech Work', module: 'work' },
-  '/edu': { title: 'OxeTech Edu', module: 'edu' },
-  '/trilhas': { title: 'Trilhas de Conhecimento', module: 'trilhas' },
-  '/lab': { title: 'OxeTech Lab', module: 'lab' },
-  '/alunos': { title: 'Alunos' },
+interface HeaderProps {
+  title: string
+  description?: string
 }
 
-export function Header() {
-  const pathname = usePathname()
-  const pageInfo = pathMap[pathname] || { title: 'Dashboard' }
-  const moduleColor = pageInfo.module ? getModuleColor(pageInfo.module, 'primary') : undefined
-
+export function Header({ title, description }: HeaderProps) {
   return (
-    <header
-      className="flex h-20 items-center border-b bg-card/50 backdrop-blur-sm px-8"
-      style={{ borderRadius: '0 0 24px 24px' }}
+    <header 
+      className="border-b backdrop-blur-md sticky top-0 z-10 shadow-sm"
+      style={{ 
+        borderColor: 'var(--border)',
+        backgroundColor: 'rgba(255, 255, 255, 0.8)'
+      }}
     >
-      <div className="flex items-center gap-4">
-        <div
-          className={cn(
-            'h-12 w-1 rounded-r-full transition-all duration-300',
-            moduleColor && 'animate-pulse-slow'
-          )}
-          style={{ backgroundColor: moduleColor || 'transparent' }}
-        />
+      <div className="flex items-center justify-between px-6 py-4">
         <div>
-          <h2
-            className="text-2xl font-bold"
-            style={{ color: moduleColor || undefined }}
+          <h1 
+            className="heading-2"
+            style={{ color: 'var(--primary-dark)' }}
           >
-            {pageInfo.title}
-          </h2>
-          <p className="text-sm text-muted-foreground mt-0.5">
-            Dashboard Analítico do Ecossistema OxeTech
-          </p>
+            {title}
+          </h1>
+          {description && (
+            <p className="caption mt-1.5">{description}</p>
+          )}
         </div>
-      </div>
-      <Separator orientation="vertical" className="mx-6 h-8" />
-      <div className="flex-1" />
-      <div className="flex items-center gap-4">
-        <div className="text-right">
-          <p className="text-sm font-medium">Tempo real</p>
-          <p className="text-xs text-muted-foreground">Atualizado há instantes</p>
+        
+        <div className="flex items-center gap-4">
+          <div className="relative hidden md:block">
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 opacity-40" />
+            <Input
+              placeholder="Buscar no dashboard..."
+              className="pl-9 w-72"
+              style={{ 
+                borderColor: 'var(--border)',
+                backgroundColor: 'rgba(240, 240, 240, 0.5)'
+              }}
+            />
+          </div>
+          
+          <Button variant="ghost" size="icon" className="relative">
+            <Bell className="h-5 w-5" />
+            <span 
+              className="absolute top-1.5 right-1.5 h-2 w-2 rounded-full"
+              style={{ backgroundColor: 'var(--error)' }}
+            />
+          </Button>
+          
+          <div 
+            className="flex items-center gap-3 pl-4 border-l"
+            style={{ borderColor: 'var(--border)' }}
+          >
+            <div className="text-right hidden sm:block">
+              <p className="text-sm font-semibold">SECTI - AL</p>
+              <p className="text-xs opacity-60">Administrador</p>
+            </div>
+            <div 
+              className="h-10 w-10 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: 'var(--primary)' }}
+            >
+              <span className="font-semibold text-sm text-white">SA</span>
+            </div>
+          </div>
         </div>
       </div>
     </header>

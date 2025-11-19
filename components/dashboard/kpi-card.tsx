@@ -1,135 +1,81 @@
 'use client'
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { LucideIcon } from 'lucide-react'
+import { Type as type, LucideIcon } from 'lucide-react'
+import { TrendingUp, TrendingDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { ModuleType, getModuleColor } from '@/lib/design-system'
-import { useEffect, useRef, useState } from 'react'
 
 interface KPICardProps {
   title: string
   value: string | number
+  change?: number
   icon: LucideIcon
-  description?: string
-  trend?: {
-    value: number
-    isPositive: boolean
-  }
-  className?: string
-  module?: ModuleType
-  delay?: number
+  trend?: 'up' | 'down'
+  color?: 'work' | 'lab' | 'edu' | 'trilhas' | 'din'
+  subtitle?: string
+}
+
+const colorMap = {
+  work: { bg: '#005ea2', light: 'rgba(0, 94, 162, 0.1)' },
+  lab: { bg: '#28a0cb', light: 'rgba(40, 160, 203, 0.1)' },
+  edu: { bg: '#00a91c', light: 'rgba(0, 169, 28, 0.1)' },
+  trilhas: { bg: '#1a4480', light: 'rgba(26, 68, 128, 0.1)' },
+  din: { bg: '#8168b3', light: 'rgba(129, 104, 179, 0.1)' },
 }
 
 export function KPICard({
   title,
   value,
+  change,
   icon: Icon,
-  description,
   trend,
-  className,
-  module,
-  delay = 0,
+  color = 'work',
+  subtitle
 }: KPICardProps) {
-  const [isVisible, setIsVisible] = useState(false)
-  const cardRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => setIsVisible(true), delay)
-        }
-      },
-      { threshold: 0.1 }
-    )
-
-    if (cardRef.current) {
-      observer.observe(cardRef.current)
-    }
-
-    return () => observer.disconnect()
-  }, [delay])
-
-  const moduleColor = module ? getModuleColor(module, 'primary') : undefined
-  const moduleGradient = module
-    ? `linear-gradient(135deg, ${getModuleColor(module, 'primary')}15 0%, ${getModuleColor(module, 'secondary')}10 100%)`
-    : undefined
+  const colors = colorMap[color]
 
   return (
-    <Card
-      ref={cardRef}
-      className={cn(
-        'group relative overflow-hidden transition-all duration-300',
-        'hover:shadow-medium hover:-translate-y-1',
-        'border-0 shadow-soft',
-        isVisible ? 'animate-fade-in opacity-100' : 'opacity-0',
-        className
-      )}
-      style={{
-        borderRadius: '22px',
-        background: moduleGradient || undefined,
-      }}
-    >
-      {/* Efeito de brilho no hover */}
-      <div
-        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        style={{
-          background: module
-            ? `linear-gradient(135deg, ${getModuleColor(module, 'primary')}08 0%, transparent 100%)`
-            : undefined,
-        }}
-      />
-
-      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3">
-        <CardTitle className="text-sm font-medium text-muted-foreground">
-          {title}
-        </CardTitle>
-        <div
-          className={cn(
-            'p-2 rounded-xl transition-all duration-300',
-            'group-hover:scale-110 group-hover:rotate-3'
+    <div className="gov-card group">
+      <div className="flex items-start justify-between gap-4">
+        <div className="flex-1 min-w-0">
+          <p className="kpi-label mb-3">{title}</p>
+          <p className="kpi-number" style={{ color: colors.bg }}>
+            {value}
+          </p>
+          {subtitle && (
+            <p className="kpi-subtitle mt-2">{subtitle}</p>
           )}
-          style={{
-            backgroundColor: moduleColor ? `${moduleColor}15` : undefined,
-            color: moduleColor || undefined,
+        </div>
+        
+        <div 
+          className="h-14 w-14 rounded-xl flex items-center justify-center transition-all duration-200 group-hover:scale-110"
+          style={{ 
+            backgroundColor: colors.light,
+            color: colors.bg
           }}
         >
-          <Icon className="h-5 w-5" />
+          <Icon className="h-7 w-7" strokeWidth={2} />
         </div>
-      </CardHeader>
-      <CardContent className="space-y-2">
-        <div
-          className={cn(
-            'text-3xl font-bold transition-all duration-300',
-            'group-hover:scale-105'
-          )}
-          style={{ color: moduleColor || undefined }}
+      </div>
+      
+      {change !== undefined && (
+        <div 
+          className="flex items-center gap-2 mt-4 pt-4 border-t"
+          style={{ borderColor: 'var(--border)' }}
         >
-          {value}
+          {trend === 'up' ? (
+            <div className="flex items-center gap-1.5" style={{ color: 'var(--success)' }}>
+              <TrendingUp className="h-4 w-4" />
+              <span className="text-sm font-semibold">+{change}%</span>
+            </div>
+          ) : (
+            <div className="flex items-center gap-1.5" style={{ color: 'var(--error)' }}>
+              <TrendingDown className="h-4 w-4" />
+              <span className="text-sm font-semibold">{change}%</span>
+            </div>
+          )}
+          <span className="text-xs opacity-60">vs. mês anterior</span>
         </div>
-        {description && (
-          <p className="text-xs text-muted-foreground leading-relaxed">
-            {description}
-          </p>
-        )}
-        {trend && (
-          <div
-            className={cn(
-              'flex items-center gap-1 text-xs font-medium mt-2',
-              trend.isPositive ? 'text-green-600' : 'text-red-600'
-            )}
-          >
-            <span>{trend.isPositive ? '↑' : '↓'}</span>
-            <span>
-              {trend.isPositive ? '+' : ''}
-              {trend.value}%
-            </span>
-            <span className="text-muted-foreground text-[10px]">
-              vs período anterior
-            </span>
-          </div>
-        )}
-      </CardContent>
-    </Card>
+      )}
+    </div>
   )
 }

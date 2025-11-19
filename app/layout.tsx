@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Providers } from './providers'
+import { Providers } from '@/components/dashboard/providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'OxeTech Dashboard',
-  description: 'Dashboard Analítico do Ecossistema OxeTech',
+  description: 'Dashboard SECTI-AL',
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -23,4 +24,3 @@ export default function RootLayout({
     </html>
   )
 }
-
