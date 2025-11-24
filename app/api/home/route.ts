@@ -3,6 +3,7 @@ import { prisma } from '@/lib/db'
 import { normalizarNomeMunicipio } from '@/lib/geographic-analytics'
 import { cachedQuery, createCacheKey, queryCache } from '@/lib/cache'
 import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
+import { agregarDadosLab } from '@/lib/data-aggregator/lab-aggregator'
 
 export const dynamic = 'force-dynamic'
 
@@ -230,13 +231,10 @@ export async function GET() {
       },
     })
     
-    // Lab: Certificados (status TWO = APROVADO na tabela matriculas)
-    // CORRIGIDO: Certificados Lab vêm da tabela matriculas (status TWO = APROVADO)
-    const totalCertificadosLab = await prisma.matriculas.count({
-      where: {
-        status: 'TWO', // APROVADO = Certificado
-      },
-    })
+    // Lab: Certificados - Usar agregação (CSV + Banco) para contar todos os formados
+    // CORRIGIDO: Usar agregarDadosLab para incluir dados do CSV legado + banco
+    const turmasAgregadasLab = await agregarDadosLab(false) // Não usar IA aqui para performance
+    const totalCertificadosLab = turmasAgregadasLab.reduce((acc, t) => acc + t.numFormados, 0)
     
     const totalCertificados = totalCertificadosWork + totalCertificadosEdu + totalCertificadosTrilhas + totalCertificadosLab
 
