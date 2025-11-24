@@ -1,9 +1,31 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET(request: Request) {
+  // Verificar se Prisma está disponível
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        stats: {
+          totalTrilhas: 0,
+          totalInscritos: 0,
+          totalConcluidos: 0,
+          progressoMedioGeral: 0,
+          conclusaoMediaModulo: 0,
+        },
+        trilhas: [],
+        progressoPorTrilha: [],
+        topTrilhas: [],
+        evolucaoTemporal: [],
+        inscritos: [],
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     const { searchParams } = new URL(request.url)
     const periodo = searchParams.get('periodo') || 'all'
@@ -311,9 +333,22 @@ export async function GET(request: Request) {
     })
   } catch (error) {
     console.error('Error fetching trilhas data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Failed to fetch trilhas data' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        stats: {
+          totalTrilhas: 0,
+          totalInscritos: 0,
+          totalConcluidos: 0,
+          progressoMedioGeral: 0,
+          conclusaoMediaModulo: 0,
+        },
+        trilhas: [],
+        progressoPorTrilha: [],
+        topTrilhas: [],
+        evolucaoTemporal: [],
+        inscritos: [],
+      },
+      error: error instanceof Error ? error.message : 'Failed to fetch trilhas data',
+    }, { status: 200 })
   }
 }

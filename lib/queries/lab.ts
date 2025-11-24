@@ -106,12 +106,51 @@ interface LabData {
   error: string | null
 }
 
+import { safeFetch } from '@/lib/utils/api-helpers'
+
 async function fetchLabData(): Promise<LabData> {
-  const response = await fetch('/api/lab')
-  if (!response.ok) {
-    throw new Error('Failed to fetch lab data')
+  try {
+    const data = await safeFetch<LabData>('/api/lab')
+    if (!data.data) {
+      return {
+        data: {
+          stats: {
+            totalInscricoes: 0,
+            inscricoesAtivas: 0,
+            inscricoesFinalizadas: 0,
+            inscricoesPorStatus: [],
+            mediaPorLaboratorio: 0,
+            totalVagas: 0,
+            vagasOcupadas: 0,
+            vagasLivres: 0,
+            totalTurmas: 0,
+            explicacao: {
+              vagasCalculo: '',
+              inscricoesCalculo: '',
+              diferenca: '',
+            },
+          },
+          distribuicaoPorCurso: [],
+          cursosNormalizados: [],
+          cursosPorCategoria: {},
+          cursosPorSubcategoria: {},
+          inscricoesPorCursoNormalizado: [],
+          analisePorCurso: [],
+          evolucaoTemporal: [],
+          evolucaoSemanal: [],
+          inscricoesPorLaboratorio: [],
+          inscricoes: [],
+          alunosCertificadosLab: [],
+          totalCertificadosLab: 0,
+        },
+        error: 'Dados não disponíveis',
+      }
+    }
+    return data
+  } catch (error) {
+    console.error('Error fetching lab data:', error)
+    throw error
   }
-  return response.json()
 }
 
 export function useLabData() {

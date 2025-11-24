@@ -45,12 +45,36 @@ interface CertificadosData {
   error: string | null
 }
 
+import { safeFetch } from '@/lib/utils/api-helpers'
+
 async function fetchCertificadosData(): Promise<CertificadosData> {
-  const response = await fetch('/api/certificados')
-  if (!response.ok) {
-    throw new Error('Failed to fetch certificados data')
+  try {
+    const data = await safeFetch<CertificadosData>('/api/certificados')
+    if (!data.data) {
+      return {
+        data: {
+          stats: {
+            totalCertificadosWork: 0,
+            totalCertificadosEdu: 0,
+            totalCertificadosTrilhas: 0,
+            totalCertificadosLab: 0,
+            totalCertificados: 0,
+            totalAlunosCertificados: 0,
+            alunosComMultiplosCertificados: 0,
+          },
+          alunosCertificados: [],
+          distribuicaoMunicipio: [],
+          distribuicaoPrograma: { Work: 0, Edu: 0, Trilhas: 0, Lab: 0 },
+          detalhesPorPrograma: { Work: [], Edu: [], Trilhas: [], Lab: [] },
+        },
+        error: 'Dados não disponíveis',
+      }
+    }
+    return data
+  } catch (error) {
+    console.error('Error fetching certificados data:', error)
+    throw error
   }
-  return response.json()
 }
 
 export function useCertificadosData() {

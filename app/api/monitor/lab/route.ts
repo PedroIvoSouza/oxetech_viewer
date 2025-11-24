@@ -2,10 +2,25 @@ import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { gerarAlertasLab } from '@/lib/core/alerts'
 import { auditarLab } from '@/lib/core/audit'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        turmas: [],
+        alertas: [],
+        auditoria: {
+          inconsistencias: [],
+          sugestoes: [],
+        },
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     // Buscar todas as turmas com presenças
     const turmas = await prisma.turmas.findMany({
@@ -177,10 +192,17 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error fetching lab monitor data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Erro ao buscar dados de monitoramento do Lab' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        turmas: [],
+        alertas: [],
+        auditoria: {
+          inconsistencias: [],
+          sugestoes: [],
+        },
+      },
+      error: error instanceof Error ? error.message : 'Erro ao buscar dados de monitoramento do Lab',
+    }, { status: 200 })
   }
 }
 

@@ -9,10 +9,48 @@ import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { categorizarCursos, normalizarCurso } from '@/lib/course-normalizer'
 import { agregarDadosLab } from '@/lib/data-aggregator/lab-aggregator'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  // Verificar se Prisma está disponível
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        stats: {
+          totalInscricoes: 0,
+          inscricoesAtivas: 0,
+          inscricoesFinalizadas: 0,
+          inscricoesPorStatus: [],
+          mediaPorLaboratorio: 0,
+          totalVagas: 0,
+          vagasOcupadas: 0,
+          vagasLivres: 0,
+          totalTurmas: 0,
+          explicacao: {
+            vagasCalculo: '',
+            inscricoesCalculo: '',
+            diferenca: '',
+          },
+        },
+        distribuicaoPorCurso: [],
+        cursosNormalizados: [],
+        cursosPorCategoria: {},
+        cursosPorSubcategoria: {},
+        inscricoesPorCursoNormalizado: [],
+        analisePorCurso: [],
+        evolucaoTemporal: [],
+        evolucaoSemanal: [],
+        inscricoesPorLaboratorio: [],
+        inscricoes: [],
+        alunosCertificadosLab: [],
+        totalCertificadosLab: 0,
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     // Carregar dados agregados (CSV + Banco) - apresentado como uma coisa só
     const turmasAgregadas = await agregarDadosLab(true) // Usar IA para corrigir nomes
@@ -419,9 +457,38 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error fetching lab data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Failed to fetch lab data' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        stats: {
+          totalInscricoes: 0,
+          inscricoesAtivas: 0,
+          inscricoesFinalizadas: 0,
+          inscricoesPorStatus: [],
+          mediaPorLaboratorio: 0,
+          totalVagas: 0,
+          vagasOcupadas: 0,
+          vagasLivres: 0,
+          totalTurmas: 0,
+          explicacao: {
+            vagasCalculo: '',
+            inscricoesCalculo: '',
+            diferenca: '',
+          },
+        },
+        distribuicaoPorCurso: [],
+        cursosNormalizados: [],
+        cursosPorCategoria: {},
+        cursosPorSubcategoria: {},
+        inscricoesPorCursoNormalizado: [],
+        analisePorCurso: [],
+        evolucaoTemporal: [],
+        evolucaoSemanal: [],
+        inscricoesPorLaboratorio: [],
+        inscricoes: [],
+        alunosCertificadosLab: [],
+        totalCertificadosLab: 0,
+      },
+      error: error instanceof Error ? error.message : 'Failed to fetch lab data',
+    }, { status: 200 })
   }
 }

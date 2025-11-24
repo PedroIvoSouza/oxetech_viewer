@@ -2,10 +2,30 @@ import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { gerarAlertasWork } from '@/lib/core/alerts'
 import { auditarWork } from '@/lib/core/audit'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        funil: {
+          empresas: 0,
+          vagas: 0,
+          candidaturas: 0,
+          contratacoes: 0,
+        },
+        alertas: [],
+        auditoria: {
+          inconsistencias: [],
+          sugestoes: [],
+        },
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     // Funil completo do edital
     const [empresas, vagas, candidaturas, contratacoes] = await Promise.all([

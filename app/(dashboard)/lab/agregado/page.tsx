@@ -64,25 +64,21 @@ export default function LabAgregadoPage() {
           title="Total de Turmas"
           value={formatNumber(stats?.totalTurmas || 0)}
           icon={BookOpen}
-          description="CSV + Banco agregados"
         />
         <KPICard
           title="Total de Matriculados"
           value={formatNumber(stats?.totalInscritos || 0)}
           icon={Users}
-          description="Inscritos agregados"
         />
         <KPICard
           title="Total de Formados"
           value={formatNumber(stats?.totalFormados || 0)}
           icon={Award}
-          description="Certificados agregados"
         />
         <KPICard
           title="Taxa de Evasão"
           value={`${(stats?.taxaEvasao || 0).toFixed(1)}%`}
           icon={TrendingDown}
-          description="Calculada dos dados agregados"
         />
       </div>
 

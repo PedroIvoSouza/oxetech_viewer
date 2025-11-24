@@ -1,10 +1,24 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { normalizarNomeMunicipio, obterCoordenadas } from '@/lib/geographic-analytics'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        work: [],
+        edu: [],
+        lab: [],
+        trilhas: [],
+        total: 0,
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     // WORK: Distribuição por município
     const alunosWork = await prisma.oxetechwork_inscricao_alunos.findMany({
@@ -143,10 +157,14 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error fetching geographic data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Failed to fetch geographic data' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        distribuicao: [],
+        totalMunicipios: 0,
+        maxTotal: 0,
+      },
+      error: error instanceof Error ? error.message : 'Failed to fetch geographic data',
+    }, { status: 200 })
   }
 }
 

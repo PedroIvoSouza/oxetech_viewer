@@ -49,12 +49,39 @@ interface WorkData {
   error: string | null
 }
 
+import { safeFetch } from '@/lib/utils/api-helpers'
+
 async function fetchWorkData(): Promise<WorkData> {
-  const response = await fetch('/api/work')
-  if (!response.ok) {
-    throw new Error('Failed to fetch work data')
+  try {
+    const data = await safeFetch<WorkData>('/api/work')
+    // Garantir estrutura válida
+    if (!data.data) {
+      return {
+        data: {
+          stats: {
+            vagas: 0,
+            empresas: 0,
+            candidaturas: 0,
+            contratacoes: 0,
+            inscricoes: 0,
+          },
+          funilPorEdital: [],
+          empresas: [],
+          vagasPorStatus: [],
+          vagas: [],
+          temposMedios: {
+            inscricaoCandidatura: 0,
+            candidaturaContratacao: 0,
+          },
+        },
+        error: 'Dados não disponíveis',
+      }
+    }
+    return data
+  } catch (error) {
+    console.error('Error fetching work data:', error)
+    throw error
   }
-  return response.json()
 }
 
 export function useWorkData() {

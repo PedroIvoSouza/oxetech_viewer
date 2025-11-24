@@ -47,12 +47,35 @@ interface EduData {
   error: string | null
 }
 
+import { safeFetch } from '@/lib/utils/api-helpers'
+
 async function fetchEduData(): Promise<EduData> {
-  const response = await fetch('/api/edu')
-  if (!response.ok) {
-    throw new Error('Failed to fetch edu data')
+  try {
+    const data = await safeFetch<EduData>('/api/edu')
+    if (!data.data) {
+      return {
+        data: {
+          stats: {
+            totalEscolas: 0,
+            totalMatriculas: 0,
+            totalTurmas: 0,
+          },
+          frequenciaPorEscola: [],
+          frequenciaDiaria: [],
+          rankingCursos: [],
+          matriculasPorCurso: [],
+          mapaCalorHorario: [],
+          comparativoMensal: [],
+          matriculasPorStatus: [],
+        },
+        error: 'Dados não disponíveis',
+      }
+    }
+    return data
+  } catch (error) {
+    console.error('Error fetching edu data:', error)
+    throw error
   }
-  return response.json()
 }
 
 export function useEduData() {

@@ -29,7 +29,7 @@ export async function middleware(request: NextRequest) {
   const logData = {
     path: pathname,
     method: request.method,
-    ip: request.ip || request.headers.get('x-forwarded-for') || 'unknown',
+    ip: request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown',
     origin: request.headers.get('origin') || 'unknown',
     userAgent: request.headers.get('user-agent') || 'unknown',
     timestamp: new Date().toISOString(),

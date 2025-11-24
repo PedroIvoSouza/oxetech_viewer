@@ -43,13 +43,54 @@ interface HomeData {
 }
 
 async function fetchHomeData(): Promise<HomeData> {
-  const response = await fetch('/api/home', {
-    credentials: 'include',
-  })
-  if (!response.ok) {
-    throw new Error('Failed to fetch home data')
+  try {
+    const response = await fetch('/api/home', {
+      credentials: 'include',
+    })
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}))
+      throw new Error(errorData.error || `Failed to fetch home data: ${response.status}`)
+    }
+    const data = await response.json()
+    // Garantir que a estrutura de dados está correta
+    if (!data.data) {
+      return {
+        data: {
+          kpis: {
+            totalAlunos: 0,
+            totalEmpresas: 0,
+            totalMatriculasEdu: 0,
+            totalInscricoesWork: 0,
+            totalVagasWork: 0,
+            totalCandidaturasWork: 0,
+            totalContratacoesWork: 0,
+            totalTrilhas: 0,
+            totalAtividadesConcluidas: 0,
+            totalFrequencias: 0,
+            totalInstrutores: 0,
+            totalAgentes: 0,
+            totalCertificados: 0,
+            totalCertificadosWork: 0,
+            totalCertificadosEdu: 0,
+            totalCertificadosTrilhas: 0,
+            totalCertificadosLab: 0,
+            totalMunicipios: 0,
+          },
+          evolucao12Meses: [],
+          evolucaoAlunos: [],
+          evolucaoWork: [],
+          funilWork: { inscricoes: 0, candidaturas: 0, contratacoes: 0 },
+          conclusaoTrilhas: [],
+          distribuicaoPrograma: { work: 0, edu: 0, lab: 0, trilhas: 0 },
+        },
+        error: data.error || null,
+      }
+    }
+    return data
+  } catch (error) {
+    console.error('Error fetching home data:', error)
+    throw error instanceof Error ? error : new Error('Failed to fetch home data')
   }
-  return response.json()
 }
 
 export function useHomeData() {

@@ -7,10 +7,28 @@
 
 import { NextResponse } from 'next/server'
 import { agregarDadosLab } from '@/lib/data-aggregator/lab-aggregator'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET(request: Request) {
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        stats: {
+          totalTurmas: 0,
+          totalInscritos: 0,
+          totalFormados: 0,
+          totalVagas: 0,
+        },
+        porLaboratorio: {},
+        porCurso: {},
+        turmas: [],
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     const { searchParams } = new URL(request.url)
     const usarIA = searchParams.get('sem-ia') !== 'true'
@@ -92,13 +110,26 @@ export async function GET(request: Request) {
     })
   } catch (error: any) {
     console.error('Error aggregating lab data:', error)
-    return NextResponse.json(
-      {
-        data: null,
-        error: error?.message || 'Failed to aggregate lab data',
+    return NextResponse.json({
+      data: {
+        estatisticas: {
+          totalTurmas: 0,
+          totalInscritos: 0,
+          totalFormados: 0,
+          totalVagas: 0,
+          taxaEvasao: 0,
+          porFonte: {
+            apenasBanco: 0,
+            apenasCSV: 0,
+            ambas: 0,
+          },
+        },
+        turmas: [],
+        porLaboratorio: [],
+        porCurso: [],
       },
-      { status: 500 }
-    )
+      error: error?.message || 'Failed to aggregate lab data',
+    }, { status: 200 })
   }
 }
 

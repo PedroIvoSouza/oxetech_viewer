@@ -2,10 +2,38 @@ import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { categorizarCursos } from '@/lib/course-normalizer'
 import { normalizarNomeMunicipio } from '@/lib/geographic-analytics'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  // Verificar se Prisma está disponível
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        stats: {
+          totalCertificadosWork: 0,
+          totalCertificadosEdu: 0,
+          totalCertificadosTrilhas: 0,
+          totalCertificadosLab: 0,
+          totalCertificados: 0,
+          totalAlunosCertificados: 0,
+          alunosComMultiplosCertificados: 0,
+        },
+        alunosCertificados: [],
+        distribuicaoMunicipio: [],
+        distribuicaoPrograma: {},
+        detalhesPorPrograma: {
+          Work: [],
+          Edu: [],
+          Trilhas: [],
+          Lab: [],
+        },
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     // WORK: Alunos contratados (certificados)
     const contratados = await prisma.contratacoes.findMany({
@@ -272,10 +300,29 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error fetching certificados data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Failed to fetch certificados data' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        stats: {
+          totalCertificadosWork: 0,
+          totalCertificadosEdu: 0,
+          totalCertificadosTrilhas: 0,
+          totalCertificadosLab: 0,
+          totalCertificados: 0,
+          totalAlunosCertificados: 0,
+          alunosComMultiplosCertificados: 0,
+        },
+        alunosCertificados: [],
+        distribuicaoMunicipio: [],
+        distribuicaoPrograma: {},
+        detalhesPorPrograma: {
+          Work: [],
+          Edu: [],
+          Trilhas: [],
+          Lab: [],
+        },
+      },
+      error: error instanceof Error ? error.message : 'Failed to fetch certificados data',
+    }, { status: 200 })
   }
 }
 

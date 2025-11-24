@@ -2,10 +2,49 @@ import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { normalizarNomeMunicipio } from '@/lib/geographic-analytics'
 import { cachedQuery, createCacheKey, queryCache } from '@/lib/cache'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  // Verificar se Prisma está disponível
+  if (!isPrismaAvailable()) {
+    return NextResponse.json(
+      { 
+        data: {
+          kpis: {
+            totalAlunos: 0,
+            totalCertificados: 0,
+            totalCertificadosWork: 0,
+            totalCertificadosEdu: 0,
+            totalCertificadosTrilhas: 0,
+            totalCertificadosLab: 0,
+            totalEmpresas: 0,
+            totalMatriculasEdu: 0,
+            totalInscricoesWork: 0,
+            totalVagasWork: 0,
+            totalCandidaturasWork: 0,
+            totalContratacoesWork: 0,
+            totalTrilhas: 0,
+            totalAtividadesConcluidas: 0,
+            totalFrequencias: 0,
+            totalInstrutores: 0,
+            totalAgentes: 0,
+            totalMunicipios: 0,
+          },
+          evolucao12Meses: [],
+          evolucaoAlunos: [],
+          evolucaoWork: [],
+          funilWork: { inscricoes: 0, candidaturas: 0, contratacoes: 0 },
+          conclusaoTrilhas: [],
+          distribuicaoPrograma: { work: 0, edu: 0, lab: 0, trilhas: 0 },
+        },
+        error: 'DATABASE_URL não configurada'
+      },
+      { status: 200 }
+    )
+  }
+
   try {
     // KPIs Gerais (com cache)
     const cacheKey = createCacheKey('home:kpis', {})
@@ -40,20 +79,20 @@ export async function GET() {
         prisma.agentes.count(),
       ])
 
-      return {
-        totalAlunos,
-        totalEmpresas,
-        totalMatriculasEdu,
-        totalInscricoesWork,
-        totalVagasWork,
-        totalCandidaturasWork,
-        totalContratacoesWork,
-        totalTrilhas,
-        totalAtividadesConcluidas,
-        totalFrequencias,
-        totalInstrutores,
-        totalAgentes,
-      }
+          return {
+            totalAlunos,
+            totalEmpresas,
+            totalMatriculasEdu,
+            totalInscricoesWork,
+            totalVagasWork,
+            totalCandidaturasWork,
+            totalContratacoesWork,
+            totalTrilhas,
+            totalAtividadesConcluidas,
+            totalFrequencias,
+            totalInstrutores,
+            totalAgentes,
+          }
     })
 
     const {
@@ -250,26 +289,26 @@ export async function GET() {
 
     return NextResponse.json({
       data: {
-        kpis: {
-          totalAlunos,
-          totalCertificados,
-          totalCertificadosWork,
-          totalCertificadosEdu,
-          totalCertificadosTrilhas,
-          totalCertificadosLab,
-          totalEmpresas,
-          totalMatriculasEdu,
-          totalInscricoesWork,
-          totalVagasWork,
-          totalCandidaturasWork,
-          totalContratacoesWork,
-          totalTrilhas,
-          totalAtividadesConcluidas,
-          totalFrequencias,
-          totalInstrutores,
-          totalAgentes,
-          totalMunicipios,
-        },
+          kpis: {
+            totalAlunos,
+            totalCertificados,
+            totalCertificadosWork,
+            totalCertificadosEdu,
+            totalCertificadosTrilhas,
+            totalCertificadosLab,
+            totalEmpresas,
+            totalMatriculasEdu,
+            totalInscricoesWork,
+            totalVagasWork,
+            totalCandidaturasWork,
+            totalContratacoesWork,
+            totalTrilhas,
+            totalAtividadesConcluidas,
+            totalFrequencias,
+            totalInstrutores,
+            totalAgentes,
+            totalMunicipios,
+          },
         evolucao12Meses,
         evolucaoAlunos: evolucaoAlunosArray,
         evolucaoWork: evolucaoWorkArray,
@@ -281,9 +320,36 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error fetching home data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Failed to fetch home data' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        kpis: {
+          totalAlunos: 0,
+          totalCertificados: 0,
+          totalCertificadosWork: 0,
+          totalCertificadosEdu: 0,
+          totalCertificadosTrilhas: 0,
+          totalCertificadosLab: 0,
+          totalEmpresas: 0,
+          totalMatriculasEdu: 0,
+          totalInscricoesWork: 0,
+          totalVagasWork: 0,
+          totalCandidaturasWork: 0,
+          totalContratacoesWork: 0,
+          totalTrilhas: 0,
+          totalAtividadesConcluidas: 0,
+          totalFrequencias: 0,
+          totalInstrutores: 0,
+          totalAgentes: 0,
+          totalMunicipios: 0,
+        },
+        evolucao12Meses: [],
+        evolucaoAlunos: [],
+        evolucaoWork: [],
+        funilWork: { inscricoes: 0, candidaturas: 0, contratacoes: 0 },
+        conclusaoTrilhas: [],
+        distribuicaoPrograma: { work: 0, edu: 0, lab: 0, trilhas: 0 },
+      },
+      error: error instanceof Error ? error.message : 'Failed to fetch home data',
+    }, { status: 200 })
   }
 }

@@ -1,9 +1,20 @@
 import { NextResponse } from 'next/server'
 import { gerarAnaliseDetalhadaLab } from '@/lib/bi/lab-analysis'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        estatisticas: {},
+        analises: [],
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     const analise = await gerarAnaliseDetalhadaLab()
     
@@ -13,13 +24,13 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error generating detailed Lab analysis:', error)
-    return NextResponse.json(
-      {
-        data: null,
-        error: error instanceof Error ? error.message : 'Erro ao gerar análise detalhada do Lab',
+    return NextResponse.json({
+      data: {
+        estatisticas: {},
+        analises: [],
       },
-      { status: 500 }
-    )
+      error: error instanceof Error ? error.message : 'Erro ao gerar análise detalhada do Lab',
+    }, { status: 200 })
   }
 }
 

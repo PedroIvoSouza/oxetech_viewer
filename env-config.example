@@ -1,0 +1,12 @@
+# Configurações otimizadas para VM com poucos recursos
+# Copie estas variáveis para seu .env.local
+
+# Node.js - Limites de memória
+NODE_OPTIONS=--max-old-space-size=1024 --max-semi-space-size=64
+
+# Next.js - Otimizações
+NEXT_TELEMETRY_DISABLED=1
+
+# Desenvolvimento - Reduz uso de recursos
+WATCHPACK_POLLING=false
+

@@ -82,41 +82,35 @@ export default function CertificadosPage() {
           title="Total de Certificados"
           value={formatNumber(stats.totalCertificados)}
           icon={Award}
-          delay={0}
         />
         <KPICard
           title="Alunos Certificados"
           value={formatNumber(stats.totalAlunosCertificados)}
           icon={Users}
-          delay={50}
         />
         <KPICard
           title="Certificados Work"
           value={formatNumber(stats.totalCertificadosWork)}
           icon={Briefcase}
-          module="work"
-          delay={100}
+          color="work"
         />
         <KPICard
           title="Certificados Edu"
           value={formatNumber(stats.totalCertificadosEdu)}
           icon={GraduationCap}
-          module="edu"
-          delay={150}
+          color="edu"
         />
         <KPICard
           title="Certificados Trilhas"
           value={formatNumber(stats.totalCertificadosTrilhas)}
           icon={BookOpen}
-          module="trilhas"
-          delay={200}
+          color="trilhas"
         />
         <KPICard
           title="Certificados Lab"
           value={formatNumber(stats.totalCertificadosLab)}
           icon={FlaskConical}
-          module="lab"
-          delay={250}
+          color="lab"
         />
       </div>
 

@@ -4,7 +4,6 @@
  */
 
 import { cn } from '@/lib/utils'
-import { Card, CardContent, CardHeader, CardTitle } from './card'
 
 interface GovCardProps {
   title?: string
@@ -27,11 +26,11 @@ export function GovCard({ title, children, className, span = 1, hover = true }: 
       )}
     >
       {title && (
-        <CardHeader className="pb-3">
-          <CardTitle className="card-title">{title}</CardTitle>
-        </CardHeader>
+        <div className="pb-3 mb-4 border-b border-border">
+          <h3 className="card-title">{title}</h3>
+        </div>
       )}
-      <CardContent className={cn(!title && 'pt-6')}>{children}</CardContent>
+      <div className={cn(!title && 'pt-6')}>{children}</div>
     </div>
   )
 }

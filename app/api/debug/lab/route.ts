@@ -1,9 +1,20 @@
 import { NextResponse } from 'next/server'
 import { debugLabInconsistencias } from '@/lib/audit/lab-debug'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        inconsistencias: [],
+        sugestoes: [],
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     const debugInfo = await debugLabInconsistencias()
 
@@ -13,13 +24,13 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error debugging Lab inconsistencies:', error)
-    return NextResponse.json(
-      {
-        data: null,
-        error: error instanceof Error ? error.message : 'Erro ao debugar inconsistências do Lab',
+    return NextResponse.json({
+      data: {
+        inconsistencias: [],
+        sugestoes: [],
       },
-      { status: 500 }
-    )
+      error: error instanceof Error ? error.message : 'Erro ao debugar inconsistências do Lab',
+    }, { status: 200 })
   }
 }
 

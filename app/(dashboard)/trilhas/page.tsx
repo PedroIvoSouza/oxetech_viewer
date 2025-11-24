@@ -1,13 +1,18 @@
+/**
+ * Dashboard Trilhas de Conhecimento - Bento Grid Style
+ * Inspirado em USAspending.gov
+ */
+
 'use client'
 
 import { useState, useMemo } from 'react'
 import { useTrilhasData } from '@/lib/queries/trilhas'
-import { KPICard } from '@/components/dashboard/kpi-card'
+import { GovCard } from '@/components/ui/gov-card'
+import { GovKPI } from '@/components/dashboard/gov-kpi'
+import { BentoGridSkeleton } from '@/components/ui/bento-skeleton'
 import { BarChart } from '@/components/charts/bar-chart'
 import { PieChart } from '@/components/charts/pie-chart'
 import { LineChart } from '@/components/charts/line-chart'
-import { Skeleton } from '@/components/ui/skeleton'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import {
@@ -20,7 +25,6 @@ import {
   Award,
 } from 'lucide-react'
 import { formatNumber, formatPercent, formatDate } from '@/lib/formatters'
-import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
 export default function TrilhasPage() {
@@ -38,27 +42,20 @@ export default function TrilhasPage() {
   }, [data, busca])
 
   if (isLoading) {
-    return (
-      <div className="space-y-8">
-        <div className="grid gap-6 md:grid-cols-4">
-          {Array.from({ length: 5 }).map((_, i) => (
-            <Skeleton key={i} className="h-40" />
-          ))}
-        </div>
-        <Skeleton className="h-96" />
-      </div>
-    )
+    return <BentoGridSkeleton count={8} />
   }
 
   if (error) {
+    console.error('Error loading trilhas data:', error)
     return (
-      <div className="flex h-96 items-center justify-center rounded-2xl bg-destructive/10">
-        <div className="text-center">
-          <p className="text-lg font-semibold text-destructive">
-            Erro ao carregar dados
-          </p>
-          <p className="text-sm text-muted-foreground mt-2">{error.message}</p>
-        </div>
+      <div className="bento-grid">
+        <GovCard span={4} className="border-error">
+          <div className="flex items-center justify-center h-64">
+            <p className="text-error font-semibold">
+              Erro ao carregar dados: {error.message}
+            </p>
+          </div>
+        </GovCard>
       </div>
     )
   }
@@ -77,122 +74,88 @@ export default function TrilhasPage() {
   } = data.data
 
   return (
-    <div className="space-y-8">
-      {/* Header */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h1 className="text-4xl font-bold mb-2" style={{ color: '#C80000' }}>
-          Trilhas de Conhecimento
-        </h1>
-        <p className="text-lg text-muted-foreground">
-          Dashboard completo das trilhas de conhecimento
-        </p>
-      </motion.div>
-
-      {/* KPIs */}
-      <div className="grid gap-6 md:grid-cols-5">
-        <KPICard
-          title="Total de Trilhas"
-          value={formatNumber(stats.totalTrilhas)}
-          icon={BookOpen}
-          module="trilhas"
-          delay={0}
-        />
-        <KPICard
-          title="Total de Inscritos"
-          value={formatNumber(stats.totalInscritos)}
-          icon={Users}
-          module="trilhas"
-          delay={50}
-        />
-        <KPICard
-          title="Total Concluídos"
-          value={formatNumber(stats.totalConcluidos)}
-          icon={CheckCircle}
-          module="trilhas"
-          delay={100}
-        />
-        <KPICard
-          title="Progresso Médio"
-          value={formatPercent(stats.progressoMedioGeral)}
-          icon={TrendingUp}
-          module="trilhas"
-          delay={150}
-        />
-        <KPICard
-          title="Conclusão por Módulo"
-          value={formatPercent(stats.conclusaoMediaModulo)}
-          icon={Award}
-          module="trilhas"
-          delay={200}
-        />
-      </div>
+    <div className="bento-grid">
+      {/* Big Number Ribbon - KPIs Principais */}
+      <GovKPI
+        label="Total de Trilhas"
+        value={stats.totalTrilhas || 0}
+        icon={BookOpen}
+        description="Trilhas cadastradas"
+        delay={0}
+      />
+      <GovKPI
+        label="Total de Inscritos"
+        value={stats.totalInscritos || 0}
+        icon={Users}
+        description="Alunos inscritos"
+        delay={100}
+      />
+      <GovKPI
+        label="Total Concluídos"
+        value={stats.totalConcluidos || 0}
+        icon={CheckCircle}
+        description="Trilhas concluídas"
+        delay={200}
+      />
+      <GovKPI
+        label="Progresso Médio"
+        value={`${stats.progressoMedioGeral.toFixed(1)}%`}
+        icon={TrendingUp}
+        description="Percentual médio de progresso"
+        delay={300}
+      />
 
       {/* Filtros */}
-      <Card
-        className="border-0 shadow-soft"
-        style={{ borderRadius: '22px' }}
-      >
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <Filter className="h-5 w-5 text-trilhas-primary" />
-            Filtros
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="flex flex-col md:flex-row gap-4">
-            <div className="flex-1 relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
-                placeholder="Buscar trilha por nome..."
-                value={busca}
-                onChange={(e) => setBusca(e.target.value)}
-                className="pl-10"
-                style={{ borderRadius: '12px' }}
-              />
-            </div>
-            <div className="flex gap-2">
-              <Button
-                variant={periodo === 'all' ? 'default' : 'outline'}
-                onClick={() => setPeriodo('all')}
-                style={{ borderRadius: '12px' }}
-              >
-                Todos
-              </Button>
-              <Button
-                variant={periodo === '30d' ? 'default' : 'outline'}
-                onClick={() => setPeriodo('30d')}
-                style={{ borderRadius: '12px' }}
-              >
-                30 dias
-              </Button>
-              <Button
-                variant={periodo === '90d' ? 'default' : 'outline'}
-                onClick={() => setPeriodo('90d')}
-                style={{ borderRadius: '12px' }}
-              >
-                90 dias
-              </Button>
-              <Button
-                variant={periodo === '1y' ? 'default' : 'outline'}
-                onClick={() => setPeriodo('1y')}
-                style={{ borderRadius: '12px' }}
-              >
-                1 ano
-              </Button>
-            </div>
+      <GovCard title="Filtros" span={4}>
+        <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex-1 relative">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <Input
+              placeholder="Buscar trilha por nome..."
+              value={busca}
+              onChange={(e) => setBusca(e.target.value)}
+              className="pl-10"
+              style={{ borderRadius: '12px' }}
+            />
           </div>
-        </CardContent>
-      </Card>
+          <div className="flex gap-2">
+            <Button
+              variant={periodo === 'all' ? 'default' : 'outline'}
+              onClick={() => setPeriodo('all')}
+              style={{ borderRadius: '12px' }}
+            >
+              Todos
+            </Button>
+            <Button
+              variant={periodo === '30d' ? 'default' : 'outline'}
+              onClick={() => setPeriodo('30d')}
+              style={{ borderRadius: '12px' }}
+            >
+              30 dias
+            </Button>
+            <Button
+              variant={periodo === '90d' ? 'default' : 'outline'}
+              onClick={() => setPeriodo('90d')}
+              style={{ borderRadius: '12px' }}
+            >
+              90 dias
+            </Button>
+            <Button
+              variant={periodo === '1y' ? 'default' : 'outline'}
+              onClick={() => setPeriodo('1y')}
+              style={{ borderRadius: '12px' }}
+            >
+              1 ano
+            </Button>
+          </div>
+        </div>
+      </GovCard>
 
       {/* Gráficos */}
-      <div className="grid gap-6 md:grid-cols-2">
-        {topTrilhas.length > 0 && (
+      {topTrilhas.length > 0 && (
+        <GovCard title="Top 10 Trilhas Mais Acessadas" span={2}>
           <BarChart
-            title="Top 10 Trilhas Mais Acessadas"
+            title=""
             description="Trilhas com mais inscrições"
             data={topTrilhas}
             xKey="trilha"
@@ -204,12 +167,14 @@ export default function TrilhasPage() {
               },
             ]}
             module="trilhas"
-            height={350}
+            height={300}
           />
-        )}
-        {evolucaoTemporal.length > 0 && (
+        </GovCard>
+      )}
+      {evolucaoTemporal.length > 0 && (
+        <GovCard title="Evolução Temporal de Inscrições" span={2}>
           <LineChart
-            title="Evolução Temporal de Inscrições"
+            title=""
             description="Inscrições nos últimos 12 meses"
             data={evolucaoTemporal}
             xKey="mes"
@@ -221,12 +186,14 @@ export default function TrilhasPage() {
               },
             ]}
             module="trilhas"
-            height={350}
+            height={300}
           />
-        )}
-        {progressoPorTrilha.length > 0 && (
+        </GovCard>
+      )}
+      {progressoPorTrilha.length > 0 && (
+        <GovCard title="Progresso Médio por Trilha" span={2}>
           <BarChart
-            title="Progresso Médio por Trilha"
+            title=""
             description="Percentual médio de conclusão por trilha"
             data={progressoPorTrilha}
             xKey="trilha"
@@ -238,12 +205,14 @@ export default function TrilhasPage() {
               },
             ]}
             module="trilhas"
-            height={350}
+            height={300}
           />
-        )}
-        {progressoPorTrilha.length > 0 && (
+        </GovCard>
+      )}
+      {progressoPorTrilha.length > 0 && (
+        <GovCard title="Conclusão por Trilha" span={2}>
           <PieChart
-            title="Conclusão por Trilha"
+            title=""
             description="Distribuição de conclusões"
             data={progressoPorTrilha
               .filter((p) => p.concluidos > 0)
@@ -253,201 +222,170 @@ export default function TrilhasPage() {
                 value: item.concluidos,
               }))}
             module="trilhas"
-            height={350}
+            height={300}
           />
-        )}
-      </div>
+        </GovCard>
+      )}
 
       {/* Lista de Trilhas */}
-      <Card
-        className="border-0 shadow-soft overflow-hidden"
-        style={{ borderRadius: '22px' }}
-      >
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <BookOpen className="h-5 w-5 text-trilhas-primary" />
-            Lista de Trilhas
-          </CardTitle>
-          <CardDescription>
-            {trilhasFiltradas.length} trilha(s) encontrada(s)
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b">
-                  <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
-                    Trilha
-                  </th>
-                  <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
-                    Carga Horária
-                  </th>
-                  <th className="text-right p-3 text-sm font-semibold text-muted-foreground">
-                    Inscritos
-                  </th>
-                  <th className="text-right p-3 text-sm font-semibold text-muted-foreground">
-                    Concluídos
-                  </th>
-                  <th className="text-right p-3 text-sm font-semibold text-muted-foreground">
-                    % Conclusão
-                  </th>
-                  <th className="text-right p-3 text-sm font-semibold text-muted-foreground">
-                    Módulos
-                  </th>
-                  <th className="text-center p-3 text-sm font-semibold text-muted-foreground">
-                    Status
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {trilhasFiltradas.map((trilha) => {
-                  const progresso = progressoPorTrilha.find(
-                    (p) => p.id === trilha.id
-                  )
+      <GovCard title="Lista de Trilhas" span={4}>
+        <div className="overflow-x-auto">
+          <table className="w-full">
+            <thead>
+              <tr className="border-b">
+                <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
+                  Trilha
+                </th>
+                <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
+                  Carga Horária
+                </th>
+                <th className="text-right p-3 text-sm font-semibold text-muted-foreground">
+                  Inscritos
+                </th>
+                <th className="text-right p-3 text-sm font-semibold text-muted-foreground">
+                  Concluídos
+                </th>
+                <th className="text-right p-3 text-sm font-semibold text-muted-foreground">
+                  % Conclusão
+                </th>
+                <th className="text-right p-3 text-sm font-semibold text-muted-foreground">
+                  Módulos
+                </th>
+                <th className="text-center p-3 text-sm font-semibold text-muted-foreground">
+                  Status
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {trilhasFiltradas.map((trilha) => {
+                const progresso = progressoPorTrilha.find(
+                  (p) => p.id === trilha.id
+                )
 
-                  return (
-                    <motion.tr
-                      key={trilha.id}
-                      className="border-b hover:bg-muted/50 transition-colors"
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <td className="p-3">
-                        <div>
-                          <p className="font-medium">{trilha.titulo}</p>
-                          <p className="text-xs text-muted-foreground mt-1 line-clamp-1">
-                            {trilha.descricao}
-                          </p>
-                        </div>
-                      </td>
-                      <td className="p-3">{trilha.carga_horaria}h</td>
-                      <td className="p-3 text-right font-medium">
-                        {progresso?.totalInscritos || 0}
-                      </td>
-                      <td className="p-3 text-right font-medium">
-                        {progresso?.concluidos || 0}
-                      </td>
-                      <td className="p-3 text-right">
-                        <span
-                          className={cn(
-                            'font-bold',
-                            (progresso?.percentualConclusao || 0) >= 70
-                              ? 'text-green-600'
-                              : (progresso?.percentualConclusao || 0) >= 40
-                              ? 'text-yellow-600'
-                              : 'text-red-600'
-                          )}
-                        >
-                          {formatPercent(progresso?.percentualConclusao || 0)}
-                        </span>
-                      </td>
-                      <td className="p-3 text-right font-medium">
-                        {trilha.modulos_trilhas.length}
-                      </td>
-                      <td className="p-3 text-center">
-                        <span
-                          className={cn(
-                            'rounded-full px-3 py-1 text-xs font-medium',
-                            progresso?.status === 'ativo'
-                              ? 'bg-green-100 text-green-800'
-                              : 'bg-gray-100 text-gray-800'
-                          )}
-                        >
-                          {progresso?.status === 'ativo' ? 'Ativo' : 'Inativo'}
-                        </span>
-                      </td>
-                    </motion.tr>
-                  )
-                })}
-              </tbody>
-            </table>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Tabela de Inscritos */}
-      <Card
-        className="border-0 shadow-soft overflow-hidden"
-        style={{ borderRadius: '22px' }}
-      >
-        <CardHeader>
-          <CardTitle>Inscritos com Progresso</CardTitle>
-          <CardDescription>
-            Lista de alunos inscritos nas trilhas com percentual de conclusão
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b">
-                  <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
-                    Aluno
-                  </th>
-                  <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
-                    Email
-                  </th>
-                  <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
-                    Trilha
-                  </th>
-                  <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
-                    Data Inscrição
-                  </th>
-                  <th className="text-center p-3 text-sm font-semibold text-muted-foreground">
-                    Concluído
-                  </th>
-                  <th className="text-right p-3 text-sm font-semibold text-muted-foreground">
-                    Progresso
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {inscritos.slice(0, 50).map((inscrito, index) => (
-                  <motion.tr
-                    key={inscrito.id}
+                return (
+                  <tr
+                    key={trilha.id}
                     className="border-b hover:bg-muted/50 transition-colors"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.02 }}
                   >
-                    <td className="p-3 font-medium">{inscrito.aluno}</td>
-                    <td className="p-3 text-muted-foreground">
-                      {inscrito.email}
+                    <td className="p-3">
+                      <div>
+                        <p className="font-medium">{trilha.titulo}</p>
+                        <p className="text-xs text-muted-foreground mt-1 line-clamp-1">
+                          {trilha.descricao}
+                        </p>
+                      </div>
                     </td>
-                    <td className="p-3">{inscrito.trilha}</td>
-                    <td className="p-3 text-muted-foreground">
-                      {formatDate(inscrito.dataInscricao)}
+                    <td className="p-3">{trilha.carga_horaria}h</td>
+                    <td className="p-3 text-right font-medium">
+                      {progresso?.totalInscritos || 0}
                     </td>
-                    <td className="p-3 text-center">
-                      {inscrito.concluido ? (
-                        <span className="text-green-600 font-medium">Sim</span>
-                      ) : (
-                        <span className="text-muted-foreground">Não</span>
-                      )}
+                    <td className="p-3 text-right font-medium">
+                      {progresso?.concluidos || 0}
                     </td>
                     <td className="p-3 text-right">
                       <span
                         className={cn(
                           'font-bold',
-                          inscrito.percentualConcluido >= 70
+                          (progresso?.percentualConclusao || 0) >= 70
                             ? 'text-green-600'
-                            : inscrito.percentualConcluido >= 40
+                            : (progresso?.percentualConclusao || 0) >= 40
                             ? 'text-yellow-600'
                             : 'text-red-600'
                         )}
                       >
-                        {formatPercent(inscrito.percentualConcluido)}
+                        {formatPercent(progresso?.percentualConclusao || 0)}
                       </span>
                     </td>
-                  </motion.tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </CardContent>
-      </Card>
+                    <td className="p-3 text-right font-medium">
+                      {trilha.modulos_trilhas.length}
+                    </td>
+                    <td className="p-3 text-center">
+                      <span
+                        className={cn(
+                          'rounded-full px-3 py-1 text-xs font-medium',
+                          progresso?.status === 'ativo'
+                            ? 'bg-green-100 text-green-800'
+                            : 'bg-gray-100 text-gray-800'
+                        )}
+                      >
+                        {progresso?.status === 'ativo' ? 'Ativo' : 'Inativo'}
+                      </span>
+                    </td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </div>
+      </GovCard>
+
+      {/* Tabela de Inscritos */}
+      <GovCard title="Inscritos com Progresso" span={4}>
+        <div className="overflow-x-auto">
+          <table className="w-full">
+            <thead>
+              <tr className="border-b">
+                <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
+                  Aluno
+                </th>
+                <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
+                  Email
+                </th>
+                <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
+                  Trilha
+                </th>
+                <th className="text-left p-3 text-sm font-semibold text-muted-foreground">
+                  Data Inscrição
+                </th>
+                <th className="text-center p-3 text-sm font-semibold text-muted-foreground">
+                  Concluído
+                </th>
+                <th className="text-right p-3 text-sm font-semibold text-muted-foreground">
+                  Progresso
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {inscritos.slice(0, 50).map((inscrito) => (
+                <tr
+                  key={inscrito.id}
+                  className="border-b hover:bg-muted/50 transition-colors"
+                >
+                  <td className="p-3 font-medium">{inscrito.aluno}</td>
+                  <td className="p-3 text-muted-foreground">
+                    {inscrito.email}
+                  </td>
+                  <td className="p-3">{inscrito.trilha}</td>
+                  <td className="p-3 text-muted-foreground">
+                    {formatDate(inscrito.dataInscricao)}
+                  </td>
+                  <td className="p-3 text-center">
+                    {inscrito.concluido ? (
+                      <span className="text-green-600 font-medium">Sim</span>
+                    ) : (
+                      <span className="text-muted-foreground">Não</span>
+                    )}
+                  </td>
+                  <td className="p-3 text-right">
+                    <span
+                      className={cn(
+                        'font-bold',
+                        inscrito.percentualConcluido >= 70
+                          ? 'text-green-600'
+                          : inscrito.percentualConcluido >= 40
+                          ? 'text-yellow-600'
+                          : 'text-red-600'
+                      )}
+                    >
+                      {formatPercent(inscrito.percentualConcluido)}
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </GovCard>
     </div>
   )
 }

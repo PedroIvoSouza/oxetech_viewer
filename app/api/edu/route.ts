@@ -1,10 +1,32 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { categorizarCursos } from '@/lib/course-normalizer'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  // Verificar se Prisma está disponível
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        stats: {
+          totalEscolas: 0,
+          totalMatriculas: 0,
+          totalTurmas: 0,
+        },
+        frequenciaPorEscola: [],
+        frequenciaDiaria: [],
+        rankingCursos: [],
+        matriculasPorCurso: [],
+        mapaCalorHorario: [],
+        comparativoMensal: [],
+        matriculasPorStatus: [],
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     // Frequência por escola
     const escolas = await prisma.escolas_oxetech_edu.findMany({
@@ -244,12 +266,6 @@ export async function GET() {
 
     return NextResponse.json({
       data: {
-        frequenciaPorEscola,
-        frequenciaDiaria,
-        rankingCursos,
-        matriculasPorCurso,
-        mapaCalorHorario,
-        comparativoMensal,
         stats: {
           totalEscolas,
           totalMatriculas,
@@ -258,6 +274,12 @@ export async function GET() {
           cursosNormalizados: cursosNormalizados.cursosNormalizados,
           cursosPorCategoria: cursosNormalizados.porCategoria,
         },
+        frequenciaPorEscola,
+        frequenciaDiaria,
+        rankingCursos,
+        matriculasPorCurso,
+        mapaCalorHorario,
+        comparativoMensal,
         matriculasPorStatus: matriculasComStatus.map((item) => ({
           status: item.status,
           total: item._count,
@@ -267,9 +289,25 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error fetching edu data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Failed to fetch edu data' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        stats: {
+          totalEscolas: 0,
+          totalMatriculas: 0,
+          totalTurmas: 0,
+          totalCertificados: 0,
+          cursosNormalizados: [],
+          cursosPorCategoria: {},
+        },
+        frequenciaPorEscola: [],
+        frequenciaDiaria: [],
+        rankingCursos: [],
+        matriculasPorCurso: [],
+        mapaCalorHorario: [],
+        comparativoMensal: [],
+        matriculasPorStatus: [],
+      },
+      error: error instanceof Error ? error.message : 'Failed to fetch edu data',
+    }, { status: 200 })
   }
 }

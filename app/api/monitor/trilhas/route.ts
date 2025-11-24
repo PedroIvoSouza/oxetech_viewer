@@ -1,10 +1,21 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
 import { gerarAlertasTrilhas } from '@/lib/core/alerts'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        trilhas: [],
+        alertas: [],
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     // Buscar trilhas e inscrições
     const trilhas = await prisma.trilhas_de_conhecimento.findMany({
@@ -182,9 +193,12 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error fetching trilhas monitor data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Erro ao buscar dados de monitoramento das Trilhas' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        trilhas: [],
+        alertas: [],
+      },
+      error: error instanceof Error ? error.message : 'Erro ao buscar dados de monitoramento das Trilhas',
+    }, { status: 200 })
   }
 }

@@ -143,58 +143,49 @@ export default function MonitorLabPage() {
           title="Turmas Abertas Hoje"
           value={formatNumber(turmasAbertasHoje)}
           icon={Activity}
-          module="lab"
-          delay={0}
+          color="lab"
         />
         <KPICard
           title="Total de Turmas"
           value={formatNumber(stats.totalTurmas)}
           icon={School}
-          module="lab"
-          delay={50}
+          color="lab"
         />
         <KPICard
           title="Total de Alunos"
           value={formatNumber(stats.totalAlunos)}
           icon={Users}
-          module="lab"
-          delay={100}
+          color="lab"
         />
         <KPICard
           title="Frequência Média"
           value={formatPercent(stats.mediaFrequencia)}
           icon={TrendingUp}
-          module="lab"
-          delay={150}
+          color="lab"
         />
         <KPICard
           title="Turmas Críticas"
           value={formatNumber(turmasCriticas.length)}
           icon={AlertTriangle}
-          module="lab"
-          delay={200}
-          description="Ausência > 30%"
+          color="lab"
         />
         <KPICard
           title="Turmas sem Presença"
           value={formatNumber(turmasSemPresenca.length)}
           icon={XCircle}
-          module="lab"
-          delay={250}
+          color="lab"
         />
         <KPICard
           title="Total de Alertas"
           value={formatNumber(stats.totalAlertas)}
           icon={AlertTriangle}
-          module="lab"
-          delay={300}
+          color="lab"
         />
         <KPICard
           title="Itens de Auditoria"
           value={formatNumber(stats.totalAuditoria)}
           icon={CheckCircle}
-          module="lab"
-          delay={350}
+          color="lab"
         />
       </div>
 

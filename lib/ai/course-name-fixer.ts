@@ -7,9 +7,16 @@
 
 import OpenAI from 'openai'
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || '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',
-})
+// Verificar se a chave da API está configurada
+if (!process.env.OPENAI_API_KEY) {
+  console.warn('⚠️  OPENAI_API_KEY não configurada. Funcionalidade de correção de nomes via IA será desabilitada.')
+}
+
+const openai = process.env.OPENAI_API_KEY
+  ? new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    })
+  : null
 
 interface CourseFixResult {
   original: string
@@ -35,6 +42,18 @@ export async function corrigirNomeCurso(
   const cacheKey = nomeOriginal.toLowerCase().trim()
   if (courseCache.has(cacheKey)) {
     return courseCache.get(cacheKey)!
+  }
+
+  // Se não houver chave de API, retornar original sem correção
+  if (!openai) {
+    const fallback: CourseFixResult = {
+      original: nomeOriginal,
+      fixed: nomeOriginal,
+      confidence: 0.1,
+      normalized: nomeOriginal,
+    }
+    courseCache.set(cacheKey, fallback)
+    return fallback
   }
 
   try {

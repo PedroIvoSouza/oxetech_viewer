@@ -1,9 +1,27 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        kpis: {
+          totalAlunos: 0,
+          totalEmpresas: 0,
+          totalContratacoes: 0,
+          totalCertificados: 0,
+          taxaEmpregabilidade: 0,
+        },
+        empresasAtendidas: [],
+        programas: [],
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     // KPIs Estratégicos
     const [
@@ -190,9 +208,24 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error fetching executive panel data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Erro ao buscar dados do painel executivo' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        kpis: {
+          totalAlunos: 0,
+          totalEmpresas: 0,
+          totalContratacoes: 0,
+          totalCertificados: 0,
+          taxaEmpregabilidade: 0,
+          empresasAtendidas: 0,
+          municipiosAtendidos: 0,
+        },
+        participantesAtivos: [],
+        impactoSocial: {},
+        okrs: [],
+        tendencias: [],
+        programas: [],
+      },
+      error: error instanceof Error ? error.message : 'Erro ao buscar dados do painel executivo',
+    }, { status: 200 })
   }
 }

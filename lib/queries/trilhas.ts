@@ -67,20 +67,43 @@ interface TrilhaData {
   error: string | null
 }
 
+import { safeFetch } from '@/lib/utils/api-helpers'
+
 async function fetchTrilhasData(
   periodo: string = 'all',
   busca: string = ''
 ): Promise<TrilhaData> {
-  const params = new URLSearchParams()
-  if (periodo) params.append('periodo', periodo)
-  if (busca) params.append('busca', busca)
+  try {
+    const params = new URLSearchParams()
+    if (periodo) params.append('periodo', periodo)
+    if (busca) params.append('busca', busca)
 
-  const url = `/api/trilhas${params.toString() ? `?${params.toString()}` : ''}`
-  const response = await fetch(url)
-  if (!response.ok) {
-    throw new Error('Failed to fetch trilhas data')
+    const url = `/api/trilhas${params.toString() ? `?${params.toString()}` : ''}`
+    const data = await safeFetch<TrilhaData>(url)
+    if (!data.data) {
+      return {
+        data: {
+          stats: {
+            totalTrilhas: 0,
+            totalInscritos: 0,
+            totalConcluidos: 0,
+            progressoMedioGeral: 0,
+            conclusaoMediaModulo: 0,
+          },
+          trilhas: [],
+          progressoPorTrilha: [],
+          topTrilhas: [],
+          evolucaoTemporal: [],
+          inscritos: [],
+        },
+        error: 'Dados não disponíveis',
+      }
+    }
+    return data
+  } catch (error) {
+    console.error('Error fetching trilhas data:', error)
+    throw error
   }
-  return response.json()
 }
 
 export function useTrilhasData(periodo: string = 'all', busca: string = '') {

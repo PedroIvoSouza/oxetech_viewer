@@ -168,33 +168,25 @@ export default function BILabPage() {
           title="Total de Certificados"
           value={formatNumber(resumo.totalCertificados)}
           icon={Award}
-          delay={0}
-          description="Alunos certificados de fato (status TWO)"
-          module="lab"
+          color="lab"
         />
         <KPICard
           title="Taxa de Certificação"
           value={`${resumo.taxaCertificacaoGeral.toFixed(1)}%`}
           icon={TrendingUp}
-          delay={100}
-          description="Taxa geral de certificação"
-          module="lab"
+          color="lab"
         />
         <KPICard
           title="Taxa de Evasão"
           value={`${resumo.taxaEvasaoGeral.toFixed(1)}%`}
           icon={TrendingDown}
-          delay={200}
-          description="Taxa geral de evasão"
-          module="lab"
+          color="lab"
         />
         <KPICard
           title="Taxa de Ocupação"
           value={`${resumo.taxaOcupacaoGeral.toFixed(1)}%`}
           icon={Building2}
-          delay={300}
-          description="Vagas ocupadas / vagas total"
-          module="lab"
+          color="lab"
         />
       </div>
 

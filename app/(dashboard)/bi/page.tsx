@@ -156,29 +156,21 @@ export default function BIPage() {
           title="Total de Alunos Impactados"
           value={formatNumber(impactoSocial.totalAlunosImpactados)}
           icon={Users}
-          delay={0}
-          description="Alunos únicos em todos os eixos"
         />
         <KPICard
           title="Total de Certificados"
           value={formatNumber(impactoSocial.totalCertificados)}
           icon={Award}
-          delay={100}
-          description="Alunos certificados em todos os eixos"
         />
         <KPICard
           title="Taxa de Empregabilidade"
           value={`${(impactoSocial.taxaEmpregabilidade || 0).toFixed(1)}%`}
           icon={TrendingUp}
-          delay={200}
-          description="Taxa de contratação no Work"
         />
         <KPICard
           title="Municípios Atendidos"
           value={formatNumber(impactoSocial.totalMunicipiosAtendidos)}
           icon={MapPin}
-          delay={300}
-          description="Cobertura geográfica"
         />
       </div>
 

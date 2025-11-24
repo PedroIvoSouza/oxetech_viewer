@@ -1,6 +1,7 @@
 'use client'
 
 import { ThemeProvider } from 'next-themes'
+import { Toaster } from 'sonner'
 import { ReactNode } from 'react'
 
 export function Providers({ children }: { children: ReactNode }) {
@@ -12,6 +13,7 @@ export function Providers({ children }: { children: ReactNode }) {
       disableTransitionOnChange
     >
       {children}
+      <Toaster position="top-right" />
     </ThemeProvider>
   )
 }

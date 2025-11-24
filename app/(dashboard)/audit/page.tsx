@@ -148,36 +148,26 @@ export default function AuditPage() {
           title="Total de Problemas"
           value={formatNumber(resumo.totalFindings)}
           icon={ShieldCheck}
-          delay={0}
-          description="Total de inconsistências encontradas"
         />
         <KPICard
           title="Críticos"
           value={formatNumber(resumo.criticos)}
           icon={AlertOctagon}
-          delay={100}
-          description="Problemas críticos"
         />
         <KPICard
           title="Alta Severidade"
           value={formatNumber(resumo.altos)}
           icon={AlertTriangle}
-          delay={200}
-          description="Problemas de alta severidade"
         />
         <KPICard
           title="Média Severidade"
           value={formatNumber(resumo.medios)}
           icon={AlertCircle}
-          delay={300}
-          description="Problemas de média severidade"
         />
         <KPICard
           title="Baixa Severidade"
           value={formatNumber(resumo.baixos)}
           icon={Info}
-          delay={400}
-          description="Problemas de baixa severidade"
         />
       </div>
 

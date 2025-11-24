@@ -33,3 +33,87 @@ body {
   border-radius: 0.75rem;
   padding: 1.5rem;
 }
+
+/* Bento Grid Layout - Inspirado em USAspending.gov */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+}
+
+/* Bento Card Styles */
+.bento-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bento-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* KPI Number Styles */
+.kpi-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'Public Sans', 'Inter', system-ui, sans-serif;
+}
+
+.kpi-number-primary {
+  color: var(--primary);
+}
+
+.kpi-number-secondary {
+  color: var(--foreground);
+  opacity: 0.9;
+}
+
+.big-number-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 8px;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0;
+}
+
+/* Font utilities */
+.font-mono-numeric {
+  font-variant-numeric: tabular-nums;
+  font-family: 'Roboto Mono', 'JetBrains Mono', monospace;
+}
+
+.font-body {
+  font-family: 'Inter', 'Public Sans', system-ui, sans-serif;
+}

@@ -24,6 +24,9 @@ import {
   TrendingUp,
   Award,
   Activity,
+  LineChart,
+  Settings,
+  HelpCircle,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
@@ -90,9 +93,24 @@ export function Shell({ children }: ShellProps) {
       icon: TrendingUp,
     },
     {
+      title: 'Tendências',
+      href: '/tendencias',
+      icon: LineChart,
+    },
+    {
       title: 'Reports',
       href: '/reports',
       icon: TrendingUp,
+    },
+    {
+      title: 'Configurações',
+      href: '/configuracoes',
+      icon: Settings,
+    },
+    {
+      title: 'Ajuda',
+      href: '/ajuda',
+      icon: HelpCircle,
     },
   ]
 

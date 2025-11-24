@@ -1,14 +1,23 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: null,
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
-    const id = parseInt(params.id)
+    const { id: idParam } = await params
+    const id = parseInt(idParam)
 
     const aluno = await prisma.alunos.findUnique({
       where: { id },
@@ -63,10 +72,10 @@ export async function GET(
     return NextResponse.json({ data: aluno, error: null })
   } catch (error) {
     console.error('Error fetching aluno data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Failed to fetch aluno data' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: null,
+      error: error instanceof Error ? error.message : 'Failed to fetch aluno data',
+    }, { status: 200 })
   }
 }
 

@@ -1,9 +1,34 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET() {
+  // Verificar se Prisma está disponível
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        stats: {
+          vagas: 0,
+          empresas: 0,
+          candidaturas: 0,
+          contratacoes: 0,
+          inscricoes: 0,
+        },
+        funilPorEdital: [],
+        empresas: [],
+        vagasPorStatus: [],
+        vagas: [],
+        temposMedios: {
+          inscricaoCandidatura: 0,
+          candidaturaContratacao: 0,
+        },
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     // Estatísticas gerais
     const [vagas, empresas, candidaturas, contratacoes] = await Promise.all([
@@ -316,9 +341,25 @@ export async function GET() {
     })
   } catch (error) {
     console.error('Error fetching work data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Failed to fetch work data' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        stats: {
+          vagas: 0,
+          empresas: 0,
+          candidaturas: 0,
+          contratacoes: 0,
+          inscricoes: 0,
+        },
+        funilPorEdital: [],
+        empresas: [],
+        vagasPorStatus: [],
+        vagas: [],
+        temposMedios: {
+          inscricaoCandidatura: 0,
+          candidaturaContratacao: 0,
+        },
+      },
+      error: error instanceof Error ? error.message : 'Failed to fetch work data',
+    }, { status: 200 })
   }
 }

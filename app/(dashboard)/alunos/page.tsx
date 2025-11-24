@@ -118,37 +118,31 @@ export default function AlunosPage() {
           title="Total de Alunos"
           value={formatNumber(pagination.total)}
           icon={Users}
-          delay={0}
         />
         <KPICard
           title="Trilhas Inscritas"
           value={formatNumber(totalTrilhasInscritas)}
           icon={BookOpen}
-          delay={50}
         />
         <KPICard
           title="Trilhas Concluídas"
           value={formatNumber(totalTrilhasConcluidas)}
           icon={CheckCircle}
-          delay={100}
         />
         <KPICard
           title="Lab Inscrições"
           value={formatNumber(totalLabInscricoes)}
           icon={FlaskConical}
-          delay={150}
         />
         <KPICard
           title="Work Inscrições"
           value={formatNumber(totalWorkInscricoes)}
           icon={Briefcase}
-          delay={200}
         />
         <KPICard
           title="Progresso Médio"
           value={formatPercent(progressoMedioGeral)}
           icon={TrendingUp}
-          delay={250}
         />
       </div>
 

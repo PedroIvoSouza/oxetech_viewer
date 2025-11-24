@@ -1,9 +1,29 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/db'
+import { isPrismaAvailable } from '@/lib/utils/prisma-helpers'
 
 export const dynamic = 'force-dynamic'
 
 export async function GET(request: Request) {
+  // Verificar se Prisma está disponível
+  if (!isPrismaAvailable()) {
+    return NextResponse.json({
+      data: {
+        alunos: [],
+        pagination: {
+          page: 1,
+          limit: 20,
+          total: 0,
+          totalPages: 0,
+        },
+        filters: {
+          municipios: [],
+        },
+      },
+      error: 'DATABASE_URL não configurada',
+    }, { status: 200 })
+  }
+
   try {
     const { searchParams } = new URL(request.url)
     const page = parseInt(searchParams.get('page') || '1')
@@ -187,9 +207,20 @@ export async function GET(request: Request) {
     })
   } catch (error) {
     console.error('Error fetching alunos data:', error)
-    return NextResponse.json(
-      { data: null, error: 'Failed to fetch alunos data' },
-      { status: 500 }
-    )
+    return NextResponse.json({
+      data: {
+        alunos: [],
+        pagination: {
+          page: 1,
+          limit: 20,
+          total: 0,
+          totalPages: 0,
+        },
+        filters: {
+          municipios: [],
+        },
+      },
+      error: error instanceof Error ? error.message : 'Failed to fetch alunos data',
+    }, { status: 200 })
   }
 }
